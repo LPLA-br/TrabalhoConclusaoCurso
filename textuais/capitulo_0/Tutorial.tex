@@ -1,0 +1,175 @@
+\section{\textbf{TUTORIAL}}
+    \label{cha:tutorial}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black}
+    Não coloque \textbf{espaço} no nome dos arquivos, muito menos nas \textbf{referências dos nomes dos arquivos}, pois quando realizar as chamadas em texto torna\hyp{se} complicado tratar esse caractere.
+    
+    Padrões utilizados por todo o documento:
+    \begin{itemize}
+        \item Código identado para fácil leitura;
+        \item Nome das pastas com todas as letras minúsculas;
+        \item Nome dos arquivos (.tex | .bib) capitalizados;
+        \item Separações dos nomes dos arquivos com - (hífem);
+        \item Os rótulos dos elementos textuais possuem um prefixo sobre o tipo do item que representam, segue alguns exemplos.
+        \begin{verbatim} 
+            \label{cha:introducao}
+            \label{sec:objetivos}
+            \label{subsec:objetivo-geral}
+            \label{subsubsec:assunto-xyz}
+            \label{fig:nome-da-figura}
+            \label{tab:nome-da-tabela}
+        \end{verbatim} 
+    \end{itemize}
+
+\subsection{\textbf{Como criar referências}}
+\label{sec:referencias}
+
+\href{https://verbosus.com/bibtex-style-examples.html}{Neste Link} contém alguns exemplos das possíveis anotações que o \LaTeX aceita, basta seguir o padrão.
+
+Segue um exemplo de como realizar o uso da citação, além disso, adianto que esse exemplo utiliza a anotação para citações na web.
+
+Com o \LaTeX, é muito fácil escrever documentos profissionais~\cite{latex1995}. Este é um exemplo de referência indireta. No entanto, existem casos em que se faz necessário o uso de referência direta. Em \citeonline{latex1995}, é descrito como o LaTeX é muito útil e simples de ser utilizado para gerar documentos profissionais.
+
+Às vezes, a citação do autor pode ultrapassar 3 linhas, então faça uso desta ideia:
+\begin{citacao}
+    Segundo \citeonline{latex1995}
+    \lipsum[59]
+\end{citacao}
+
+\begin{verbatim}
+    \cite{latex1995} -> Referência indireta
+    
+    \citeonline{latex1995} -> Referência direta            
+    Segundo \citeonline{latex1995}
+    \begin{citacao}
+        
+    \end{citacao}
+\end{verbatim}
+
+Além disso, outros tipos de referências podem ser utilizados no LaTeX, como por exemplo:
+
+\subsubsection{Citação de Artigo em Periódico:}
+\begin{verbatim}
+    \cite{artigo_periodico}
+\end{verbatim}
+\cite{artigo_periodico}
+
+\subsubsection{Referência de Livro:}
+\begin{verbatim}
+    \cite{livro}
+\end{verbatim}
+\cite{livro}
+
+\subsubsection{Citação de Capítulo de Livro:}
+\begin{verbatim}
+    \cite{capitulo_livro}
+\end{verbatim}
+\cite{capitulo_livro}
+
+\subsubsection{Trabalho em Conferência:}
+\begin{verbatim}
+    \cite{trabalho_conferencia}
+\end{verbatim}
+\cite{trabalho_conferencia}
+
+\subsubsection{Tese ou Dissertação:}
+\begin{verbatim}
+    \cite{tese}
+\end{verbatim}
+\cite{tese}
+
+\subsubsection{Algorítmos:}
+\begin{verbatim}
+    \cite{algoritmo}
+\end{verbatim}
+\cite{algoritmo}
+
+\subsubsection{Filme:}
+\begin{verbatim}
+    \cite{filme}
+\end{verbatim}
+\cite{filme}
+
+\subsubsection{Vídeo:}
+\begin{verbatim}
+    \cite{video}
+\end{verbatim}
+\cite{video}
+
+Estes exemplos demonstram como fazer citações e referências de diferentes tipos de documentos utilizando o LaTeX e o pacote `abntex2cite`, seguindo as normas ABNT.
+
+Estes exemplos demonstram como fazer citações e referências de diferentes tipos de documentos utilizando o LaTeX e o pacote `abntex2cite`, seguindo as normas ABNT.
+
+    \subsection{\textbf{Figuras, Tabelas, Quadros, Equação e Algoritmos} }       
+    Os exemplos de inclusão e como referenciar e uma figura, tabela, quadro, equação e algoritmo podem ser observados na Figura~\ref{fig:figura}, Tabela~\ref{tab:tabela}, Quadro~\ref{tab:quadro}, Equação~\ref{eq:equacao}, Algoritmo~\ref{alg:algoritmo}.
+    
+    \begin{figure}[h]
+        \centering
+        \caption{Exemplo de Figura}
+        \includegraphics{lib/Logoufrn.jpg}
+        % Contém Fonte: 
+        \source{O Autor (\imprimirdata)}
+        \label{fig:figura}
+    \end{figure}
+    
+    \begin{table}[h]
+        \centering
+    % \renewcommand{\tablename}{Quadro} % Texto a ser mostrado na lista
+        \caption{Exemplo de Tabela}
+        % c -> center, l -> left, r -> right e | -> linha vertical
+        \begin{tabular}{c|c}
+            \hline
+            \textbf{Título} & \textbf{Título}  \\ \hline %\hline -> linha horizontal
+            x1 & 23 \\ \hline 
+        \end{tabular}
+        \label{tab:tabela}
+        \source{O Autor (\imprimirdata)}
+    \end{table}
+
+    
+    \begin{quadro}[h]
+        \centering
+        \caption{Exemplo de Quadro}
+        % c -> center, l -> left, r -> right e | -> linha vertical
+        \begin{tabular}{|c|c|}
+            \hline
+            \textbf{Título} & \textbf{Título}  \\ \hline
+            chave & valor em texto \\ \hline
+        \end{tabular}
+        \label{tab:quadro}
+        \source{O Autor (\imprimirdata)}
+    \end{quadro}
+    
+    \begin{equation}
+        \label{eq:equacao}
+        a^2 = b^2 + c^2
+    \end{equation}
+    
+    \begin{algorithm}[H]
+        \caption{Pseudo\hyp{Código} de Exemplo}
+        \label{alg:algoritmo}
+        \SetAlgoLined
+        \begin{algorithmic}[1]
+            \REQUIRE entender, estresse
+            \ENSURE estresse $\leftarrow$ 0, entender $\leftarrow$ FALSE
+            \REPEAT
+            	\STATE leia o template com calma
+            	\STATE tente entender
+            	\IF{entender}
+                    \STATE entender $\leftarrow$ TRUE
+                \ELSE
+                    \STATE estresse $\leftarrow$ estresse + 1
+                \ENDIF
+            \UNTIL{entender $=$ TRUE}
+            \RETURN estresse
+        \end{algorithmic}
+    \end{algorithm}
+    \begin{center}
+        \vspace{-2em}
+        \source{O Autor (\imprimirdata)}
+    \end{center}
+    
+    \subsection{\textbf{Siglas}}
+        \label{sec:siglas}
+        
+        No curso de \ac{bsi} da \ac{ufrn} é um curso da área de \ac{ti} na cidade de Caicó - RN.
+\newpage

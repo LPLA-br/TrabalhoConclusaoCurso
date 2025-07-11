@@ -1,0 +1,41 @@
+\begin{folhadeaprovacao}
+    {\fontfamily{phv}\selectfont % Define a fonte para Arial apenas dentro deste ambiente
+    \begin{center}
+        \large\imprimirautor
+
+        \vspace*{\fill}\vspace*{\fill}
+        
+           \begin{center}
+            {\normalfont\fontfamily{ptm}\selectfont % Define a fonte para Times New Roman apenas para o título
+            \normalfont\bfseries\Large\imprimirtitulo
+            }% Fim do comando \fontfamily{ptm}\selectfont
+        \end{center}
+        
+        \vspace*{\fill}
+            
+        \hspace{.45\textwidth}
+        \begin{minipage}{.5\textwidth}
+            \imprimirpreambulo
+        \end{minipage}%
+            \vspace*{\fill}
+        
+       \textbf{\imprimirlocal}, xx de mmm de \imprimirdata
+   \end{center}
+
+   \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
+   %\assinatura{\textbf{Professor} \\ Co-Orientador}
+   \assinatura{\textbf{Professor} \\ Examinador(a) 1}
+   \assinatura{\textbf{Professor} \\ Examinador(a) 2}
+   %\assinatura{\textbf{Professor} \\ Examinador(a) 3}
+   %\assinatura{\textbf{Professor} \\ Examinador(a) 4}
+      
+   \begin{center}
+       \vspace*{0.5cm}
+       {\large\imprimirlocal}
+       \par
+       {\large\imprimirdata}
+       \vspace*{1cm}
+   \end{center}
+  }% Fim do comando \fontfamily{ptm}\selectfont
+\end{folhadeaprovacao}
+\newpage

@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                              %%
+%%          Importação de pacotes               %%
+%%                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Acrônimos (Siglas e Abreviaturas)
+\usepackage{acronym}
+
+\hypersetup{hidelinks} % Isso desativa a coloração dos links
+
+% Pacote para o desenvolvimento de algoritmos e codificação utf8
+\usepackage[portuguese,lined,boxed,ruled]{algorithm2e}
+\usepackage{algorithmic}
+
+% Fontes e símbolos matemáticos
+\usepackage{amsfonts, amsmath, amssymb}
+
+\usepackage[brazil]{babel}
+
+\usepackage{booktabs}
+
+
+% Manutenção das legendas em imagens (fonte pequena, 10pt)
+\usepackage[font=small]{caption}
+
+% Manutenção da marcação em listas (enumerator)
+\usepackage{enumitem}
+
+% Codificação da fonte em 8 bits
+\usepackage[T1]{fontenc}
+
+% Pacote para formatação de títulos
+\usepackage{titlesec}
+
+% Configuração da fonte para Arial (Helvetica)
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+
+\titleformat{\section}
+  {\bfseries\normalsize} % Define a fonte para Arial (Helvetica) e tamanho 12 para as seções
+  {\thesection}
+  {1em}
+  {}
+
+\titleformat{\subsection}
+  {\normalsize\bfseries} % Define negrito e tamanho 12 para as subseções
+  {\thesubsection}
+  {1em}
+  {}
+
+\titleformat{\subsubsection}
+  {\normalsize} % Define a fonte para Arial (Helvetica) e tamanho 12 para as subsubseções sem negrito
+  {\thesubsubsection}
+  {1em}
+  {}
+
+% Inserir figuras
+\usepackage{graphicx}
+
+% Dimensões do documento
+\usepackage[left=3.0cm, right=2.0cm, top=3.0cm, bottom=2.0cm]{geometry}
+
+% Glossário
+\usepackage[nonumberlist,style=index]{glossaries}
+
+% Hifenização das palavras 
+\usepackage{hyphenat}
+
+% Índice
+\usepackage{imakeidx}
+
+% Identar do primeiro parágrafo de cada seção
+\usepackage{indentfirst}
+
+% Acentuação direta
+\usepackage[utf8]{inputenc}
+
+% Gerador de Texto
+\usepackage{lipsum}
+
+% Para melhorias de justificação
+\usepackage{microtype}
+
+% Mescla de células em tabelas
+\usepackage{multirow}
+
+\usepackage{placeins}
+
+% Rotacionar elementos
+\usepackage{rotating}
+
+% Manutenção do espaçamento entre linhas
+\usepackage{setspace}
+
+% Cria rodapé em tabelas 
+\usepackage{threeparttable}
+
+% Texto em Arial (Helvetica)
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+
+% Pacotes com Hierarquia
+\usepackage[brazilian, hyperpageref]{backref} % Paginas com as citações na bibl
+
+% Referências
+\usepackage[alf, bibjustif, abnt-etal-list=0, abnt-etal-text=it]{abntex2cite}
+
+% Redefine o formato do título das referências
+\renewcommand{\bibsection}{%
+  \clearpage
+  \phantomsection
+  \addcontentsline{toc}{section}{\protect\numberline{}REFERÊNCIAS} % Adiciona o título ao sumário
+  {\centering\bfseries\fontsize{12}{14}\selectfont REFERÊNCIAS\par\nobreak} % Título das referências
+}
+
+% Configurações do pacote hyperref
+\usepackage{hyperref}
+
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{}
+
+% Configurações das tabelas
