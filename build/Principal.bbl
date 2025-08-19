@@ -1,0 +1,95 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v<VERSION> }
+
+\bibitem[Algoritmo Ano de Criação]{algoritmo}
+\abntrefinfo{Algoritmo}{Algoritmo}{Ano de Criação}
+{ALGORITMO, A. do. \emph{Título do Algoritmo}. Ano de Criação. Descrição
+  do local de publicação, como um site, livro, etc.}
+
+\bibitem[BELTRÃO, FARZAT e TRAVASSOS 2020]{beltrao2020}
+\abntrefinfo{BELTRÃO, FARZAT e TRAVASSOS}{BELTRÃO; FARZAT; TRAVASSOS}{2020}
+{BELTRÃO, A.; FARZAT, F.; TRAVASSOS, G. Technical debt: A clean architecture
+  implementation. In:  \emph{Anais Estendidos do XI Congresso Brasileiro de
+  Software: Teoria e Prática}. Porto Alegre, RS, Brasil: SBC, 2020. p.
+  131--134.
+ISSN 0000-0000. Dispon{\'\i}vel em:
+  \url{https://sol.sbc.org.br/index.php/cbsoft\_estendido/article/view/14620}.}
+
+\bibitem[CARREIRA 2023]{carreira2023}
+\abntrefinfo{CARREIRA}{CARREIRA}{2023}
+{CARREIRA, a. b. d. T. e.~. \emph{Demissões em massa: a bolha de TI explodiu
+  ?} 2023.
+Dispon{\'\i}vel em:
+  \url{https://carreira.com.br/demissoes-em-massa-e-a-bolha-de-ti/}. Acesso em:
+  \today.}
+
+\bibitem[IEEE e all 1990]{IEEEGlossary}
+\abntrefinfo{IEEE e all}{IEEE; all}{1990}
+{IEEE, S.~G.; ALL. \emph{IEEE Standard Glosary of Software Engineering
+  Terminology}. Std 610.12-1990. New York, NY, USA: Secretary, IEEE Standard
+  Board, 1990.
+ISBN 155937067X.}
+
+\bibitem[MARZOLLA 2024]{cnn2024}
+\abntrefinfo{MARZOLLA}{MARZOLLA}{2024}
+{MARZOLLA, I. \emph{"profissão do futuro", setor de tecnologia enfrenta crise
+  com profissionais sobrecarregados e empresas insatisfeitas}. 2024.
+Dispon{\'\i}vel em:
+  \url{https://www.cnnbrasil.com.br/economia/macroeconomia/profissao-do-futuro-setor-de-tecnologia-enfrenta-crise-com-profissionais-sobrecarregados-e-empresas-insatisfeitas/}.
+  Acesso em: \today.}
+
+\bibitem[Mittelbach 1985]{latex1995}
+\abntrefinfo{Mittelbach}{Mittelbach}{1985}
+{MITTELBACH, F. \emph{Introduction to LaTeX}. 1985.
+Dispon{\'\i}vel em: \url{https://www.latex-project.org/about/}. Acesso em:
+  \today.}
+
+\bibitem[Sobrenome 2023]{tese}
+\abntrefinfo{Sobrenome}{Sobrenome}{2023a}
+{SOBRENOME, N. A.
+\emph{Título da Tese/Dissertação}.
+Tese ou Dissertação, Local, 2023.}
+
+\bibitem[Sobrenome 2023]{artigo_periodico}
+\abntrefinfo{Sobrenome}{Sobrenome}{2023b}
+{SOBRENOME, N. A. Título do artigo.
+\emph{Nome do Periódico}, X, n.~Y, p. XX--YY, 2023.}
+
+\bibitem[Sobrenome 2023]{capitulo_livro}
+\abntrefinfo{Sobrenome}{Sobrenome}{2023c}
+{SOBRENOME, N. A. Título do capítulo. In:  LIVRO, E. do (Ed.). \emph{Título
+  do Livro}. Local de Publicação: Editora, 2023. p. XX--YY.
+ISBN ISBN.}
+
+\bibitem[Sobrenome 2023]{livro}
+\abntrefinfo{Sobrenome}{Sobrenome}{2023d}
+{SOBRENOME, N. A. \emph{Título do Livro}. Edição. Local de Publicação:
+  Editora, 2023.
+ISBN ISBN.}
+
+\bibitem[Sobrenome 2023]{trabalho_conferencia}
+\abntrefinfo{Sobrenome}{Sobrenome}{2023e}
+{SOBRENOME, N. A. Título do trabalho. In:  \emph{Nome da Conferência}. [S.l.:
+  s.n.], 2023. p. XX--YY.}
+
+\bibitem[Titulo do Filme Ano de Lançamento]{filme}
+\abntrefinfo{Titulo\ldots}{Titulo\ldots}{Ano de Lançamento}
+{TITULO do Filme. Cidade onde foi produzido: Estúdio de Produção, Ano de
+  Lançamento.}
+
+\bibitem[VIEIRA e FERNANDES 2024]{vieira2024impactos}
+\abntrefinfo{VIEIRA e FERNANDES}{VIEIRA; FERNANDES}{2024}
+{VIEIRA, G.~G.; FERNANDES, S.~C. Impactos da pandemia de covid-19 na
+  interação dos usuários com ti.
+275, 2024.}
+
+\bibitem[Vídeo Ano de Publicação]{video}
+\abntrefinfo{Vídeo}{Vídeo}{Ano de Publicação}
+{VíDEO, s.~d. Autor(es)~do. \emph{Título do Vídeo}. Ano de Publicação.
+Dispon{\'\i}vel em: \url{URL do Video}.}
+
+\end{thebibliography}

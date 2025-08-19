@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.11)  11 JUL 2025 18:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.11)  19 AUG 2025 18:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1395,7 +1395,7 @@ Underfull \hbox (badness 1097) in paragraph at lines 18--19
 
 [4]) (./pre-textuais/Epigrafe.tex
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 8.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 7.
 
 
 [5]) (./pre-textuais/ResumoEAbstract.tex
@@ -1427,6 +1427,38 @@ Package hyperref Warning: Option `colorlinks' has already been used,
 
 Package hyperref Warning: Option `colorlinks' has already been used,
 (hyperref)                setting the option has no effect on input line 14.
+
+
+LaTeX Warning: Hyper reference `acro:tsi' on page 11 undefined on input line 16
+.
+
+
+LaTeX Warning: Hyper reference `acro:tsi' on page 11 undefined on input line 16
+.
+
+
+LaTeX Warning: Hyper reference `acro:ieee' on page 11 undefined on input line 1
+7.
+
+
+LaTeX Warning: Hyper reference `acro:ieee' on page 11 undefined on input line 1
+7.
+
+
+LaTeX Warning: Hyper reference `acro:ifrn' on page 11 undefined on input line 1
+8.
+
+
+LaTeX Warning: Hyper reference `acro:ifrn' on page 11 undefined on input line 1
+8.
+
+
+LaTeX Warning: Hyper reference `acro:abes' on page 11 undefined on input line 1
+9.
+
+
+LaTeX Warning: Hyper reference `acro:abes' on page 11 undefined on input line 1
+9.
 
 
 
@@ -1468,15 +1500,6 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 
-LaTeX Warning: Citation `latex1995' on page 15 undefined on input line 30.
-
-
-LaTeX Warning: Citation `latex1995' on page 15 undefined on input line 30.
-
-
-LaTeX Warning: Citation `latex1995' on page 15 undefined on input line 34.
-
-
 Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 (lipsum)                'brazil' will be used instead.
 
@@ -1484,48 +1507,21 @@ Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 
 [15{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 
-LaTeX Warning: Citation `artigo_periodico' on page 16 undefined on input line 5
-4.
-
-
-LaTeX Warning: Citation `livro' on page 16 undefined on input line 60.
-
-
-LaTeX Warning: Citation `capitulo_livro' on page 16 undefined on input line 66.
-
-
-
-LaTeX Warning: Citation `trabalho_conferencia' on page 16 undefined on input li
-ne 72.
-
-
-LaTeX Warning: Citation `tese' on page 16 undefined on input line 78.
-
-
-
 [16]
-
-LaTeX Warning: Citation `algoritmo' on page 17 undefined on input line 84.
-
-
-LaTeX Warning: Citation `filme' on page 17 undefined on input line 90.
-
-
-LaTeX Warning: Citation `video' on page 17 undefined on input line 96.
-
-<lib/Logoufrn.jpg, id=198, 90.3375pt x 103.88812pt>
+<lib/Logoufrn.jpg, id=224, 90.3375pt x 103.88812pt>
 File: lib/Logoufrn.jpg Graphic file (type jpg)
 <use lib/Logoufrn.jpg>
-Package pdftex.def Info: lib/Logoufrn.jpg  used on input line 108.
+Package pdftex.def Info: lib/Logoufrn.jpg  used on input line 111.
 (pdftex.def)             Requested size: 90.33727pt x 103.88786pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (17.62482pt too wide) detected at line 165
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (17.62482pt too wide) detected at line 168
 [][] 
  []
 
@@ -1533,60 +1529,119 @@ Overfull \hbox (17.62482pt too wide) detected at line 165
 
 [17 <./lib/Logoufrn.jpg>]
 Package acronym Info: Label `acro:bsi' newly defined as it shall be overridden
-although it is yet undefined on input line 174.
+although it is yet undefined on input line 177.
+
+
+Package acronym Warning: Acronym bsi is not defined on input line 177.
+
+
+Package acronym Warning: Acronym bsi is not defined on input line 177.
+
 Package acronym Info: Label `acro:ufrn' newly defined as it shall be overridden
 
-although it is yet undefined on input line 174.
+although it is yet undefined on input line 177.
+
+Package acronym Warning: Acronym ufrn is not defined on input line 177.
+
+
+Package acronym Warning: Acronym ufrn is not defined on input line 177.
+
 Package acronym Info: Label `acro:ti' newly defined as it shall be overridden
-although it is yet undefined on input line 174.
+although it is yet undefined on input line 177.
 
 
 [18]) (./textuais/capitulo_1/Introducao.tex
+Package acronym Info: Label `acro:ia' newly defined as it shall be overridden
+although it is yet undefined on input line 42.
+
+
+Package acronym Warning: Acronym ia is not defined on input line 42.
+
+
+Package acronym Warning: Acronym ia is not defined on input line 42.
+
 (./textuais/capitulo_1/sub-topicos/ContextualizacaoEProblema.tex)
 (./textuais/capitulo_1/sub-topicos/Objetivos.tex)
-(./textuais/capitulo_1/sub-topicos/DelimitacaoDoEstudo.tex)
-(./textuais/capitulo_1/sub-topicos/Justificativa.tex)
+(./textuais/capitulo_1/sub-topicos/DelimitacaoDoEstudo.tex
+
+[19]) (./textuais/capitulo_1/sub-topicos/Justificativa.tex)
 (./textuais/capitulo_1/sub-topicos/ApresentacaoDoTrabalho.tex)
 
-[19]) (./textuais/capitulo_2/FundamentacaoTeorica.tex
-(./textuais/capitulo_2/sub-topicos/TrabalhosRelacionados.tex)
+[20]) (./textuais/capitulo_2/FundamentacaoTeorica.tex
 
-[20]) (./textuais/capitulo_3/Metodologia.tex
+[21] (./textuais/capitulo_2/sub-topicos/TrabalhosRelacionados.tex)
+
+[22]) (./textuais/capitulo_3/Metodologia.tex
 (./textuais/capitulo_3/sub-topicos/QuestoesDePesquisa.tex)
 (./textuais/capitulo_3/sub-topicos/PropostaMetodologica.tex)
 (./textuais/capitulo_3/sub-topicos/Atividades.tex)
 
-[21]) (./textuais/capitulo_4/DesenvolvimentoDaPesquisa.tex
+[23]) (./textuais/capitulo_4/DesenvolvimentoDaPesquisa.tex
 (./textuais/capitulo_4/sub-topicos/PropostaDeSolucao.tex)
 (./textuais/capitulo_4/sub-topicos/Experimentos.tex)
 
-[22]) (./textuais/capitulo_5/Resultados.tex
+[24]) (./textuais/capitulo_5/Resultados.tex
 
-[23]) (./textuais/capitulo_6/Conclusoes.tex
+[25]) (./textuais/capitulo_6/Conclusoes.tex
 (./textuais/capitulo_6/sub-topicos/Discussao.tex)
 (./textuais/capitulo_6/sub-topicos/Contribuicoes.tex)
 (./textuais/capitulo_6/sub-topicos/Limitacoes.tex)
 (./textuais/capitulo_6/sub-topicos/TrabalhosFuturos.tex)
 
-[24])
-No file Principal.bbl.
+[26]) (build/Principal.bbl (build/Principal.brf)
+\tf@brf=\write5
+\openout5 = `Principal.brf'.
+
+
+bibitemlist
+
+Underfull \hbox (badness 6691) in paragraph at lines 44--44
+[]\T1/phv/m/n/12 (+20) MARZOLLA, I. \T1/phv/m/sl/12 (+20) "pro-fis-são do fu-tu
+ro", se-tor de tec-no-lo-gia en-frenta crise
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+\T1/phv/m/sl/12 (+20) com pro-fis-si-o-nais so-bre-car-re-ga-dos e em-pre-sas i
+n-sa-tis-fei-tas\T1/phv/m/n/12 (+20) . 2024. Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+\T1/phv/m/n/12 (+20) po-ní-vel em: [][]$<[]https : / / www . cnnbrasil . com . 
+br / economia / macroeconomia /
+ []
+
+
+Overfull \hbox (151.6274pt too wide) in paragraph at lines 44--44
+\T1/phv/m/n/12 (-20) pro^^\ssao-[]do-[]futuro-[]setor-[]de-[]tecnologia-[]enfre
+nta-[]crise-[]com-[]pro^^\ssionais-[]sobrecarregados-[]e-[]empresas-[]insatisfe
+itas /
+ []
+
+)
+
+[27
+
+]
 runsystem(makeindex Principal.idx)...executed safely (allowed).
 
+
 No file Principal.ind.
-\tf@lof=\write5
-\openout5 = `Principal.lof'.
+\tf@lof=\write6
+\openout6 = `Principal.lof'.
 
-\tf@loq=\write6
-\openout6 = `Principal.loq'.
+\tf@loq=\write7
+\openout7 = `Principal.loq'.
 
-\tf@lot=\write7
-\openout7 = `Principal.lot'.
+\tf@lot=\write8
+\openout8 = `Principal.lot'.
 
-\tf@loa=\write8
-\openout8 = `Principal.loa'.
+\tf@loa=\write9
+\openout9 = `Principal.loa'.
 
-\tf@toc=\write9
-\openout9 = `Principal.toc'.
+\tf@toc=\write10
+\openout10 = `Principal.toc'.
 
 (build/Principal.aux)
  ***********
@@ -1597,19 +1652,21 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
+Package rerunfilecheck Info: File `Principal.brf' has not changed.
+(rerunfilecheck)             Checksum: F8295458A4E14FCB97386271866B611A;998.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 21 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31050 strings out of 475151
- 548982 string characters out of 5766386
- 1212548 words of memory out of 5000000
- 53182 multiletter control sequences out of 15000+600000
- 609489 words of font info for 210 fonts, out of 8000000 for 9000
+ 31255 strings out of 475151
+ 551787 string characters out of 5766386
+ 1215120 words of memory out of 5000000
+ 53317 multiletter control sequences out of 15000+600000
+ 609244 words of font info for 238 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 99i,11n,107p,2379b,974s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,107p,2379b,1062s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pf
 b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/
@@ -1617,10 +1674,10 @@ type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/c
 m-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 ></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-d
 ist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on build/Principal.pdf (25 pages, 193511 bytes).
+Output written on build/Principal.pdf (28 pages, 206100 bytes).
 PDF statistics:
- 436 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
- 105 named destinations out of 1000 (max. 500000)
- 53579 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 518 PDF objects out of 1000 (max. 8388607)
+ 465 compressed objects within 5 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 49491 words of extra memory for PDF output out of 51595 (max. 10000000)
 
