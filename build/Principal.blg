@@ -17,61 +17,99 @@ Warning--entry type for "cnn2024" isn't style-file defined
 --line 54 of file pos-textuais/Referencias.bib
 Warning--entry type for "carreira2023" isn't style-file defined
 --line 63 of file pos-textuais/Referencias.bib
-Warning--entry type for "latex1995" isn't style-file defined
---line 75 of file pos-textuais/Referencias.bib
-Warning--entry type for "filme" isn't style-file defined
---line 143 of file pos-textuais/Referencias.bib
-Warning--entry type for "video" isn't style-file defined
---line 151 of file pos-textuais/Referencias.bib
+You're missing a field name---line 94 of file pos-textuais/Referencias.bib
+ : 
+ : %     author = {Frank Mittelbach},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 103 of file pos-textuais/Referencias.bib
+ : 
+ : %     author = {Autor Sobrenome, Nome},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 114 of file pos-textuais/Referencias.bib
+ : 
+ : %     author = {Autor Sobrenome, Nome},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 124 of file pos-textuais/Referencias.bib
+ : 
+ : %     author = {Autor Sobrenome, Nome},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 137 of file pos-textuais/Referencias.bib
+ : 
+ : %     author = {Autor Sobrenome, Nome},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 146 of file pos-textuais/Referencias.bib
+ : 
+ : %     author = {Autor Sobrenome, Nome},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 155 of file pos-textuais/Referencias.bib
+ : 
+ : %   author = {Autor(es) do Algoritmo},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 162 of file pos-textuais/Referencias.bib
+ : 
+ : %   title = {Titulo do Filme},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 170 of file pos-textuais/Referencias.bib
+ : 
+ : %   author = {Autor(es) do Vídeo, se disponível},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=8) to 20 items from 10.
-Warning--faltando school em tese
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v<VERSION>           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 17 entries,
+You've used 10 entries,
             6714 wiz_defined-function locations,
-            1281 strings with 11283 characters,
-and the built_in function-call counts, 18324 in all, are:
-= -- 2111
-> -- 272
-< -- 355
-+ -- 509
-- -- 87
-* -- 1087
-:= -- 2319
-add.period$ -- 63
-call.type$ -- 18
-change.case$ -- 99
-chr.to.int$ -- 24
-cite$ -- 15
-duplicate$ -- 1523
-empty$ -- 1064
-format.name$ -- 401
-if$ -- 3939
-int.to.chr$ -- 6
+            1250 strings with 11210 characters,
+and the built_in function-call counts, 13640 in all, are:
+= -- 1685
+> -- 229
+< -- 346
++ -- 476
+- -- 70
+* -- 809
+:= -- 1675
+add.period$ -- 33
+call.type$ -- 11
+change.case$ -- 72
+chr.to.int$ -- 18
+cite$ -- 7
+duplicate$ -- 1302
+empty$ -- 567
+format.name$ -- 332
+if$ -- 2775
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 271
-newline$ -- 76
-num.names$ -- 66
-pop$ -- 334
+missing$ -- 157
+newline$ -- 45
+num.names$ -- 35
+pop$ -- 203
 preamble$ -- 1
-purify$ -- 55
+purify$ -- 37
 quote$ -- 0
-skip$ -- 1822
+skip$ -- 1517
 stack$ -- 1
-substring$ -- 890
-swap$ -- 568
-text.length$ -- 10
+substring$ -- 579
+swap$ -- 476
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 14
-warning$ -- 1
-while$ -- 98
+type$ -- 1
+warning$ -- 0
+while$ -- 52
 width$ -- 0
-write$ -- 224
-(There were 6 warnings)
+write$ -- 119
+(There were 9 error messages)

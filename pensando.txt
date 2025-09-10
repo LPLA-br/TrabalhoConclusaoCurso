@@ -1,0 +1,78 @@
+TRABALHO DE CONCLUSÃO DE CURSO - VISÃO GERAL
+
+Contexto do domínio de pesquisa:
+  Subdomínios estudados/trabalhados:
+    Domínio de negócios:
+      Administração de processos produtivos
+      em ateliês de costura (Sociedade Limitada Unipessoal).
+    Domínio técnico:
+      Aplicação web
+      Redes locais LAN (Redução de custos com infraestrutura aliena)
+
+Conceitos chave:
+  Arquitetura em camadas.
+  Padrões de projeto.
+  Princípios de desenvolvimento orientado a objetos.
+  Orientação a objetos e seus pilares.
+  Inversão de dependências.
+  Baixo acoplamento.
+  Débito técnico VS sobre-engenharia.
+
+Contrapôe a:
+  Modelo de classes anêmico.
+  Violação da responsabilidade única em classes.
+  Violação do encapsulamento.
+  Dependência forte de bibliotecas e frameworks (acoplamento).
+
+Incentivo a:
+  Modelagem do domínio de negócios, em classes, rica e independente.
+  Emprego da inversão de dependência quando necessário para evitar
+  acoplamento excessivo.
+  Cuidados com aumentos exorbitantes da complexidade de implementação
+  devido à sobre-engenharia.
+
+Características do trabalho:
+  Abordagem:
+    Qualitativa
+      Contexto e razões por detrás das práticas.
+    Quantitativa
+      Status de importância de boas práticas.
+  Natureza:
+    Pesquisa Aplicada
+      Fundamentada em obras técnico-filosóficas.
+      Emprego de conhecimento pré existente na construção
+      de uma "prova de conceito".
+  Objetivos:
+    Exploratória
+      Proporcionar, aos leitores, maior familiaridade com o problema, tornando-o mais
+      explícito.
+  Procedimentos:
+    Experimental
+      Metodicamente aplicar princípios e padrões ao
+      objeto de estudo, apontando variáveis que influenciam 
+      seu desenvolvimento e obtendo formas de controle e observação
+      dos efeitos do rumo tomando sob influência de restrições das
+      tecnologias escolhidas.
+
+      Como aplicação de princípios pode conflitar com ferramenta da industria ?
+      O resultado foi satisfatório ?
+
+Possibilidades de formato aceitos pelo IFRN (TSI, PPC, 2019):
+  c) relatório de desenvolvimento de um protótipo de um software.
+  d) relatório de projeto relacionado ao desenvolvimento de software realizado em estágio.
+  e) trabalho acadêmico ou relatório da atuação em projeto de pesquisa ou extensão.
+
+Objetivo(s):
+  1.Demonstrar um caso de desenvolvimento de sistema sob a ótica
+  da arquitetura limpa e desenvolvimento orientado ao domínio de negócios
+  sobre pilha de tecnologia php/laravel.
+  2.determinar: conflitos, inconsistências, vantagens,
+  desvantagens.
+
+Justificativa:
+  1.Ganho acadêmico
+    1.1 Aumenta o conjunto de trabalhos que demonstram a possibilidade
+    de emprego da arquitetura limpa e DDD sobre várias tecnologias conhecidas.
+    1.2 Incentiva o uso de técnicas que podem aumentar a qualidade, confiabilidade
+    e manutenibilidade do software.
+
