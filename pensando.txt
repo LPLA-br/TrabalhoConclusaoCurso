@@ -11,41 +11,33 @@ Contexto do domínio de pesquisa:
 
 Conceitos chave:
   Arquitetura em camadas.
+  Inversão de dependências.
+  Baixo acoplamento.
   Padrões de projeto.
   Princípios de desenvolvimento orientado a objetos.
   Orientação a objetos e seus pilares.
-  Inversão de dependências.
-  Baixo acoplamento.
   Débito técnico VS sobre-engenharia.
 
 Contrapôe a:
-  Modelo de classes anêmico.
-  Violação da responsabilidade única em classes.
-  Violação do encapsulamento.
   Dependência forte de bibliotecas e frameworks (acoplamento).
 
 Incentivo a:
   Modelagem do domínio de negócios, em classes, rica e independente.
   Emprego da inversão de dependência quando necessário para evitar
-  acoplamento excessivo.
-  Cuidados com aumentos exorbitantes da complexidade de implementação
-  devido à sobre-engenharia.
+  ao máximo o acoplamento.
 
 Características do trabalho:
   Abordagem:
     Qualitativa
-      Contexto e razões por detrás das práticas.
-    Quantitativa
-      Status de importância de boas práticas.
+      Contexto e razões por detrás das práticas empregadas.
   Natureza:
     Pesquisa Aplicada
-      Fundamentada em obras técnico-filosóficas.
-      Emprego de conhecimento pré existente na construção
-      de uma "prova de conceito".
+      Fundamenta-se em obras técnico-filosóficas.
+      Emprego de conhecimento pré existente na construção de uma "prova de conceito".
   Objetivos:
     Exploratória
-      Proporcionar, aos leitores, maior familiaridade com o problema, tornando-o mais
-      explícito.
+      Proporcionar, aos leitores, maior familiaridade com a possiblidade, tornando-a mais
+      clara.
   Procedimentos:
     Experimental
       Metodicamente aplicar princípios e padrões ao
@@ -57,17 +49,17 @@ Características do trabalho:
       Como aplicação de princípios pode conflitar com ferramenta da industria ?
       O resultado foi satisfatório ?
 
-Possibilidades de formato aceitos pelo IFRN (TSI, PPC, 2019):
-  c) relatório de desenvolvimento de um protótipo de um software.
+Formato escolhido pelo aluno de acordo com (TSI, PPC, 2019):
+  C) RELATÓRIO DE DESENVOLVIMENTO DE UM PROTÓTIPO DE UM SOFTWARE.
   d) relatório de projeto relacionado ao desenvolvimento de software realizado em estágio.
   e) trabalho acadêmico ou relatório da atuação em projeto de pesquisa ou extensão.
 
 Objetivo(s):
-  1.Demonstrar um caso de desenvolvimento de sistema sob a ótica
-  da arquitetura limpa e desenvolvimento orientado ao domínio de negócios
-  sobre pilha de tecnologia php/laravel.
-  2.determinar: conflitos, inconsistências, vantagens,
-  desvantagens.
+  1.Demonstrar possiblidade de se isolar bem as classes do domínio
+  de negócios da solução técnica, permitindo a troca da segunda
+  sem afetar o domínio implementado negativamente.
+
+  2.determinar: conflitos, inconsistências, vantagens, desvantagens.
 
 Justificativa:
   1.Ganho acadêmico
