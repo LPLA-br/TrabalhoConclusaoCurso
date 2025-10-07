@@ -3,66 +3,94 @@
 %%            Introdução            %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Neste capítulo devem ser apresentados o contexto do seu trabalho e o problema que deseja abordar, bem como os objetivos que deseja alcançar e a justificativa para o estudo.
+% Neste capítulo devem ser apresentados o contexto do seu trabalho e o problema que
+% deseja abordar, bem como os objetivos que deseja alcançar e a justificativa para o estudo.
 
 \section{\textbf{INTRODUÇÃO}}
     \label{sec:introdução}
     % Tópicos propostos, para remover algum destes tópicos
     %comente a linha referente ao tópico que deseja remover
-    \textit{Neste capítulo devem ser apresentados o contexto do seu trabalho e o problema que
-    deseja abordar, bem como os objetivos que deseja alcançar e a justificativa para o estudo.}
+
+    %\textit{Neste capítulo devem ser apresentados o contexto do seu trabalho e o problema que
+    %deseja abordar, bem como os objetivos que deseja alcançar e a justificativa para o estudo.}
+
+    % introdução - parágrafos - novo planejamento
+
+    % I. Software no início da computação
+    A computadores eletrônicos e o software surgiram como ferramenta de importância
+    reconhecida notoriamente durante os eventos finais da segunda grande guerra.
+    Inicialmente tinha-se como foco utilitário a quebra de criptografia
+    da comunicação inimiga e o cálculo da tragetória de mísseis balisticos.
     
-    % Contextualização e problema
-    No século XXI o software é o mais importante produto da industria 4.0 e 5.0 .
-    Vários setores da economia conteporânea apoiam sua logistica de produção de produtos e 
-    provimentos de serviços por meio de tais ferramentas (expandir).
+    Poucos anos após o fim dos conflitos armados houve o desenvolvimento contínuo
+    não somente da tecnologia física como também da lógica (\textit{software}).
+    Programas, antes escritos em binário agora podiam ser criados em linguagens
+    próximas da linguagem humana.
 
-    Nestes primeiros anos da década de 2020 viu-se, não somente no
-    mercado nacional, o pico na demanda por profissionais com
-    competências para construir soluções em \ac{ti}, demanda esta justificada pelos
-    problemas sanitários do período pandêmico que limitaram o contato humano e favoreceram a expansão
-    da infraestrutura digital em campos como a educação, comunicações,
-    comércio digital e outros \cite{vieira2024impactos} e \cite{carreira2023}.
+    O trabalho da cientista Grace Murray Hopper, década de 1950,
+    concebeu a ideia do compilador, programa capaz de transcrever/traduzir uma
+    linguagem lógica mais abstrata e inteligível ao homem para o código de máquina
+    executável pelo aparato físico computacional.
+
+    Na década 1960 a Ciência da Computação consolidara-se, de fato, como uma ciência formal
+    e de importância notoria para as décadas futuras. Sua importância não mais
+    era militar mas também civil em áreas como negócios, administração e demais áreas das
+    ciências exatas e da natureza.
+
+    Via-se um linear e vertiginoso aumento do poder computacional ao mesmo tempo em
+    que diminuia-se as dimensões dos computadores. Gordon Moore, fundador da Intel,
+    publicara na revista \textit{ Electronics Magazine }, em 1965, um artigo, onde previra
+    o dobro do aumento do poder computacional a cada 18 meses.
+    %@article{almeidaevoluccao, title={Evolu{\c{c}}{\~a}o dos Processadores}, author={Almeida, Rafael Bruno}, journal={Evolu{\c{c}}{\~a}o dos processadores} }
+
+    % II. Software, complexidade crescente das soluções
+    Entretanto, como bem compreendido na historiologia tecnologica humana, nenhum
+    avanço é insento de problemas e crises. Durante a décadas de 1960 e 1970 houve um grande aumento
+    na necessidade por software por parte de organizações governamentais e privadas. Todavia,
+    processos e técnicas praticadas no desenvolvimento conhecidas na época não eram eficazes
+    o suficiente em atender as necessidades por soluções de complexidade crescente.
+    % Página 5, Dijkstra, The humble programmer
+ 
+    % III. Crise do software de 1960,70,80
+    O cenário de crise possuia como principais características: Complexidade crescente das
+    soluções exigidas e imaturidade técnico-metodologica. Apresentava-se
+    como consequências negativas de tais características, o(a) :
+
+    \begin{itemize}
+      \item{ Estouro de prazos previamente estipulado }
+      \item{ Aumento de custo muito além do planejado }
+      \item{ Agravamento da inconsistência entre o que era exigido e o que era provido }
+      \item{ Expansão da ingerenciabilidade de projetos em pouco tempo de manutenção }
+      \item{ Crescimento da inqualidade do software apresentando falhas, bugs e  }
+    \end{itemize}
+
+    % IV. Mitigação da crise e progresso até os dias atuais.
+    Apesar da crise em si nunca ter sido absolutamente resolvida de fato, esforços oriundos da experiência
+    de vários profissionais e pesquisadores competentes resultaram na consolidação de obras técnicas com orientações
+    fundamentais proporcionantes da solução mitigatória sobre tal realidade. Obras como: 
+
+    \begin{itemize}
+      \item{ "\textit{Software Engineering: A Report on a Conference Sponsored by the NATO Science Committee} }
+      \item{ "\textit{The Mytical Man-Month: Essays on Software Engineering - Frederick P. Brooks Js. }" }
+      \item{ "\textit{Refactoring: Improving the Design of Existing Code - Martin Fowler}" }
+      \item{ "\textit{Structured Programming - Dijkstra}" }
+      \item{ "\textit{Design Patterns: Elements of Reusable Object-Oriented Software - Gamma, Helm, Johnson, Vlissides}" }
+      \item{ "\textit{Clean Code - Robert C. Martin}" }
+    \end{itemize}
+
+    brilham dentre os esforços escritos em prol de um mundo menos flagelado pelos defeitos
+    do software.
+
+    % IV. Crise atual do software. - A dependência
+    Dentre os problemas enfrentados pela ciência da computação tem-se o da dependência.
+    O software, como solução, surge, da mesma maneira que a pesquisa científica, sobre
+    "o ombro de gigantes" pois sua construção se faz de modo a reaproveitar códigos
+    (soluções) antes desenvolvidas (conhecidas, no âmbito técnico, como módulos,
+    bibliotecas e frameworks).
     
-    Entretanto, o que se seguiu foi um cenário de demissões em massa e uma aparente
-    queda de demanda por profissionais, o periódico  \citeonline{carreira2023} aponta
-    como principais motivos o pós pandemia, que trouxe redução de demanda justificada
-    pelos novos níveis de receitas das companhias de tecnologia e a recessão global
-    que dá sinais de crise a bastante tempo.
-
-    Atualmente, 50\% profissionais apontam salários menores e
-    jornadas mais exaustivas enquanto 45\% empresas, demandantes de habilidades mais
-    concretamente estabelecidas, enfretam dificuldades para contratar profissionais
-    realmente qualificados \cite{cnn2024}.
-
-    A dificuldade e necessidade em conseguir profissionais qualificados apontam para
-    um cenario onde a entrega de valor com qualidade é uma prioridade maior em tempos de
-    estabilização do mercado e garanti-la através de profissionais mais capazes
-    em evitar os efeitos do débito técnico, comumente associados à falta de experiência,
-    é nuclear \cite[p.~131 et all.]{beltrao2020}. Além disto o advento da \ac{ia} possibilitou
-    a automação parcial ou completa de processos simples que antes eram exercidos por
-    profissionais menos experientes como bem demonstrado por \citeonline{baptista2023ia}: Ele
-    apontara capacidades de, com prompts simples, construir códigos de calculadora
-    e sua interface funcionais, estilização básica consistente e até mesmo um quadro de desenhos
-    reinicialiável.
-
-    Quanto a métricas de geração de valor no processo de transformação digital,
-    \citeonline[p. 9]{metricasResende2024}, ao avaliar grandes empresas Brasileiras
-    do ramo atuantes no Rio de Janerio, inclui, dentre um conjunto de desafios, como
-    sendo grandes detratores da geração de valor: Superar desalinhamento entre Tecnologia e negócio
-    e deter todas competências de \ac{ti} necessárias.
-
-    Tanto o desalinhamento entre negócio e \ac{ti} quanto o acesso limitado de profissionais capacitados
-    evidenciam uma carência de conhecimentos arquiteturais e de implementação voltada a
-    representar o domínio de negócios.
-
-    \citeonline[p.~131 et all.]{beltrao2020} introduz o débito técnico como
-    sendo o foco em benefícios de curto prazo acaba criando problemas na manutenibilidade
-    de um sistema implicando em uma realidade de custos maiores e, em casos extremos,
-    de re-implementações totais de novos sistemas. Esta ocorrência, não incomum em
-    projetos cujos os prazos são curtíssimos, têm como contributor principal
-    oriundo da pressa, o emprego impudente de soluções não alinhadas com princípios, 
-    fundamentos e bons hábitos na implementação técnica de softwares.
+    % V. Importância de reforçar os fundamentos edificados a sangue na primeira grande crise
+    % para evitar seu agravamento.
+    
 
     \input{textuais/capitulo_1/sub-topicos/ContextualizacaoEProblema}
     % Objetivos (geral e específicos)
