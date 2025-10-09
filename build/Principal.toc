@@ -7,28 +7,22 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {section}{\numberline {1}\textbf {INTRODUÇÃO}}{15}{section.0.1}%
-\contentsline {subsection}{\numberline {1.1}\textbf {Contextualização e Problema}}{16}{subsection.0.1.1}%
+\contentsline {section}{\numberline {1}\textbf {INTRODUÇÃO}}{14}{section.0.1}%
+\contentsline {subsection}{\numberline {1.1}\textbf {Contextualização e Problema}}{15}{subsection.0.1.1}%
 \contentsline {subsection}{\numberline {1.2}\textbf {Objetivos}}{16}{subsection.0.1.2}%
-\contentsline {subsection}{\numberline {1.3}\textbf {Delimitação do Estudo}}{16}{subsection.0.1.3}%
-\contentsline {subsection}{\numberline {1.4}\textbf {Justificativa}}{16}{subsection.0.1.4}%
-\contentsline {subsection}{\numberline {1.5}\textbf {Apresentação do Trabalho}}{16}{subsection.0.1.5}%
-\contentsline {section}{\numberline {2}\textbf {FUNDAMENTAÇÃO TEÓRICA}}{17}{section.0.2}%
-\contentsline {subsection}{\numberline {2.1}\textbf {Trabalhos Relacionados}}{18}{subsection.0.2.1}%
-\contentsline {section}{\numberline {3}\textbf {METODOLOGIA}}{19}{section.0.3}%
-\contentsline {subsection}{\numberline {3.1}\textbf {Questões de Pesquisa}}{19}{subsection.0.3.1}%
-\contentsline {subsection}{\numberline {3.2}\textbf {Proposta Metodológica}}{19}{subsection.0.3.2}%
-\contentsline {subsection}{\numberline {3.3}\textbf {Atividades}}{19}{subsection.0.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Cronograma de Atividades}{19}{subsubsection.0.3.3.1}%
-\contentsline {section}{\numberline {4}\textbf {DESENVOLVIMENTO DA PESQUISA}}{20}{section.0.4}%
-\contentsline {subsection}{\numberline {4.1}\textbf {Proposta de Solução}}{20}{subsection.0.4.1}%
-\contentsline {subsection}{\numberline {4.2}\textbf {Experimentos}}{20}{subsection.0.4.2}%
-\contentsline {section}{\numberline {5}\textbf {RESULTADOS}}{21}{section.0.5}%
-\contentsline {section}{\numberline {6}\textbf {CONCLUSÃO}}{22}{section.0.6}%
-\contentsline {subsection}{\numberline {6.1}\textbf {Discussão}}{22}{subsection.0.6.1}%
-\contentsline {subsection}{\numberline {6.2}\textbf {Contribuições}}{22}{subsection.0.6.2}%
-\contentsline {subsection}{\numberline {6.3}\textbf {Limitações}}{22}{subsection.0.6.3}%
-\contentsline {subsection}{\numberline {6.4}\textbf {Trabalhos Futuros}}{22}{subsection.0.6.4}%
+\contentsline {subsection}{\numberline {1.3}\textbf {Justificativa}}{16}{subsection.0.1.3}%
+\contentsline {subsection}{\numberline {1.4}\textbf {Apresentação do Trabalho}}{17}{subsection.0.1.4}%
+\contentsline {section}{\numberline {2}\textbf {FUNDAMENTAÇÃO TEÓRICA}}{18}{section.0.2}%
+\contentsline {subsection}{\numberline {2.1}\textbf {Trabalhos Relacionados}}{19}{subsection.0.2.1}%
+\contentsline {section}{\numberline {3}\textbf {METODOLOGIA}}{20}{section.0.3}%
+\contentsline {section}{\numberline {4}\textbf {DESENVOLVIMENTO DA PESQUISA}}{21}{section.0.4}%
+\contentsline {subsection}{\numberline {4.1}\textbf {Proposta de Solução}}{21}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {4.2}\textbf {Experimentos}}{21}{subsection.0.4.2}%
+\contentsline {section}{\numberline {5}\textbf {RESULTADOS}}{22}{section.0.5}%
+\contentsline {section}{\numberline {6}\textbf {CONCLUSÃO}}{23}{section.0.6}%
+\contentsline {subsection}{\numberline {6.1}\textbf {Discussão}}{23}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {6.2}\textbf {Contribuições}}{23}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {6.3}\textbf {Limitações}}{23}{subsection.0.6.3}%
+\contentsline {subsection}{\numberline {6.4}\textbf {Trabalhos Futuros}}{23}{subsection.0.6.4}%
 \vspace {\cftbeforechapterskip }
-\contentsline {section}{\numberline {}REFERÊNCIAS}{23}{section*.20}%
+\contentsline {section}{\numberline {}REFERÊNCIAS}{24}{section*.16}%

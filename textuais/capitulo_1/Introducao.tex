@@ -70,27 +70,43 @@
     fundamentais proporcionantes da solução mitigatória sobre tal realidade. Obras como: 
 
     \begin{itemize}
-      \item{ "\textit{Software Engineering: A Report on a Conference Sponsored by the NATO Science Committee} }
-      \item{ "\textit{The Mytical Man-Month: Essays on Software Engineering - Frederick P. Brooks Js. }" }
-      \item{ "\textit{Refactoring: Improving the Design of Existing Code - Martin Fowler}" }
-      \item{ "\textit{Structured Programming - Dijkstra}" }
-      \item{ "\textit{Design Patterns: Elements of Reusable Object-Oriented Software - Gamma, Helm, Johnson, Vlissides}" }
-      \item{ "\textit{Clean Code - Robert C. Martin}" }
+      \item{ \textit{Software Engineering: A Report on a Conference Sponsored by the NATO Science Committee} }
+      \item{ \textit{The Mytical Man-Month: Essays on Software Engineering - Frederick P. Brooks Js. } }
+      \item{ \textit{Refactoring: Improving the Design of Existing Code - Martin Fowler} }
+      \item{ \textit{Structured Programming - Dijkstra} }
+      \item{ \textit{Design Patterns: Elements of Reusable Object-Oriented Software - Gamma, Helm, Johnson, Vlissides} }
+      \item{ \textit{Clean Code - Robert C. Martin} }
     \end{itemize}
 
-    brilham dentre os esforços escritos em prol de um mundo menos flagelado pelos defeitos
-    do software.
+    brilham dentre os esforços escritos.
 
     % IV. Crise atual do software. - A dependência
-    Dentre os problemas enfrentados pela ciência da computação tem-se o da dependência.
-    O software, como solução, surge, da mesma maneira que a pesquisa científica, sobre
-    "o ombro de gigantes" pois sua construção se faz de modo a reaproveitar códigos
-    (soluções) antes desenvolvidas (conhecidas, no âmbito técnico, como módulos,
-    bibliotecas e frameworks).
-    
-    % V. Importância de reforçar os fundamentos edificados a sangue na primeira grande crise
-    % para evitar seu agravamento.
-    
+    Dentre os problemas enfrentados pela ciência da computação e engenharia de software
+    tem-se o da dependência. O software, como solução, surge, da mesma maneira
+    que a pesquisa científica, sobre obras anterior pois sua construção faz-se de modo
+    a reaproveitar códigos (soluções) desenvolvidas anteriormente por outros programadores.
+    Conhece-se tais peças componentes, no âmbito técnico, como: trechos, módulos,
+    bibliotecas e frameworks. %/cite{}
+
+    Apesar das dependências não serem um problema quando cuidadosamente gerenciadas
+    e limitadas há, durante o desenvolvimento, o risco real de um projeto cair no clássico
+    problema do inferno das dependências, situação em que o software tem seu funcionamento
+    correto comprometido devido a peças de software dependidas estarem sob efeito de um ou
+    vários dos seguintes problemas:
+
+    \begin{itemize}
+      \item{Versões diferente de uma mesma dependência exigida}
+      \item{Dependências circulares onde A depende de B e B depende de A}
+      \item{Emprego de dependências desatualizadas}
+      \item{Esquema de instalação complexo}
+    \end{itemize}
+
+    % V. Conclusão da introdução - Pode-se evitar a dependência ?
+    Problemas corelacionados às dependências são abundantes em projetos de software de todas
+    as dimensões e resolvê-los não é uma das mais fáceis tarefas. Por conseguinte, haver trabalhos
+    no âmbito acadêmico que contribuam copiosamente em boas demonstrações é um esforço
+    necessário e util.
+
 
     \input{textuais/capitulo_1/sub-topicos/ContextualizacaoEProblema}
     % Objetivos (geral e específicos)

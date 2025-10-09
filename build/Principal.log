@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.11)  21 AUG 2025 11:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.11)  9 OCT 2025 11:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1391,95 +1391,101 @@ Underfull \hbox (badness 1097) in paragraph at lines 18--19
 
 ]) (./pre-textuais/Dedicatoria.tex
 
-[3]) (./pre-textuais/Agradecimentos.tex
-
-[4]) (./pre-textuais/Epigrafe.tex
+[3]) (./pre-textuais/Epigrafe.tex
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 7.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 9.
 
 
-[5]) (./pre-textuais/ResumoEAbstract.tex
+[4]) (./pre-textuais/ResumoEAbstract.tex
 
-[6]
+[5]
 
-[7]) (./pre-textuais/Listas.tex (./pre-textuais/listas/Figuras.tex
+[6]) (./pre-textuais/Listas.tex (./pre-textuais/listas/Figuras.tex
 
 Package hyperref Warning: Option `colorlinks' has already been used,
 (hyperref)                setting the option has no effect on input line 9.
 
 (build/Principal.lof)
 
-[8]) (./pre-textuais/listas/Quadros.tex
+[7]) (./pre-textuais/listas/Quadros.tex
 
 Package hyperref Warning: Option `colorlinks' has already been used,
 (hyperref)                setting the option has no effect on input line 9.
 
 (build/Principal.loq)
 
-[9]) (./pre-textuais/listas/Tabelas.tex
+[8]) (./pre-textuais/listas/Tabelas.tex
 
 Package hyperref Warning: Option `colorlinks' has already been used,
 (hyperref)                setting the option has no effect on input line 9.
 
 (build/Principal.lot)
 
-[10]) (./pre-textuais/listas/Siglas.tex
+[9]) (./pre-textuais/listas/Siglas.tex
 
 Package hyperref Warning: Option `colorlinks' has already been used,
 (hyperref)                setting the option has no effect on input line 14.
 
 
-LaTeX Warning: Hyper reference `acro:dt' on page 11 undefined on input line 15.
+LaTeX Warning: Hyper reference `acro:dt' on page 10 undefined on input line 15.
 
 
 
-LaTeX Warning: Hyper reference `acro:dt' on page 11 undefined on input line 15.
+LaTeX Warning: Hyper reference `acro:dt' on page 10 undefined on input line 15.
 
 
 
-LaTeX Warning: Hyper reference `acro:tsi' on page 11 undefined on input line 18
+LaTeX Warning: Hyper reference `acro:ti' on page 10 undefined on input line 17.
+
+
+
+LaTeX Warning: Hyper reference `acro:ti' on page 10 undefined on input line 17.
+
+
+
+LaTeX Warning: Hyper reference `acro:tsi' on page 10 undefined on input line 18
 .
 
 
-LaTeX Warning: Hyper reference `acro:tsi' on page 11 undefined on input line 18
+LaTeX Warning: Hyper reference `acro:tsi' on page 10 undefined on input line 18
 .
 
 
-LaTeX Warning: Hyper reference `acro:ieee' on page 11 undefined on input line 1
+LaTeX Warning: Hyper reference `acro:ieee' on page 10 undefined on input line 1
 9.
 
 
-LaTeX Warning: Hyper reference `acro:ieee' on page 11 undefined on input line 1
+LaTeX Warning: Hyper reference `acro:ieee' on page 10 undefined on input line 1
 9.
 
 
-LaTeX Warning: Hyper reference `acro:ifrn' on page 11 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:ifrn' on page 10 undefined on input line 2
 0.
 
 
-LaTeX Warning: Hyper reference `acro:ifrn' on page 11 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:ifrn' on page 10 undefined on input line 2
 0.
 
 
-LaTeX Warning: Hyper reference `acro:abes' on page 11 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:abes' on page 10 undefined on input line 2
 1.
 
 
-LaTeX Warning: Hyper reference `acro:abes' on page 11 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:abes' on page 10 undefined on input line 2
 1.
 
 
 
-[11]) (./pre-textuais/listas/Simbolos.tex
+[10]) (./pre-textuais/listas/Simbolos.tex
 
-[12]) (./pre-textuais/listas/Algoritmos.tex
+[11]) (./pre-textuais/listas/Algoritmos.tex
 
 Package hyperref Warning: Option `colorlinks' has already been used,
 (hyperref)                setting the option has no effect on input line 9.
 
 (build/Principal.loa)
 
-[13
+[12
 
 ])
 
@@ -1488,74 +1494,57 @@ Package hyperref Warning: Option `colorlinks' has already been used,
 
 (build/Principal.toc)
 
-[14]) (./textuais/capitulo_1/Introducao.tex
-Package acronym Info: Label `acro:ti' newly defined as it shall be overridden
-although it is yet undefined on input line 22.
+[13]) (./textuais/capitulo_1/Introducao.tex
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
+0.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+[14] (./textuais/capitulo_1/sub-topicos/ContextualizacaoEProblema.tex
 Package acronym Info: Label `acro:ia' newly defined as it shall be overridden
-although it is yet undefined on input line 42.
+although it is yet undefined on input line 16.
 
 
-[15] (./textuais/capitulo_1/sub-topicos/ContextualizacaoEProblema.tex)
-(./textuais/capitulo_1/sub-topicos/Objetivos.tex)
-(./textuais/capitulo_1/sub-topicos/DelimitacaoDoEstudo.tex)
+[15]) (./textuais/capitulo_1/sub-topicos/Objetivos.tex)
 (./textuais/capitulo_1/sub-topicos/Justificativa.tex)
-(./textuais/capitulo_1/sub-topicos/ApresentacaoDoTrabalho.tex)
+(./textuais/capitulo_1/sub-topicos/ApresentacaoDoTrabalho.tex
 
-[16]) (./textuais/capitulo_2/FundamentacaoTeorica.tex
+[16])
 
-[17] (./textuais/capitulo_2/sub-topicos/TrabalhosRelacionados.tex)
+[17]) (./textuais/capitulo_2/FundamentacaoTeorica.tex
 
-[18]) (./textuais/capitulo_3/Metodologia.tex
-(./textuais/capitulo_3/sub-topicos/QuestoesDePesquisa.tex)
-(./textuais/capitulo_3/sub-topicos/PropostaMetodologica.tex)
-(./textuais/capitulo_3/sub-topicos/Atividades.tex)
+[18] (./textuais/capitulo_2/sub-topicos/TrabalhosRelacionados.tex)
 
-[19]) (./textuais/capitulo_4/DesenvolvimentoDaPesquisa.tex
+[19]) (./textuais/capitulo_3/Metodologia.tex
+
+[20]) (./textuais/capitulo_4/DesenvolvimentoDaPesquisa.tex
 (./textuais/capitulo_4/sub-topicos/PropostaDeSolucao.tex)
 (./textuais/capitulo_4/sub-topicos/Experimentos.tex)
 
-[20]) (./textuais/capitulo_5/Resultados.tex
+[21]) (./textuais/capitulo_5/Resultados.tex
 
-[21]) (./textuais/capitulo_6/Conclusoes.tex
+[22]) (./textuais/capitulo_6/Conclusoes.tex
 (./textuais/capitulo_6/sub-topicos/Discussao.tex)
 (./textuais/capitulo_6/sub-topicos/Contribuicoes.tex)
 (./textuais/capitulo_6/sub-topicos/Limitacoes.tex)
 (./textuais/capitulo_6/sub-topicos/TrabalhosFuturos.tex)
 
-[22]) (build/Principal.bbl (build/Principal.brf)
+[23]) (build/Principal.bbl (build/Principal.brf)
 \tf@brf=\write5
 \openout5 = `Principal.brf'.
 
 
 bibitemlist
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
-[]\T1/phv/m/n/12 (+20) MARZOLLA, I. []\T1/phv/m/sl/12 (+20) profissão do fu-tur
-o[], se-tor de tec-no-lo-gia en-frenta crise
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
-\T1/phv/m/sl/12 (+20) com pro-fis-si-o-nais so-bre-car-re-ga-dos e em-pre-sas i
-n-sa-tis-fei-tas\T1/phv/m/n/12 (+20) . 2024. Dis-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
-\T1/phv/m/n/12 (+20) po-ní-vel em: [][]$<[]https : / / www . cnnbrasil . com . 
-br / economia / macroeconomia /
- []
-
-
-Overfull \hbox (151.6274pt too wide) in paragraph at lines 45--45
-\T1/phv/m/n/12 (-20) pro^^\ssao-[]do-[]futuro-[]setor-[]de-[]tecnologia-[]enfre
-nta-[]crise-[]com-[]pro^^\ssionais-[]sobrecarregados-[]e-[]empresas-[]insatisfe
-itas /
- []
-
 )
 
-[23
+[24
 
 ]
 runsystem(makeindex Principal.idx)...executed safely (allowed).
@@ -1587,28 +1576,28 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Principal.brf' has not changed.
-(rerunfilecheck)             Checksum: 473764AFF7BC27C834C045AF4BE1DBDD;478.
+(rerunfilecheck)             Checksum: D39338FBE501C6A2854197F0B8CE8CA8;94.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 21 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 30947 strings out of 475151
- 547283 string characters out of 5766386
- 1209602 words of memory out of 5000000
- 53098 multiletter control sequences out of 15000+600000
- 601667 words of font info for 209 fonts, out of 8000000 for 9000
+ 30831 strings out of 475151
+ 543803 string characters out of 5766386
+ 1207080 words of memory out of 5000000
+ 53019 multiletter control sequences out of 15000+600000
+ 601282 words of font info for 204 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 99i,11n,107p,2379b,945s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,107p,2379b,907s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 ></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-d
 ist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/
 helvetic/uhvro8a.pfb>
-Output written on build/Principal.pdf (24 pages, 129560 bytes).
+Output written on build/Principal.pdf (25 pages, 125311 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 88 named destinations out of 1000 (max. 500000)
- 38638 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 40638 words of extra memory for PDF output out of 42996 (max. 10000000)
 

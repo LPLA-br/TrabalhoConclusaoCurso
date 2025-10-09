@@ -5,59 +5,11 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v<VERSION> }
 
-\bibitem[BAPTISTA e BAPTISTA 2023]{baptista2023ia}
-\abntrefinfo{BAPTISTA e BAPTISTA}{BAPTISTA; BAPTISTA}{2023}
-{BAPTISTA, j. F.~S.; BAPTISTA, M. R. d.~S. O que a ia pode fazer para auxiliar
-  os programadores ?
-\emph{Fatec Assis}, 2023.}
-
-\bibitem[BELTRÃO, FARZAT e TRAVASSOS 2020]{beltrao2020}
-\abntrefinfo{BELTRÃO, FARZAT e TRAVASSOS}{BELTRÃO; FARZAT; TRAVASSOS}{2020}
-{BELTRÃO, A.; FARZAT, F.; TRAVASSOS, G. Technical debt: A clean architecture
-  implementation. In:  \emph{Anais Estendidos do XI Congresso Brasileiro de
-  Software: Teoria e Prática}. Porto Alegre, RS, Brasil: SBC, 2020. p.
-  131--134.
-ISSN 0000-0000. Dispon{\'\i}vel em:
-  \url{https://sol.sbc.org.br/index.php/cbsoft\_estendido/article/view/14620}.}
-
-\bibitem[CARREIRA 2023]{carreira2023}
-\abntrefinfo{CARREIRA}{CARREIRA}{2023}
-{CARREIRA, a. b. d. T. e.~. \emph{Demissões em massa: a bolha de TI explodiu
-  ?} 2023.
-Dispon{\'\i}vel em:
-  \url{https://carreira.com.br/demissoes-em-massa-e-a-bolha-de-ti/}. Acesso em:
-  \today.}
-
 \bibitem[IEEE e all 1990]{IEEEGlossary}
 \abntrefinfo{IEEE e all}{IEEE; all}{1990}
 {IEEE, S.~G.; ALL. \emph{IEEE Standard Glosary of Software Engineering
   Terminology}. Std 610.12-1990. New York, NY, USA: Secretary, IEEE Standard
   Board, 1990.
 ISBN 155937067X.}
-
-\bibitem[MARZOLLA 2024]{cnn2024}
-\abntrefinfo{MARZOLLA}{MARZOLLA}{2024}
-{MARZOLLA, I. \emph{\"profissão do futuro\", setor de tecnologia enfrenta
-  crise com profissionais sobrecarregados e empresas insatisfeitas}. 2024.
-Dispon{\'\i}vel em:
-  \url{https://www.cnnbrasil.com.br/economia/macroeconomia/profissao-do-futuro-setor-de-tecnologia-enfrenta-crise-com-profissionais-sobrecarregados-e-empresas-insatisfeitas/}.
-  Acesso em: \today.}
-
-\bibitem[Rezende \textit{et al.} 2024]{metricasResende2024}
-\abntrefinfo{Rezende \textit{et al.}}{Rezende \textit{et al.}}{2024}
-{REZENDE, J. F. d.~C.; LOUREIRO, J. F.~F.; RODRIGUES, P.~T.; MORAES, J. G.~C.
-  TransformaÇÃo digital e as mÉtricas de valor de tecnologia da informaÇÃo
-  sob a perspectiva da teoria neo-institucional.
-\emph{JISTEM - Journal of Information Systems and Technology Management}, TECSI
-  Laboratório de Tecnologia e Sistemas de Informação - FEA/USP, v.~21, p.
-  e202421001, 2024.
-ISSN 1807-1775.
-Dispon{\'\i}vel em: \url{https://doi.org/10.4301/S1807-1775202421001}.}
-
-\bibitem[VIEIRA e FERNANDES 2024]{vieira2024impactos}
-\abntrefinfo{VIEIRA e FERNANDES}{VIEIRA; FERNANDES}{2024}
-{VIEIRA, G.~G.; FERNANDES, S.~C. Impactos da pandemia de covid-19 na
-  interação dos usuários com ti.
-275, 2024.}
 
 \end{thebibliography}
