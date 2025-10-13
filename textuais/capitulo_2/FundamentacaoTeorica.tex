@@ -9,31 +9,65 @@
     \label{cha:fundamentacao-teorica}
     % remove nome do capítulo do cabeçalho
 
-   %A fundamentação teórica é a base de qualquer pesquisa, oferecendo o embasamento
-   %conceitual necessário para entender e explorar um determinado tema. Ela consiste
-   %na revisão e síntese crítica de teorias, estudos anteriores e informações relevantes
-   %que sustentam a investigação em questão. Essa seção é crucial para mostrar a
-   %importância e a originalidade do estudo, fornecendo um conjunto de conceitos e
-   %ideias que ajudam na análise dos resultados. Modelos teóricos, conceitos-chave,
-   %abordagens metodológicas e estudos anteriores são abordados para fornecer um suporte
-   %consistente à pesquisa. 
+   % A fundamentação teórica é a base de qualquer pesquisa, oferecendo o embasamento
+   % conceitual necessário para entender e explorar um determinado tema. Ela consiste
+   % na REVISÃO E SÍNTESE CRÍTICA de teorias, estudos anteriores e informações relevantes
+   % que sustentam a investigação em questão. Essa seção é crucial para mostrar a
+   % importância e a originalidade do estudo, fornecendo um conjunto de conceitos e
+   % ideias que ajudam na análise dos resultados. Modelos teóricos, conceitos-chave,
+   % abordagens metodológicas e estudos anteriores são abordados para fornecer um suporte
+   % consistente à pesquisa. 
 
     %INTRODUÇÃO À SEÇÃO
 
     Esta seção apresenta partes significativas das obras dos autores que contribuiram
     com o a engenharia de software compilando as mais contrapôem-se como solução a
-    problemas relacionados aos males da forte dependência.
+    problemas relacionados aos males da forte dependência nos sistemas.
 
     % orientação a objetos - pilares
+    Antes de avançar sobre conceitos arquiteturais e de padrões de projetos, deve-se, primeiro,
+    observar aos fundamentos intrínsecos do paradigma sobre o qual dispṍe-se a trabalhar sobre.
+    
+    O conceito de paradigma é introduzido, na obra "The Paradigms of Programming"
+    \parencite{floyd2007paradigms} de 1978 como sendo: "um padrão, um exemplo com o qual
+    as coisas são feitas". O mesmo autor deixara claro, ao discutir acerca dos paradigmas
+    de sua época, que o conceito, no âmbito do desenvolvimento de software, consiste na forma como 
+    programas são feitos.
 
-    % arquitetura limpa - frameworks são detalhes
-    Quando fala-se de arquitetura, no contexto de desenvolvimento de software, fica claro que
-    o objeto de estudo manifesta-se como um conjunto de códigos.
+    Os paradigmas surgiram concomitantemente com o desenvolvimento de liguagens de
+    programação, em especial nas de alto nível que abstraiam a implementação binária
+    direta de instruções, possibilitando uma implementação mais humana e menos complexa
+    \textcite[p.~8-]{Sammet1969languages}.
 
-    % padrões: Adaptador, Strategy, soliD injeção de dependência e outros
+    Inicialmente há o surgimento, com o desenvolvimento da arquitetura de Von Neumann,
+    do primeiro paradigma, o Imperativo que trazia os conceitos fundamentais de estado
+    e ação modificante do estado. Sua influência é, até hoje, enorme e serviu de núcleo
+    para paradigmas posteriores \textcite[p.~1]{jungthon2009paradigmas}.
 
-  
+    Com o aumento de complexidade dos sistemas, surge o paradigma estruturado que definia
+    a sequência, iteração e decisão como sendo as partes fundamentais de qualquer programa
+    implementável \textcite{Dijkstra1972structured}.
 
+    Por fim, a orientação a objetos, inicialmente implantadas nas linguagens Simula(1962) e
+    Smalltalk(1972), traz os conceitos de objeto como uma abstração de qualquer elemento
+    da vida real que interage separadamente com outros por meio de "mensagens"
+    \textcite[p.~52-55]{rentsch1982object}.
+
+    O paradigma orientado a objetos originou, de acordo com a síntese de outros autores presente
+    no artigo \parencite{kasture2019pillars}, quatros pilares fundamentais sobre a implementação definidos como:
+
+    \begin{itemize}
+      \item{ Abstração \- capacidade de representar um subconjunto de atributos e comportamentos de uma entidade real }
+      \item{ Encapsulamento \- controle de acesso externo a atributos e comportamentos privados de um objeto }
+      \item{ Herança \- capacidade de extensão por superconjunto de atributos e comportamentos }
+      \item{ Polimorfismo \- capacidade de mutação de comportamentos por sobrescrita }
+    \end{itemize}
+
+    O paradigma orientação a objetos possibilitou o desenvolvimento de arquiteturas e padrões
+    de projetos largamente documentados por vários autores.
+
+    % arquitetura hexagonal, arquitetura limpa  (Robert C. Martin) onion
+    % padrões de projeto: Adaptador, Strategy, soliD injeção de dependência e outros
 
 
 

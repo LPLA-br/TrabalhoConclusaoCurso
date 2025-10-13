@@ -13,47 +13,47 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: pos-textuais/Referencias.bib
-You're missing a field name---line 94 of file pos-textuais/Referencias.bib
+You're missing a field name---line 26 of file pos-textuais/Referencias.bib
  : 
  : %     author = {Frank Mittelbach},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 103 of file pos-textuais/Referencias.bib
+You're missing a field name---line 35 of file pos-textuais/Referencias.bib
  : 
  : %     author = {Autor Sobrenome, Nome},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 114 of file pos-textuais/Referencias.bib
+You're missing a field name---line 46 of file pos-textuais/Referencias.bib
  : 
  : %     author = {Autor Sobrenome, Nome},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 124 of file pos-textuais/Referencias.bib
+You're missing a field name---line 56 of file pos-textuais/Referencias.bib
  : 
  : %     author = {Autor Sobrenome, Nome},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 137 of file pos-textuais/Referencias.bib
+You're missing a field name---line 69 of file pos-textuais/Referencias.bib
  : 
  : %     author = {Autor Sobrenome, Nome},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 146 of file pos-textuais/Referencias.bib
+You're missing a field name---line 78 of file pos-textuais/Referencias.bib
  : 
  : %     author = {Autor Sobrenome, Nome},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 155 of file pos-textuais/Referencias.bib
+You're missing a field name---line 87 of file pos-textuais/Referencias.bib
  : 
  : %   author = {Autor(es) do Algoritmo},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 162 of file pos-textuais/Referencias.bib
+You're missing a field name---line 94 of file pos-textuais/Referencias.bib
  : 
  : %   title = {Titulo do Filme},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 170 of file pos-textuais/Referencias.bib
+You're missing a field name---line 102 of file pos-textuais/Referencias.bib
  : 
  : %   author = {Autor(es) do Vídeo, se disponível},
 (Error may have been on previous line)
@@ -67,45 +67,45 @@ Reallocated glb_str_end (elt_size=8) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 4 entries,
+You've used 3 entries,
             6714 wiz_defined-function locations,
-            1209 strings with 9614 characters,
-and the built_in function-call counts, 2306 in all, are:
-= -- 296
-> -- 34
-< -- 2
-+ -- 63
-- -- 11
-* -- 114
-:= -- 336
-add.period$ -- 5
-call.type$ -- 5
-change.case$ -- 18
-chr.to.int$ -- 9
-cite$ -- 1
-duplicate$ -- 57
-empty$ -- 208
-format.name$ -- 47
-if$ -- 581
+            1200 strings with 9426 characters,
+and the built_in function-call counts, 1462 in all, are:
+= -- 226
+> -- 1
+< -- 1
++ -- 51
+- -- 1
+* -- 57
+:= -- 226
+add.period$ -- 0
+call.type$ -- 4
+change.case$ -- 9
+chr.to.int$ -- 5
+cite$ -- 0
+duplicate$ -- 12
+empty$ -- 143
+format.name$ -- 0
+if$ -- 375
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 52
-newline$ -- 13
-num.names$ -- 5
-pop$ -- 67
+missing$ -- 31
+newline$ -- 8
+num.names$ -- 0
+pop$ -- 39
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 9
 quote$ -- 0
-skip$ -- 230
+skip$ -- 186
 stack$ -- 1
-substring$ -- 80
-swap$ -- 22
+substring$ -- 62
+swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 8
+while$ -- 2
 width$ -- 0
-write$ -- 24
+write$ -- 8
 (There were 9 error messages)

@@ -5,11 +5,4 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v<VERSION> }
 
-\bibitem[IEEE e all 1990]{IEEEGlossary}
-\abntrefinfo{IEEE e all}{IEEE; all}{1990}
-{IEEE, S.~G.; ALL. \emph{IEEE Standard Glosary of Software Engineering
-  Terminology}. Std 610.12-1990. New York, NY, USA: Secretary, IEEE Standard
-  Board, 1990.
-ISBN 155937067X.}
-
 \end{thebibliography}
