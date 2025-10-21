@@ -5,4 +5,66 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v<VERSION> }
 
+\bibitem[Almeida]{almeidaevoluccao}
+\abntrefinfo{Almeida}{Almeida}{}
+{ALMEIDA, R.~B. Evolu{\c{c}}{\~a}o dos processadores.
+\emph{Evolu{\c{c}}{\~a}o dos processadores}.}
+
+\bibitem[Dahl, Dijkstra e Hoare 1972]{Dijkstra1972structured}
+\abntrefinfo{Dahl, Dijkstra e Hoare}{Dahl; Dijkstra; Hoare}{1972}
+{DAHL, O.~J.; DIJKSTRA, E.~W.; HOARE, C. A.~R. (Ed.). \emph{Structured
+  programming}. GBR: Academic Press Ltd., 1972.
+ISBN 0122005503.}
+
+\bibitem[Dijkstra 1972]{dijkstra1972humble}
+\abntrefinfo{Dijkstra}{Dijkstra}{1972}
+{DIJKSTRA, E.~W. The humble programmer.
+\emph{Communications of the ACM}, ACM New York, NY, USA, v.~15, n.~10, p.
+  859--866, 1972.}
+
+\bibitem[Dodig-Crnkovic 2001]{dodig2001history}
+\abntrefinfo{Dodig-Crnkovic}{Dodig-Crnkovic}{2001}
+{DODIG-CRNKOVIC, G. History of computer science.
+\emph{V{\"a}ster{\aa}s: M{\"a}lardalen University}, 2001.}
+
+\bibitem[Floyd 2007]{floyd2007paradigms}
+\abntrefinfo{Floyd}{Floyd}{2007}
+{FLOYD, R.~W. The paradigms of programming. In:  \emph{ACM Turing award
+  lectures}. [S.l.: s.n.], 2007. p.~1978.}
+
+\bibitem[Hinchey 2018]{softwareCrisis2}
+\abntrefinfo{Hinchey}{Hinchey}{2018}
+{HINCHEY, M. Software crisis 2.0.
+In:  \underline{\ \ \ \ \ \ \ \ }. \emph{Software Technology: 10 Years of
+  Innovation in IEEE Computer}. [S.l.: s.n.], 2018. p. 1--16.}
+
+\bibitem[Jungthon e Goulart 2009]{jungthon2009paradigmas}
+\abntrefinfo{Jungthon e Goulart}{Jungthon; Goulart}{2009}
+{JUNGTHON, G.; GOULART, C.~M. Paradigmas de programa{\c{c}}{\~a}o.
+\emph{Monografia (Monografia)—Faculdade de Inform{\'a}tica de Taquara, Rio
+  Grande do Sul}, v.~57, 2009.}
+
+\bibitem[Kasture e Jaiswal 2019]{kasture2019pillars}
+\abntrefinfo{Kasture e Jaiswal}{Kasture; Jaiswal}{2019}
+{KASTURE, D.; JAISWAL, R.~C. Pillars of object oriented system.
+\emph{Int. J. Res. Appl. Sci. Eng. Technol.}, v.~7, n.~12, p. 589--590, 2019.}
+
+\bibitem[Newell, Perlis e Simon 1967]{newell1967what}
+\abntrefinfo{Newell, Perlis e Simon}{Newell; Perlis; Simon}{1967}
+{NEWELL, A.; PERLIS, A.~J.; SIMON, H.~A. What is computer science?
+\emph{Science}, American Association for the Advancement of Science, v.~157,
+  n.~3795, p. 1373--1374, 1967.}
+
+\bibitem[Rentsch 1982]{rentsch1982object}
+\abntrefinfo{Rentsch}{Rentsch}{1982}
+{RENTSCH, T. Object oriented programming.
+\emph{ACM Sigplan Notices}, ACM New York, NY, USA, v.~17, n.~9, p. 51--57,
+  1982.}
+
+\bibitem[Sammet 1969]{Sammet1969languages}
+\abntrefinfo{Sammet}{Sammet}{1969}
+{SAMMET, J.~E. \emph{Programming Languages: History and Fundamentals}. 1st. ed.
+  Englewood Cliffs, NJ: Prentice-Hall, 1969.
+ISBN 0137300051.}
+
 \end{thebibliography}

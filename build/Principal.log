@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.11)  9 OCT 2025 15:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.11)  21 OCT 2025 17:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1495,9 +1495,11 @@ Package hyperref Warning: Option `colorlinks' has already been used,
 (build/Principal.toc)
 
 [13]) (./textuais/capitulo_1/Introducao.tex
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
-0.
 
+Package hyperref Warning: Suppressing empty link on input line 36.
+
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 5
+9.
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
@@ -1521,32 +1523,31 @@ although it is yet undefined on input line 16.
 [17]) (./textuais/capitulo_2/FundamentacaoTeorica.tex
 (./textuais/capitulo_2/sub-topicos/TrabalhosRelacionados.tex)
 
-[18]) (./textuais/capitulo_3/Metodologia.tex
+[18]
 
-[19]) (./textuais/capitulo_4/DesenvolvimentoDaPesquisa.tex
+[19]) (./textuais/capitulo_3/Metodologia.tex
+
+[20]) (./textuais/capitulo_4/DesenvolvimentoDaPesquisa.tex
 (./textuais/capitulo_4/sub-topicos/PropostaDeSolucao.tex)
 (./textuais/capitulo_4/sub-topicos/Experimentos.tex)
 
-[20]) (./textuais/capitulo_5/Resultados.tex
+[21]) (./textuais/capitulo_5/Resultados.tex
 
-[21]) (./textuais/capitulo_6/Conclusoes.tex
+[22]) (./textuais/capitulo_6/Conclusoes.tex
 (./textuais/capitulo_6/sub-topicos/Discussao.tex)
 (./textuais/capitulo_6/sub-topicos/Contribuicoes.tex)
 (./textuais/capitulo_6/sub-topicos/Limitacoes.tex)
 (./textuais/capitulo_6/sub-topicos/TrabalhosFuturos.tex)
 
-[22]) (build/Principal.bbl (build/Principal.brf)
+[23]) (build/Principal.bbl (build/Principal.brf)
 \tf@brf=\write5
 \openout5 = `Principal.brf'.
 
 
 bibitemlist
-
-LaTeX Warning: Empty `thebibliography' environment on input line 8.
-
 )
 
-[23
+[24
 
 ]
 runsystem(makeindex Principal.idx)...executed safely (allowed).
@@ -1578,28 +1579,28 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Principal.brf' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 3AD72571BDEAFFC9DB62761801A2D9D6;631.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 21 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 30808 strings out of 475151
- 543493 string characters out of 5766386
- 1206912 words of memory out of 5000000
- 53005 multiletter control sequences out of 15000+600000
- 600906 words of font info for 199 fonts, out of 8000000 for 9000
+ 30949 strings out of 475151
+ 546346 string characters out of 5766386
+ 1210079 words of memory out of 5000000
+ 53112 multiletter control sequences out of 15000+600000
+ 602411 words of font info for 214 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 99i,11n,107p,2379b,905s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,107p,2379b,913s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 ></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-d
 ist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/
 helvetic/uhvro8a.pfb>
-Output written on build/Principal.pdf (24 pages, 121416 bytes).
+Output written on build/Principal.pdf (25 pages, 129943 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
- 244 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 324 PDF objects out of 1000 (max. 8388607)
+ 285 compressed objects within 3 object streams
+ 81 named destinations out of 1000 (max. 500000)
  40638 words of extra memory for PDF output out of 42996 (max. 10000000)
 
