@@ -13,47 +13,47 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: pos-textuais/Referencias.bib
-You're missing a field name---line 131 of file pos-textuais/Referencias.bib
+You're missing a field name---line 133 of file pos-textuais/Referencias.bib
  : 
  : %     author = {Frank Mittelbach},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 140 of file pos-textuais/Referencias.bib
+You're missing a field name---line 142 of file pos-textuais/Referencias.bib
  : 
  : %     author = {Autor Sobrenome, Nome},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 151 of file pos-textuais/Referencias.bib
+You're missing a field name---line 153 of file pos-textuais/Referencias.bib
  : 
  : %     author = {Autor Sobrenome, Nome},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 161 of file pos-textuais/Referencias.bib
+You're missing a field name---line 163 of file pos-textuais/Referencias.bib
  : 
  : %     author = {Autor Sobrenome, Nome},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 174 of file pos-textuais/Referencias.bib
+You're missing a field name---line 176 of file pos-textuais/Referencias.bib
  : 
  : %     author = {Autor Sobrenome, Nome},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 183 of file pos-textuais/Referencias.bib
+You're missing a field name---line 185 of file pos-textuais/Referencias.bib
  : 
  : %     author = {Autor Sobrenome, Nome},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 192 of file pos-textuais/Referencias.bib
+You're missing a field name---line 194 of file pos-textuais/Referencias.bib
  : 
  : %   author = {Autor(es) do Algoritmo},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 199 of file pos-textuais/Referencias.bib
+You're missing a field name---line 201 of file pos-textuais/Referencias.bib
  : 
  : %   title = {Titulo do Filme},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 207 of file pos-textuais/Referencias.bib
+You're missing a field name---line 209 of file pos-textuais/Referencias.bib
  : 
  : %   author = {Autor(es) do Vídeo, se disponível},
 (Error may have been on previous line)
@@ -69,43 +69,43 @@ Reallocated glb_str_end (elt_size=8) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 14 entries,
             6714 wiz_defined-function locations,
-            1276 strings with 10884 characters,
-and the built_in function-call counts, 9726 in all, are:
-= -- 811
+            1277 strings with 10891 characters,
+and the built_in function-call counts, 9777 in all, are:
+= -- 817
 > -- 278
 < -- 22
 + -- 150
 - -- 86
-* -- 644
-:= -- 1330
+* -- 653
+:= -- 1337
 add.period$ -- 41
 call.type$ -- 15
 change.case$ -- 92
 chr.to.int$ -- 34
 cite$ -- 11
-duplicate$ -- 458
-empty$ -- 806
+duplicate$ -- 459
+empty$ -- 812
 format.name$ -- 395
-if$ -- 2337
+if$ -- 2348
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 224
 newline$ -- 62
 num.names$ -- 55
-pop$ -- 270
+pop$ -- 266
 preamble$ -- 1
 purify$ -- 48
 quote$ -- 0
-skip$ -- 654
+skip$ -- 653
 stack$ -- 1
-substring$ -- 396
-swap$ -- 218
+substring$ -- 408
+swap$ -- 219
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 2
 warning$ -- 0
-while$ -- 82
+while$ -- 83
 width$ -- 0
-write$ -- 185
+write$ -- 187
 (There were 9 error messages)

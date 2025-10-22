@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.11)  21 OCT 2025 17:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.25)  22 OCT 2025 14:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1495,11 +1495,9 @@ Package hyperref Warning: Option `colorlinks' has already been used,
 (build/Principal.toc)
 
 [13]) (./textuais/capitulo_1/Introducao.tex
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
+1.
 
-Package hyperref Warning: Suppressing empty link on input line 36.
-
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 5
-9.
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
@@ -1586,21 +1584,21 @@ Package rerunfilecheck Info: File `Principal.brf' has not changed.
 ### simple group (level 1) entered at line 21 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 30949 strings out of 475151
- 546346 string characters out of 5766386
- 1210079 words of memory out of 5000000
+ 30958 strings out of 475151
+ 546436 string characters out of 5766386
+ 1210088 words of memory out of 5000000
  53112 multiletter control sequences out of 15000+600000
- 602411 words of font info for 214 fonts, out of 8000000 for 9000
+ 603164 words of font info for 220 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  99i,11n,107p,2379b,913s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 ></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-d
 ist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/
 helvetic/uhvro8a.pfb>
-Output written on build/Principal.pdf (25 pages, 129943 bytes).
+Output written on build/Principal.pdf (25 pages, 130094 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 285 compressed objects within 3 object streams
+ 325 PDF objects out of 1000 (max. 8388607)
+ 286 compressed objects within 3 object streams
  81 named destinations out of 1000 (max. 500000)
  40638 words of extra memory for PDF output out of 42996 (max. 10000000)
 

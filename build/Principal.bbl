@@ -5,10 +5,10 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v<VERSION> }
 
-\bibitem[Almeida]{almeidaevoluccao}
-\abntrefinfo{Almeida}{Almeida}{}
+\bibitem[Almeida 1967]{almeidaevoluccao}
+\abntrefinfo{Almeida}{Almeida}{1967}
 {ALMEIDA, R.~B. Evolu{\c{c}}{\~a}o dos processadores.
-\emph{Evolu{\c{c}}{\~a}o dos processadores}.}
+\emph{Evolu{\c{c}}{\~a}o dos processadores}, unicamp, 1967.}
 
 \bibitem[Dahl, Dijkstra e Hoare 1972]{Dijkstra1972structured}
 \abntrefinfo{Dahl, Dijkstra e Hoare}{Dahl; Dijkstra; Hoare}{1972}

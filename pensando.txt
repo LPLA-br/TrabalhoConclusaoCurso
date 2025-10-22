@@ -1,5 +1,10 @@
 TRABALHO DE CONCLUSÃO DE CURSO - VISÃO GERAL
 
+Formato escolhido pelo aluno de acordo com (TSI, PPC, 2019):
+  C) RELATÓRIO DE DESENVOLVIMENTO DE UM PROTÓTIPO DE UM SOFTWARE.
+  d) relatório de projeto relacionado ao desenvolvimento de software realizado em estágio.
+  e) trabalho acadêmico ou relatório da atuação em projeto de pesquisa ou extensão.
+
 Contexto do domínio de pesquisa:
   Subdomínios estudados/trabalhados:
     Domínio de negócios:
@@ -10,12 +15,12 @@ Contexto do domínio de pesquisa:
       Redes locais LAN (Redução de custos com infraestrutura aliena)
 
 Conceitos chave:
-  Arquitetura em camadas.
-  Inversão de dependências.
+  Orientação a objetos e seus pilares.
   Baixo acoplamento.
   Padrões de projeto.
+  Princípio da Inversão de dependências.
+  Arquitetura em camadas.
   Princípios de desenvolvimento orientado a objetos.
-  Orientação a objetos e seus pilares.
 
 Conceitos correlatos:
   Débito técnico.
@@ -54,9 +59,22 @@ Características do trabalho:
       Como aplicação de princípios pode conflitar com ferramenta da industria ?
       O resultado foi satisfatório ?
 
-Formato escolhido pelo aluno de acordo com (TSI, PPC, 2019):
-  C) RELATÓRIO DE DESENVOLVIMENTO DE UM PROTÓTIPO DE UM SOFTWARE.
-  d) relatório de projeto relacionado ao desenvolvimento de software realizado em estágio.
-  e) trabalho acadêmico ou relatório da atuação em projeto de pesquisa ou extensão.
+PROBLEMA, JUSTIFICATIVA, OBJETIVOS GERAIS E ESPECÍFICOS - SÍNTESE
 
-Problema, justificativa, objetivos gerais e específicos lege claviatura scriptum
+Problema: Cimentação de dependências em aplicações causando
+          possíveis problemas de manutenibilidade.
+          E possível desenvolver software evitando completamente
+          que as dependências sujem as classes do domínio de
+          negócios ?
+          
+Justificativa:  Contribuição para conjunto de trabalhos
+                que experimentam técnicas para evitar a dependência
+                forte de peças de software externas à aplicação.
+
+Objetivos gerais: Determinar efeitos benéficos e adversos da
+                  implementação de software independente.
+
+Objetivos especificos:  Revisar obras com técnicas, padrões e
+                        filosofias. Modelar domínio de negócio
+                        independente.
+
