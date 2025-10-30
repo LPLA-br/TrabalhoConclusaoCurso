@@ -54,7 +54,7 @@
     % III. Crise do software de 1960,70,80
     O cenário problemático de outrora trouxera efeitos indesejáveis em todos os âmbitos
     do empreendimento de se escrever \textit{software}. Complexidade crescia enquanto
-    a imaturidade técnico-metodologica firmava-se como fator propulsor. Apresentava-se,
+    a imaturidade técnico-metodologica firmava-se como fator propulsor \cite[~p.14]{brooks1995mythical}. Apresentava-se,
     como consequências negativas de tais malefeitos, o(a) :
 
     \begin{itemize}
@@ -81,32 +81,28 @@
     \end{itemize}
 
     % IV. Crise atual do software. - A dependência
-    Dentre os problemas enfrentados pela ciência da computação e engenharia de software
-    tem-se o da dependência. O software, como solução, surge, da mesma maneira
-    que a pesquisa científica, sobre obras anterior pois sua construção faz-se de modo
-    a reaproveitar códigos (soluções) desenvolvidas anteriormente por outros programadores.
-    Conhece-se tais peças componentes, no âmbito técnico, como: trechos, módulos,
-    bibliotecas e frameworks. %/cite{}
+    Dentre os problemas enfrentados na ciência da computação e engenharia de
+    software tem-se o da dependência como possível ocasionadora do alto
+    acoplamento em aplicações modernas. O software, como solução, surge, da
+    mesma maneira que a pesquisa científica, sobre sobre outros
+    \textit{softwares} desenvolvidos anteriormente por outros programadores.
+    Conhece-se tecnicamente tais peças componentes como: módulos,
+    bibliotecas e frameworks \cite{IEEEGlossary}.
 
-    Apesar das dependências não serem um problema quando cuidadosamente gerenciadas
-    e limitadas há, durante o desenvolvimento, o risco real de um projeto cair no clássico
-    problema do inferno das dependências, situação em que o software tem seu funcionamento
-    correto comprometido devido a peças de software dependidas estarem sob efeito de um ou
-    vários dos seguintes problemas:
-
-    \begin{itemize}
-      \item{Versões diferente de uma mesma dependência exigida}
-      \item{Dependências circulares onde A depende de B e B depende de A}
-      \item{Emprego de dependências desatualizadas}
-      \item{Esquema de instalação complexo}
-    \end{itemize}
+    Tais peças são, como varias outras, criadas para solucionar problemas
+    genêricos e acabam, por vezes, criando situações em que lógica de negócio
+    mistura-se-iam com soluções por ela providas proporcionando, assim, um acoplamento
+    perigoso com alta capacidade de dificultar ou até impossibilitar a manutenção e
+    extenção do \textit{software} mantido \cite{evans2004domain, uncleBob2017}.
 
     % V. Conclusão da introdução - Pode-se evitar a dependência ?
-    Problemas corelacionados às dependências são abundantes em projetos de software de todas
-    as dimensões e resolvê-los não é uma das mais fáceis tarefas. Por conseguinte, haver trabalhos
-    no âmbito acadêmico que contribuam copiosamente em boas demonstrações é um esforço
-    necessário e util.
-
+    Problemas relacionados com a dependência são objetos comuns de estudos
+    e discussões em engenharia de software e ciência da computação. Plúrimos
+    autores tratam do assunto e propõem modelos capazes de mitigar os efeitos
+    do problema. Logo, O desenvolvimento de projetos sobre um conjunto de
+    ferramenta e técnicas populares configura-se como uma forma de contribuir para
+    esclarecimento da aplicação, parcial ou total, dos conceitos abstratos expostos
+    pelos autores em geral como solução.
 
     \input{textuais/capitulo_1/sub-topicos/ContextualizacaoEProblema}
     % Objetivos (geral e específicos)
