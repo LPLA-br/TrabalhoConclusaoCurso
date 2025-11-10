@@ -62,29 +62,70 @@
       \item{ Polimorfismo \- capacidade de mutação de comportamentos por sobrescrita }
     \end{itemize}
 
+%   Superconjuntos dos fundamentos OOP
+
     O paradigma orientado a objetos possibilitou o desenvolvimento de padrões
-    de projeto definidos por procedimentos reprodutíveis e de características
-    relativamente parecidas que extendem os quatro pilares fundamentais do
-    paradigma em prol de resolver problemas oriundos do desenvolvimento orientado
-    a objetos \cite[p.~19-20]{gamma1993design}.
+    de projeto e princípios definidos por procedimentos reprodutíveis e
+    possuidores características periódicas que extendem os quatro pilares
+    fundamentais para solução de problemas oriundos do
+    desenvolvimento sobre o paradigma \ac{oop}  \cite[p.~19-20]{gamma1993design}.
 
-    O padrão possui quatro elementos essenciais: Um nome padrão, um problema
-    que ele propõe-se a resolver, a especificação da solução que resolve o problema
-    e as consequencias de adotá-lo \cite[p.~19 et al.]{gamma1993design}.
+    Os padrões, responsáveis por tratarem a forma como as classes/objetos
+    interagem, possuem quatro propriedades fundamentais que os definem: Um nome
+    padrão, um problema que eles propõem-se a resolver, a especificação geral
+    da solução que resolve o problema e as consequências positivas e negativas
+    de adotá-lo \cite[p.~19 et al.]{gamma1993design}.
 
-    Dentre os padrões orientados a objetos, os que mais se destacam por suas características
-    desacoplantes são: \textit{Adapter}, \textit{Facade}, 
+    Indo além dos padrões, tem-se princípios, mais abragentes e abstratos,
+    aplicam-se em um contexto mais fundamental. Embora não constituam
+    obrigação são, de fato, boas recomendações para melhoria de qualidade.
+    No cenário atual destacam-se, em nível industrial, o conjunto de cinco regras
+    chamado pela sigra SOLID e o seu "detalhamento prático" o \textit{Object calisthenics}
+    \cite{ObjectCalisthenics2008, uncleBob2017}.
 
-    CONTINUA
+%   Distânciar-se mais padrões, por possui escopo muito amplo, e focar em arquiteturas.
 
-    Arquiteturalmente houve o desenvolvimento de conceitos promovedores do desacoplamento
-    através da segregação de classes de domínio das demais classes importantes para
-    o funcionamento do \textit{software} como um todo. \citeonline[52]{evans2004domain}
-    propõe um modelo de quatro camadas genericas: Interface de usuário, aplicação como
-    coordenador de ações sen conhecimento de regras de negócio, o domínio como o mantenedor
-    e guardião das regras de negócio e a infraestrutura (camada inferior que sustenta todas
-    as demais superiores.)
+    No âmbito das arquitetura de sistemas houve o aprimoramento contínuo de
+    conceitos que promovem desacoplamento por meio da separação de
+    responsabilidades. O objetivo geral constituiu-se das seguintes
+    propriedades ideais desejadas, como apontado por \cite[p. 202]{uncleBob2017}:
 
+    \begin{itemize}
+      \item{ Arquitetura que independe do frameworks para funcionar. }
+      \item{ Regras de negócio podem ser testadas sem interferência de camadas superiores ou inferiores. }
+      \item{ Idependência de Interface de Usuário onde ela pode mudar sem interferir o resto do sistema. }
+      \item{ Idependência de banco de dados onde sua mudança não interfere nas regras de negócio.  }
+      \item{ Independência total das regras de negócio. }
+    \end{itemize}
+
+    Arquiteturalmente houve o desenvolvimento initerrupto de conceitos
+    promovedores do separação de responsabilidades principalmente em
+    arquiteturas baseadas em camadas. Chegou-se à conclusão universal de que
+    todo o software possui, em seu código fonte, dois elementos distinguíveis
+    categoricamente. Cada autor o definiu de formas levemente diferentes.
+
+
+    \citeonline[p. ]{evans2004domain} refere-se ao domínio em separação dos
+    demais \ac{ui}, \textit{Application} e Infraestrutura.
+
+    Semelhantemente,
+    \citeonline[p. 189]{uncleBob2017} define, mais abragentemente, categorias separadas
+    em \textit{business rules} (regras de negócio) e demais partes satélites que
+    possibilitam que tais regras sejam utilizáveis. 
+
+    \citeonline[52]{evans2004domain} inicialmente aponta o comum problema oriundo
+    do espalhamento de regras de negócio sobre uma ampla área de partes
+    não significantes ao domínio. propõe, ele, posteriormente, um modelo de
+    quatro camadas genéricas: Interface de usuário, aplicação como coordenador
+    de ações sen conhecimento de regras de negócio, o domínio como o mantenedor
+    e guardião das regras de negócio e a infraestrutura (camada inferior que
+    sustenta todas as demais superiores.)
+
+    % hexagonal:Alistair Cockburn, livro: Hexagonal Architecture: Ports and Adapters
+    % Growing Object Oriented Software with Tests
+    % DCI:  James Coplien e Trygve Reenskaug
+    % BCE:  Ivar Jacobson, livro: Object Oriented Software Engineering: A Use-Case
+    %       Driven Approach.
 
 
 %   PRINCIPAIS AUTORES
@@ -107,10 +148,6 @@
 %
 %     Buschmann et all. ( padrões arquiteturais )
 %       Pattern-Oriented Software Architecture
-
-%   ESCOLAS DE PENSAMENTO
-%   ÁREAS DE APLICAÇÃO
-
 
 
     % ÚLTIMO TÓPICO
