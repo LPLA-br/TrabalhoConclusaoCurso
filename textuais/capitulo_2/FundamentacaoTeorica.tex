@@ -20,9 +20,9 @@
 
     %INTRODUÇÃO À SEÇÃO
 
-    Esta seção apresenta partes significativas das obras dos autores que contribuiram
-    com o a engenharia de software compilando as mais contrapôem-se como solução a
-    problemas relacionados aos males da forte dependência nos sistemas.
+    Esta seção apresenta uma breve revisão das obras mais importantes de autores
+    que contribuiram com os esforços pro desacoplamento e contra efeitos adversos
+    das dependências em desenvolvimento de software.
 
     % orientação a objetos - pilares
     Antes de avançar sobre conceitos arquiteturais e de padrões de projetos, deve-se, primeiro,
@@ -62,11 +62,28 @@
       \item{ Polimorfismo \- capacidade de mutação de comportamentos por sobrescrita }
     \end{itemize}
 
-    O paradigma orientação a objetos possibilitou o desenvolvimento de arquiteturas e padrões
-    de projetos largamente documentados por vários autores.
+    O paradigma orientado a objetos possibilitou o desenvolvimento de padrões
+    de projeto definidos por procedimentos reprodutíveis e de características
+    relativamente parecidas que extendem os quatro pilares fundamentais do
+    paradigma em prol de resolver problemas oriundos do desenvolvimento orientado
+    a objetos \cite[p.~19-20]{gamma1993design}.
 
-    % arquitetura hexagonal, arquitetura limpa  (Robert C. Martin) onion
-    % padrões de projeto: Adaptador, Strategy, soliD injeção de dependência e outros
+    O padrão possui quatro elementos essenciais: Um nome padrão, um problema
+    que ele propõe-se a resolver, a especificação da solução que resolve o problema
+    e as consequencias de adotá-lo \cite[p.~19 et al.]{gamma1993design}.
+
+    Dentre os padrões orientados a objetos, os que mais se destacam por suas características
+    desacoplantes são: \textit{Adapter}, \textit{Facade}, 
+
+    CONTINUA
+
+    Arquiteturalmente houve o desenvolvimento de conceitos promovedores do desacoplamento
+    através da segregação de classes de domínio das demais classes importantes para
+    o funcionamento do \textit{software} como um todo. \citeonline[52]{evans2004domain}
+    propõe um modelo de quatro camadas genericas: Interface de usuário, aplicação como
+    coordenador de ações sen conhecimento de regras de negócio, o domínio como o mantenedor
+    e guardião das regras de negócio e a infraestrutura (camada inferior que sustenta todas
+    as demais superiores.)
 
 
 
