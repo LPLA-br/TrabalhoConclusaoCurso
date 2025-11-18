@@ -50,11 +50,12 @@ Características do trabalho:
       clara.
   Procedimentos:
     Experimental
-      Metodicamente aplicar princípios e padrões ao
-      objeto de estudo, apontando variáveis que influenciam 
-      seu desenvolvimento e obtendo formas de controle e observação
-      dos efeitos do rumo tomando sob influência de restrições das
-      tecnologias escolhidas.
+      Método Dedutivo - caso geral para concluir
+        Metodicamente aplicar princípios e padrões ao
+        objeto de estudo, apontando variáveis que influenciam 
+        seu desenvolvimento e obtendo formas de controle e observação
+        dos efeitos do rumo tomando sob influência de restrições das
+        tecnologias escolhidas.
 
       Como aplicação de princípios pode conflitar com ferramenta da industria ?
       O resultado foi satisfatório ?
@@ -72,7 +73,8 @@ Justificativa:  Contribuição para conjunto de trabalhos
                 forte de peças de software externas à aplicação.
 
 Objetivos gerais: Determinar efeitos benéficos e adversos da
-                  implementação de software independente.
+                  implementação de software com separação de responsabilidades
+                  anti acoplamento.
 
 Objetivos especificos:  Revisar obras com técnicas, padrões e
                         filosofias. Modelar domínio de negócio

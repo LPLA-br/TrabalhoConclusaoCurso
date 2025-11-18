@@ -21,12 +21,13 @@
     %INTRODUÇÃO À SEÇÃO
 
     Esta seção apresenta uma breve revisão das obras mais importantes de autores
-    que contribuiram com os esforços pro desacoplamento e contra efeitos adversos
-    das dependências em desenvolvimento de software.
+    acerca da separação de responsabilidades, desacoplamento e design ruim em
+    softwares.
 
     % orientação a objetos - pilares
-    Antes de avançar sobre conceitos arquiteturais e de padrões de projetos, deve-se, primeiro,
-    observar aos fundamentos intrínsecos do paradigma sobre o qual dispõe-se a trabalhar sobre.
+    Antes de avançar sobre conceitos arquiteturais e de padrões de projetos,
+    deve-se, primeiro, observar aos fundamentos intrínsecos do paradigma sobre
+    o qual dispõe-se a trabalhar sobre.
     
     O conceito de paradigma é introduzido por \citeonline{floyd2007paradigms}
     como sendo: "um padrão, um exemplo com o qual as coisas são feitas". O mesmo autor
@@ -43,9 +44,10 @@
     e ação modificante do estado. Sua influência é, até hoje, enorme e serviu de núcleo
     para paradigmas posteriores \cite[p.~1]{jungthon2009paradigmas}.
 
-    Com o aumento de complexidade dos sistemas, surge o paradigma estruturado que definia
-    a sequência, iteração e decisão como sendo as partes fundamentais de qualquer programa
-    implementável \cite{Dijkstra1972structured}.
+    Com o aumento de complexidade dos sistemas, surge o paradigma estruturado
+    que definia a sequência, iteração e decisão como sendo as partes
+    fundamentais de qualquer programa implementável
+    \cite{Dijkstra1972structured}.
 
     Por fim, a orientação a objetos, inicialmente implantadas nas linguagens Simula(1962) e
     Smalltalk(1972), traz os conceitos de objeto como uma abstração de qualquer elemento
@@ -67,8 +69,8 @@
     O paradigma orientado a objetos possibilitou o desenvolvimento de padrões
     de projeto e princípios definidos por procedimentos reprodutíveis e
     possuidores características periódicas que extendem os quatro pilares
-    fundamentais para solução de problemas oriundos do
-    desenvolvimento sobre o paradigma \ac{oop}  \cite[p.~19-20]{gamma1993design}.
+    fundamentais possibilitando solução ou mitigação de problemas oriundos do
+    design \ac{oop} \cite[p.~19-20]{gamma1993design}.
 
     Os padrões, responsáveis por tratarem a forma como as classes/objetos
     interagem, possuem quatro propriedades fundamentais que os definem: Um nome
@@ -104,22 +106,31 @@
     todo o software possui, em seu código fonte, dois elementos distinguíveis
     categoricamente. Cada autor o definiu de formas levemente diferentes.
 
+    \citeonline[p. 51]{evans2004domain} refere-se ao domínio em separação das
+    demais camadas satélites que permitem a funcionalidade de tal domínio ao
+    usuário final.
 
-    \citeonline[p. ]{evans2004domain} refere-se ao domínio em separação dos
-    demais \ac{ui}, \textit{Application} e Infraestrutura.
+    Semelhantemente, \citeonline{alistairHexagonal2005}, em seu artigo original, define
+    um padrão majoritariamente comoposto de classes adaptadoras que possibilitam a separação
+    do que ele chamou de "aplicação" do \textit{outside world} \(mundo externo\).
 
-    Semelhantemente,
-    \citeonline[p. 189]{uncleBob2017} define, mais abragentemente, categorias separadas
-    em \textit{business rules} (regras de negócio) e demais partes satélites que
-    possibilitam que tais regras sejam utilizáveis. 
+    Mais a frente \citeonline[p. 189]{uncleBob2017} define, mais
+    abragentemente, categorias separadas em \textit{business rules} \(regras de
+    negócio\) e demais partes satélites que possibilitam que tais regras sejam
+    utilizáveis.
 
-    \citeonline[52]{evans2004domain} inicialmente aponta o comum problema oriundo
-    do espalhamento de regras de negócio sobre uma ampla área de partes
-    não significantes ao domínio. propõe, ele, posteriormente, um modelo de
-    quatro camadas genéricas: Interface de usuário, aplicação como coordenador
-    de ações sen conhecimento de regras de negócio, o domínio como o mantenedor
-    e guardião das regras de negócio e a infraestrutura (camada inferior que
-    sustenta todas as demais superiores.)
+    \citeonline[p. 52]{evans2004domain} inicialmente aponta, reiterando o
+    motivo pelo qual tantos autores pensam semelhantemente sobre o mesmo problema,
+    o comum malefeito oriundo do espalhamento de regras de negócio
+    sobre uma ampla área técnica do software que não a do exclusivo domínio
+    que possui as regras do negócio a qual a aplicação visa atender.
+
+    Apesar todas as visões apresentadas dos parágrafos superiores aparentarem
+    ser ótimas, há, de fato, um criticismo na forma pela qual tais orientações
+    evoluem em complexidade nos projetos acarretando em problemas de
+    complexidade e excesso de engenharia como causa e o desenvolvimento menos
+    ágil em função da maior massividade de código fonte como consequência
+    \cite{redGreenwp2015}.
 
     % hexagonal:Alistair Cockburn, livro: Hexagonal Architecture: Ports and Adapters
     % Growing Object Oriented Software with Tests
@@ -151,5 +162,5 @@
 
 
     % ÚLTIMO TÓPICO
-    \input{textuais/capitulo_2/sub-topicos/TrabalhosRelacionados}
+    % \input{textuais/capitulo_2/sub-topicos/TrabalhosRelacionados}
 \newpage
