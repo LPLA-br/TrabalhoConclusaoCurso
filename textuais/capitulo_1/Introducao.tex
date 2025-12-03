@@ -30,12 +30,12 @@
     \cite[~p.5]{dodig2001history}.
 
     Na década 1960 a Ciência da Computação consolidara-se, de fato, como uma
-    ciência formal e de importância notoria para as décadas futuras. Sua
-    importância não mais retringia-se acadêmico-militar mas, agora,
-    influenciava positivamente aos grandes negócios, instituições públicas e
+    ciência formal e de importância notória para as décadas futuras. Sua
+    abragência utilitária não mais retringia-se acadêmico-militar mas, agora,
+    colaborava adjuntamente aos grandes negócios, instituições públicas e
     universidades \cite{newell1967what}.
 
-    Conteporâneamente via-se um linear, quase exponencial, aumento do poder
+    Via-se um linear, quase exponencial, aumento do poder
     computacional ao mesmo tempo em que diminuia-se as dimensões físicas dos
     computadores. De acordo com \citeonline{almeidaevoluccao} o fundador da
     Intel, Gordon Moore, publicara na revista \textit{Electronics Magazine},
@@ -43,24 +43,18 @@
     meses fato esse que possibilitara o desenvolvimento de aplicações escalantes
 
     % II. Software, complexidade crescente das soluções
-    Entretanto, nenhum avanço é insento de problemas e crises. Durante a
-    décadas de 1960 e 1970 o grande aumento na necessidade por
-    \textit{software} por organizações comerciais, públicas e de ensino
-    impeliram o agravamento da chamada "Crise do Software". O cenário teve como
-    característica principal, além do aumento constante do poder computacional
-    \cite[~p.3]{dijkstra1972humble}, a ineficácia de processos e técnicas
-    empregadas na implementação do \textit{software}, isso em um cenário onde
-    aplicações cada vez mais complexas eram exigidas como apresentado em resumo
-    por \cite{softwareCrisis2}.
-
-    % TENTAR ACESSAR LOGADO NA EDUROAM DO IFRN PARA PRODUÇÃO DO TEXTO
-    % Science Direct: Solution in software crisis Author links open overlay panelAntti Auer, Mikko Levanto, Ari Okkonen, Jyrki Okkonen
-    % Software Crisis 2.0 Brian Fitzgerald
+    Entretanto, o avanço não foi insento de problemas e crises. Durante a
+    décadas de 1960 e 1970 houvera o aumento significativo da demanda por
+    \textit{software} pelas organizações comerciais, públicas e de ensino. A
+    situação impeliu o agravamento da chamada "Crise do Software". Um cenário
+    que teve como característica principal a ineficácia de processos e
+    técnicas empregadas na implementação de sistemas criticos, tudo isso em um
+    cenário onde demandava-se cada vez mais software em complexidade crescente.
  
     % III. Crise do software de 1960,70,80
-    O cenário problemático de outrora trouxera efeitos indesejáveis em todos os
-    âmbitos do empreendimento de se escrever \textit{software}. Complexidade
-    crescia enquanto a imaturidade técnico-metodologica firmava-se como fator
+    O cenário problemático da época trouxera efeitos indesejáveis em todos os
+    âmbitos do empreendimento de se contruir software. A complexidade crescia
+    ao mesmo tempo que a imaturidade técnico-metodologica firmava-se como fator
     propulsor da crise \cite[~p.14]{brooks1995mythical}. Apresentavam-se como
     consequências dos maus processos O(A):
 
@@ -73,39 +67,39 @@
     \end{itemize}
 
     % IV. Mitigação da crise e progresso até os dias atuais.
-    Apesar da crise em si nunca ter sido absolutamente resolvida de fato, esforços
-    oriundos da experiência de vários profissionais e pesquisadores competentes
-    resultaram na consolidação de obras técnicas com orientações fundamentais que
-    propõem soluções efetivas, como: \textit{The Mytical Man-Month, Design Patterns: Elements
-    of Reusable Object-Oriented Software, Structure Programming - Dijkstra, Software
-    Engineering Conference NATO Science Committee} dentre outras.
+    Apesar da crise em si nunca ter sido absolutamente resolvida de fato,
+    esforços oriundos da experiência de vários profissionais e pesquisadores
+    competentes resultaram na consolidação de obras técnicas com orientações
+    fundamentais que propõem soluções efetivas, como: \textit{The Mytical
+    Man-Month, Design Patterns: Elements of Reusable Object-Oriented Software,
+    Structure Programming - Dijkstra, Software Engineering Conference NATO
+    Science Committee} dentre outras obras.
 
     % IV. Crise atual do software. - A dependência
-    Em meio a vários problemas enfrentados pela ciência da computação e engenharia de
-    software há o da dependência como possível ocasionadora do alto
-    acoplamento em aplicações modernas. O software, como solução, surge, da
-    mesma maneira que a pesquisa científica, alicerçando-se sobre outros
-    \textit{softwares} desenvolvidos anteriormente por outros programadores.
-    Tais alicerces denominaram-se: módulos, bibliotecas e frameworks \cite{IEEEGlossary}.
+    Em meio a vários problemas enfrentados pela ciência da computação e
+    engenharia de software há o da dependência como ocasionadora do
+    alto acoplamento em aplicações modernas. O software, como solução, surge,
+    da mesma maneira que a pesquisa científica, alicerçando-se sobre outros
+    artefatos de \textit{software} desenvolvidos anteriormente por outros
+    programadores. A tais alicerces comumente nomina-se: o módulos, as bibliotecas e
+    os frameworks frameworks \cite{IEEEGlossary}.
 
-    Os artefatos alicerçantes de \textit{software} nascem com objetivo de
-    prover soluções genéricas que acabam, por vezes, ocasionando situações em que
-    lógica de negócio, principal parte da aplicação em desenvolvimento,
+    Os artefatos alicerçantes do \textit{software} nascem com objetivo de
+    prover soluções genéricas que acabam, por vezes, provocando situações em que
+    lógica de negócio, principal parte da nova aplicação em desenvolvimento,
     mistura-se com as soluções por elas providas implicando, assim, em um acoplamento
-    potêncialmente perigoso e tóxico às manutenções, extensões e testes
+    potêncialmente perigoso e tóxico às ações de manutenção, extensão e testes
     \cite{evans2004domain, uncleBob2017}.
 
     % V. Conclusão da introdução - Pode-se evitar a dependência ?
-    O problema que se apresenta possui inúmeras análises de inúmeros
-    autores que buscam extender o estado da arte no âmbito do \textit{software}
-    e seus alicerces dependidos. Buscam, eles, padrões que equilibrem
-    os antônimos omnipresentes na tecnologia da informação: dependência/independência.
+    Vários autores já analisaram tal problemática em prol de extender o estado
+    da arte no âmbito do \textit{software} e seus alicerces dependidos. Buscam,
+    eles, metodologias ótimas que equilibrem os antônimos omnipresentes na
+    tecnologia da informação: dependência/independência.
     
-    Tais análises partem das experiências de seus autores e devem, no esforço acadêmico,
-    serem experimentadas concomitantemente com ambientes possuidores de diversas
-    variáveis mutáveis. Avaliar-se-á a aplicabilidade por meio de projetos
-    observantes do que apontou-se como problema aplicando-lhe uma ou várias soluções
-    propostas.
+    Tais análises partem das experiências de seus autores e devem, no esforço
+    acadêmico, serem experimentadas concomitantemente com ambientes possuidores
+    de plúrimos parâmetros diferentes como a tecnlogia e ambiente de demanda.
 
     \input{textuais/capitulo_1/sub-topicos/ContextualizacaoEProblema}
     % Objetivos (geral e específicos)
