@@ -110,21 +110,52 @@
     demais camadas satélites que permitem a funcionalidade de tal domínio ao
     usuário final.
 
+    \begin{figure}[h]
+      \centering
+      \caption{ Modelo de Camadas Notáveis em Sistemas de Acordo com \ac{ddd}. }
+      \includegraphics[scale=0.8]{lib/layered-ddd.png}
+      \source{ Erick Evans 2004 {\imprimirdata}}
+      \label{fig:figura}
+    \end{figure}
+
     Semelhantemente, \citeonline{alistairHexagonal2005}, em seu artigo original, define
     um padrão majoritariamente comoposto de classes adaptadoras que possibilitam a separação
-    do que ele chamou de "aplicação" do \textit{outside world} \(mundo externo\).
+    do que ele chamou de "aplicação" do \textit{outside world} "mundo externo".
 
-    Mais a frente \citeonline[p. 189]{uncleBob2017} define, mais
-    abragentemente, categorias separadas em \textit{business rules} \(regras de
-    negócio\) e demais partes satélites que possibilitam que tais regras sejam
-    utilizáveis.
+    \begin{figure}[h]
+      \centering
+      \caption{ Modelo Hexagonal com Classes Adaptadoras Interligando Domínio e Dependências. }
+      \includegraphics[scale=1.2]{lib/hexagonal-original.png}
+      \source{ Alistair Cockburn 2005 {\imprimirdata}}
+      \label{fig:figura}
+    \end{figure}
 
-    \citeonline[p. 52]{evans2004domain} inicialmente aponta, reiterando o
-    motivo pelo qual tantos autores pensam semelhantemente sobre o mesmo problema,
-    o comum malefeito oriundo do espalhamento de regras de negócio
-    sobre uma ampla área técnica do software que não a do exclusivo domínio
-    que possui as regras do negócio a qual a aplicação visa atender.
+    Mais a frente \citeonline[p.~189]{uncleBob2017} define categorias separadas
+    em \textit{business rules} "regras de negócio" e demais partes satélites
+    que possibilitam que tais regras sejam úteis na forma de uma aplicação
+    utilizável.
 
+    Em conclusão sintética, tais autores trataram acerca de um mesmo problema
+    que possui um conjunto de caracteristicas semelhantes e satélites do
+    conceito de dependência. O \textit{software} constroi-se envolto em
+    um meio que o permite ser útil ao usuário final. O meio, de forma genérica, 
+    possuidor das seguintes caracteristicas:
+
+    \begin{itemize}
+        \item{ Interfaces gráficas. }
+        \item{ Persistência da informação (bancos de dados). }
+        \item{ Comunicação entre computadores em redes TCP/IP. }
+        \item{ Segurança da informação por criptografia e hashing. }
+        \item{ Especificidades da infraestrutura em que a aplicação executa. }
+        \item{ Manipulação de dispositivos computacionais de entrada ou saída. }
+    \end{itemize}
+
+    \citeonline[p. 52]{evans2004domain} aponta que o \textit{software} pode, 
+    em processos de desenvolvimento descuidados, espalhar as regras do domínio
+    de negócios sobre algumas ou todas partes sobrelistadas.
+
+
+    %TODO: apontar como não sendo foco o criticismo
     Apesar todas as visões apresentadas dos parágrafos superiores aparentarem
     ser ótimas, há, de fato, um criticismo na forma pela qual tais orientações
     evoluem em complexidade nos projetos acarretando em problemas de

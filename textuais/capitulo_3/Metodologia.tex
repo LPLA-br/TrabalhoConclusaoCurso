@@ -18,26 +18,29 @@
     % propriedades: ferramentas, métodos e técnicas
     % abordagem mista.
 
-    O presente trabalho adota o procedimentoo experimental sob método dedutivo
-    onde, a partir de um experimento real, deduzir-se-á uma conclusão
-    sobre o atual estado da arte em técnicas de escrita de software
-    sobre o paradigma orientado a objetos. Tudo isto respeitando
-    limites e viezes impostos pela a ótica e experiência do autor.
+    O presente trabalho adota o procedimento experimental onde deduzir-se-á uma
+    conclusão sobre o atual estado da arte em técnicas de escrita de software
+    sobre o paradigma orientado a objetos. Tudo isto respeitando limites e
+    viezes impostos pela a ótica e experiência do autor.
 
-    Os procedimentos metodológicos técnicos adotados pela parte prática
-    da pesquisa são providos por obras pertinentes ao campo da
-    engenharia de software. Princípios, padrões e fundamentos são
-    aplicados para reforço e avalição de práticas.
+    Os procedimentos metodológicos técnicos adotados pela parte prática da
+    pesquisa são providos por obras pertinentes ao campo da engenharia de
+    software. Princípios, padrões e fundamentos são aplicados sob demanda em
+    reforço e avalição de práticas metodológicas do software.
 
     O projeto prático consiste de uma aplicação para redes TCP/IP. Trata-se de
-    um software cujas funcionalidades atendem necessidades de controle e
-    monitoramento de recursos e e processos em ambiente de negócios de pequeno
-    impacto no ramo da produção de peças de vestuário.
+    um \textit{software} cujas funcionalidades provêem controle e informação
+    rápida sob processos e recursos em ambiente de negócio microempreendedor
+    no ramo da produção e consertos de peças de vestuário. Tendo em vista os
+    recursos limitados de tais empreendimentos a aplicação desenvolve-se com
+    foco em uma infraestrutura de computadores local ao negócio que o utiliza.
+    Tal detalhe o faz ter uma implantação simples e segura que é demonstrada
+    graficamente abaixo:
 
     \begin{figure}[h]
       \centering
       \caption{ Diagrama Deployment Infraestrutura Local de Rede. }
-      \includegraphics{lib/nodes-uml.png}
+      \includegraphics[scale=0.5]{lib/nodes-uml.png}
       \source{ O Autor {\imprimirdata}}
       \label{fig:figura}
     \end{figure}
@@ -62,7 +65,7 @@
     \begin{figure}[h]
       \centering
       \caption{ Fluxos de Processos Adotados. }
-      \includegraphics{lib/atividades-processo.png}
+      \includegraphics[scale=0.5]{lib/atividades-processo.png}
       \source{ Pressman 2021 {\imprimirdata}}
       \label{fig:figura}
     \end{figure}
@@ -70,7 +73,8 @@
     Arquiteturalmente a aplicação adota um modelo em camadas onde cada camada é
     responsável por uma macro-responsabilidade. A garantia de separação entre
     domínio e funcionalidades satélites dar-se por orientação da \textit{Hexagonal Architecture}
-    que faz uso massivo e simples de classes adaptadoras.
+    que faz uso massivo e simples de classes adaptadoras que fornecem uma ponte entre o
+    \textit{software} desenvolvido e seu meio necessário à utilidade.
 
     % CLASSIFICAÇÃO EVANS DDD
     % Entidades, ValueObjects, Services, Packages.
@@ -81,7 +85,7 @@
     \begin{figure}[h]
       \centering
       \caption{ Diagrama Deployment Para Componentes Possuidores de Várias Classes. }
-      \includegraphics{lib/deployment-uml.png}
+      \includegraphics[scale=0.4]{lib/deployment-uml.png}
       \source{ O Autor {\imprimirdata}}
       \label{fig:figura}
     \end{figure}
