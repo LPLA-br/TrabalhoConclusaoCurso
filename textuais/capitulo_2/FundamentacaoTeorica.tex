@@ -20,9 +20,11 @@
 
     %INTRODUÇÃO À SEÇÃO
 
-    Esta seção apresenta uma breve revisão das obras mais importantes de autores
-    acerca da separação de responsabilidades, desacoplamento e design ruim em
-    softwares.
+    Esta seção apresenta uma breve revisão das obras mais importantes de
+    autores que tratam acerca dos métodos capazes de mitigar os efeitos
+    adversos presentes em práticas, em padrões e arquiteturas, que mostraram-se
+    danosas à qualidade do \textit{software} sob o paradigma de programação
+    orientada a objetos \ac{oop}.
 
     % orientação a objetos - pilares
     Antes de avançar sobre conceitos arquiteturais e de padrões de projetos,
@@ -34,28 +36,28 @@
     deixara claro, ao discutir acerca dos paradigmas de sua época, que o conceito, no
     âmbito do desenvolvimento de software, consiste na forma como programas são feitos.
 
-    Os paradigmas surgiram concomitantemente com o desenvolvimento de liguagens de
+    Os paradigmas surgiram concomitantemente com o desenvolvimento de linguagens de
     programação, em especial nas de alto nível que abstraiam a implementação binária
     direta de instruções, possibilitando uma implementação mais humana e menos complexa
     \cite[p.~8-]{Sammet1969languages}.
 
-    Inicialmente há o surgimento, com o desenvolvimento da arquitetura de Von Neumann,
+    Inicialmente houve o surgimento, com o desenvolvimento da arquitetura de Von Neumann,
     do primeiro paradigma, o Imperativo que trazia os conceitos fundamentais de estado
-    e ação modificante do estado. Sua influência é, até hoje, enorme e serviu de núcleo
+    e ação modificante do estado. Sua influência é, até hoje, enorme e serviu de base
     para paradigmas posteriores \cite[p.~1]{jungthon2009paradigmas}.
 
     Com o aumento de complexidade dos sistemas, surge o paradigma estruturado
     que definia a sequência, iteração e decisão como sendo as partes
-    fundamentais de qualquer programa implementável
-    \cite{Dijkstra1972structured}.
+    fundamentais de qualquer programa implementável \cite{Dijkstra1972structured}.
 
-    Por fim, a orientação a objetos, inicialmente implantadas nas linguagens Simula(1962) e
-    Smalltalk(1972), traz os conceitos de objeto como uma abstração de qualquer elemento
+    Por fim, a orientação a objetos, inicialmente implantadas nas linguagens Simula 1962 e
+    Smalltalk 1972, traz os conceitos de objeto como uma abstração de qualquer elemento
     da vida real que interage separadamente com outros por meio de "mensagens"
     \cite[p.~52-55]{rentsch1982object}.
 
-    O paradigma orientado a objetos originou, de acordo com a síntese de outros autores presente em
-    \citeonline{kasture2019pillars}, quatros pilares fundamentais sobre a implementação definidos como:
+    O paradigma orientado a objetos originou, de acordo com a síntese de outros
+    autores presente em \citeonline{kasture2019pillars}, os quatros pilares
+    fundamentais sobre da implementação \ac{oop} definidos como:
 
     \begin{itemize}
       \item{ Abstração \- capacidade de representar um subconjunto de atributos e comportamentos de uma entidade real }
@@ -66,24 +68,44 @@
 
 %   Superconjuntos dos fundamentos OOP
 
-    O paradigma orientado a objetos possibilitou o desenvolvimento de padrões
-    de projeto e princípios definidos por procedimentos reprodutíveis e
-    possuidores características periódicas que extendem os quatro pilares
-    fundamentais possibilitando solução ou mitigação de problemas oriundos do
-    design \ac{oop} \cite[p.~19-20]{gamma1993design}.
+    O paradigma \ac{oop} adjunto de seus fundamentais pilares possibilitou o
+    desenvolvimento de princípios e padrões de projeto. Ambos sendo peças
+    metodológicas possuidoras de características relativamente periódicas que
+    extendem os quatro pilares fundamentais possibilitando solução ou mitigação
+    de problemas existentes no desenho \ac{oop} \cite[p.~19-20]{gamma1993design}.
+
+    Por sua vez, os princípios, mais abragentes e abstratos, influênciam um
+    contexto mais fundamental e abstrato. Embora não constituam obrigação são,
+    de fato, recomendações cuja credibilidade fundamenta-se na experiência de
+    profissionais de longa data, aplicabilidade ampla em inúmeras tecnologias
+    implementacionais, consequências relativamente previsíveis.
+
+%   Um parágrafo para:
+%   SOLID, Object Calisthenics
+%   DRY Dont Repeat yourself(reduzir duplicação de conhecimento),
+%   KISS Keep It Simple, Stupid, SoC Separation of concerns
+%   Least Astonishment(comportamento previsível ao usuário), FF Fail Fast
+
+    O SOLID, produto da análise de \citeonline[et all.]{uncleBob2017} trata, em
+    cinco pontos interconexos, acerca da forma de se modelar um abstrato
+    conjunto de classes. A responsabilidade única da classe com entidade,
+    priorização da ação de extender sobre a ação de modificar, preservação da
+    relação de substituição entre classe base e derivada em herança e a
+    inversão de dependências por contratos abstratos.
+
+    O \textit{Object Calithenics} de \citeonline{ObjectCalisthenics2008} trás
+    sete caminhos pelos quais um sistema conforma-se-á mais com os quatro
+    pilares fundamentais do paradigma \ac{oop}.
 
     Os padrões, responsáveis por tratarem a forma como as classes/objetos
     interagem, possuem quatro propriedades fundamentais que os definem: Um nome
-    padrão, um problema que eles propõem-se a resolver, a especificação geral
-    da solução que resolve o problema e as consequências positivas e negativas
-    de adotá-lo \cite[p.~19 et al.]{gamma1993design}.
+    padronizado, um problema comum a resolver, a especificação geral da solução
+    que resolve ou mitiga o problema alvo e as consequências positivas e
+    negativas de adotá-lo \cite[p.~19 et al.]{gamma1993design}.
 
-    Indo além dos padrões, tem-se princípios, mais abragentes e abstratos,
-    aplicam-se em um contexto mais fundamental. Embora não constituam
-    obrigação são, de fato, boas recomendações para melhoria de qualidade.
-    No cenário atual destacam-se, em nível industrial, o conjunto de cinco regras
-    chamado pela sigra SOLID e o seu "detalhamento prático" o \textit{Object calisthenics}
-    \cite{ObjectCalisthenics2008, uncleBob2017}.
+    Como exemplo, o padrão \textit{Adapter} constitui-se como um objeto
+    cujos os métodos são capazes de traduzir chamadas entre código cliente
+    e o código servidor.
 
 %   Distânciar-se mais padrões, por possui escopo muito amplo, e focar em arquiteturas.
 
