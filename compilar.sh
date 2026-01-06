@@ -9,3 +9,7 @@
 # resolução de referências cruzadas
 /usr/bin/pdflatex -output-directory=build ./Principal.tex;
 /usr/bin/pdflatex -output-directory=build ./Principal.tex;
+
+# cópia de Principal.pdf para diretório fora de build/
+cp ./build/Principal.pdf ./Principal.pdf;
+
