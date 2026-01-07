@@ -18,43 +18,25 @@
     % propriedades: ferramentas, métodos e técnicas
     % abordagem mista.
 
-    Todo software surgirá, de acordo com \citeonline[p. 244]{rogerPressman2021}
-    , em conformidade com o processo fundamental de levantamento de requisitos.
-    Ele define esse processo como sendo o precessor de qualquer esforço
-    prático de engenharia.
+    \textit{detalhar processo que desenvolvimento executará}
 
-    À esta etapa contribui plúrimas pessoas como clientes, gerentes e usuários
-    de um ambiente de negócios. Objetiva-se estabelecer os requisitos nucleares
-    uma ferramenta capaz de resolver um ou vários problemas informacionais
-    crônicos do negócio.
+    Este trabalho, em sua essência experimental, desenvolver-se-á ao redor de um
+    projeto prático real, aqui definido como objeto prático. Sua construção
+    se orienta pela metodologia aqui tratada.
 
-    E foi a partir da etapa fundamental de levantamento de requisitos que se
-    inicia as etapas de desenvolvimento de uma aplicação voltada para micro
-    empreendedoras da área de confecção têxtil.
+    Todo software surgirá, de acordo com \citeonline[p. 244]{rogerPressman2021},
+    em conformidade com o processo fundamental de levantamento de requisitos.
+    Ele define esse processo como sendo o início fundamental de todo esforço
+    prático de engenharia de software.
 
-    Partiu-se do pressuposto de que todo empreendimento de costura informal
-    poderiar possuir problemas comuns de ingerência de suas informações. A
-    partir deste pressuposto estabeleceu-se um canal de comunicação coloquial
-    com profissional com anos de experiência de atuação autônoma próxima
-    ao autor.
+    As partes envolvidas nesta etapa são, no geral, clientes, funcionários,
+    gerentes, administradores e, nos casos em que o sistema já é usado no
+    estado em que se encontra, usuários. Todos eles contribuem na consolidação
+    estável de um conjunto de caracteristicas que o sistema deve possuir para
+    ser informacionalmente útil ao empreendimento.
 
-    A comunicação inicial revelou situações problemáticas onde: os prazos são
-    esquecidos, o levantamento de custos com insumos usados em confecções e
-    concertos é ignorado e armazenamento irregular de medidas corporais por
-    vezes dificulta consultas rápidas e confunde quando em consultado
-    dados obsoletos.
-
-    Quanto aos requisitos não funcionais, concluiu-se que sistema atuante em
-    redes locais seria, em materia de confiabilidade, custo e legalidade, mais
-    adequado para estes ambientes de processos simples porém fundamentais.
-
-    \begin{figure}[h]
-      \centering
-      \caption{ Diagrama da Infraestrutura Local de Rede. }
-      \includegraphics[scale=0.5]{lib/nodes-uml.png}
-      \source{ O Autor {\imprimirdata}}
-      \label{fig:figura}
-    \end{figure}
+    O conjunto de requisitos feito a partir da comunicação constante guia todas
+    as etapas posteriores.
 
     Seguindo a etapa metodológica comunicativa, \citeonline{rogerPressman2021}
     define outras quatro atividades metodologicas fundamentais a todo projeto
@@ -68,8 +50,12 @@
       \item{ Entrega \- Testes, implantação e monitoramento mais preparação para proxima iteração. }
     \end{itemize}
 
-    E também o fluxo como tais atividades fundamentais
-    podem ser executadas temporalmente:
+    Essas etapas foram, de modo a não tornar complexo o trabalho, incorporadas
+    às atividades fundamentais do objeto prático do trabalho.
+
+    Além de um conjunto bem definido e aparentemente linear de tarefas, uma
+    organização temporal própria deve ser adotada. Destacou-se, para a finalidade
+    deste trabalho, os seguintes ordenamentos temporais:
 
     \begin{figure}[h]
       \centering
@@ -79,14 +65,20 @@
       \label{fig:figura}
     \end{figure}
 
-    A solução desenvolvida configurou-se, em questão de ordem dos processos,
-    como sendo semi linear com capacidade para iteração entre etapas internas
-    ou iteração de todas etapas. Entretanto não foi planejado prazos para
-    construção dos componentes do software.
+    O objeto prático temporalmente assume, na execução de suas etapas,
+    seguimento semi-linear com capacidade para iteração entre etapas internas
+    ou iteração de todas etapas. Não define-se limites temporais
+    \(prazos\) nem estabelecimento de necessidade entrega de partes usáveis a
+    usuários finais.
 
-    Arquiteturalmente a aplicação adota um modelo em camadas onde cada camada é
-    responsável por uma macro-responsabilidade definida ainda no levantamento
-    de requisitos.
+    Determinada a forma como as etapas são executadas, seguir-se-á para como o
+    sistema se estrutura. Aqui reside o cerne das questões levantadas em problemática.
+
+    Arquiteturalmente a aplicação adota um modelo tradicional camadas onde cada
+    camada é responsável por uma responsabilidade definida ainda no
+    levantamento de requisitos.
+
+    \textit{detalhar }
 
     A garantia de separação entre domínio e funcionalidades satélites dar-se
     por orientação da \textit{Hexagonal Architecture} que faz uso massivo e
