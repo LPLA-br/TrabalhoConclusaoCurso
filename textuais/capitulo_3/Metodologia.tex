@@ -18,37 +18,47 @@
     % propriedades: ferramentas, métodos e técnicas
     % abordagem mista.
 
-    O presente trabalho adota o procedimento experimental onde deduzir-se-á uma
-    conclusão sobre o atual estado da arte em técnicas de escrita de software
-    sobre o paradigma orientado a objetos. Tudo isto respeitando limites e
-    viezes impostos pela a ótica e experiência do autor.
+    Todo software surgirá, de acordo com \citeonline[p. 244]{rogerPressman2021}
+    , em conformidade com o processo fundamental de levantamento de requisitos.
+    Ele define esse processo como sendo o precessor de qualquer esforço
+    prático de engenharia.
 
-    Os procedimentos metodológicos técnicos adotados pela parte prática da
-    pesquisa são providos por obras pertinentes ao campo da engenharia de
-    software. Princípios, padrões e fundamentos são aplicados sob demanda em
-    reforço e avalição de práticas metodológicas do software.
+    À esta etapa contribui plúrimas pessoas como clientes, gerentes e usuários
+    de um ambiente de negócios. Objetiva-se estabelecer os requisitos nucleares
+    uma ferramenta capaz de resolver um ou vários problemas informacionais
+    crônicos do negócio.
 
-    O projeto prático consiste de uma aplicação para redes TCP/IP. Trata-se de
-    um \textit{software} cujas funcionalidades provêem controle e informação
-    rápida sob processos e recursos em ambiente de negócio microempreendedor
-    no ramo da produção e consertos de peças de vestuário. Tendo em vista os
-    recursos limitados de tais empreendimentos a aplicação desenvolve-se com
-    foco em uma infraestrutura de computadores local ao negócio que o utiliza.
-    Tal detalhe o faz ter uma implantação simples e segura que é demonstrada
-    graficamente abaixo:
+    E foi a partir da etapa fundamental de levantamento de requisitos que se
+    inicia as etapas de desenvolvimento de uma aplicação voltada para micro
+    empreendedoras da área de confecção têxtil.
+
+    Partiu-se do pressuposto de que todo empreendimento de costura informal
+    poderiar possuir problemas comuns de ingerência de suas informações. A
+    partir deste pressuposto estabeleceu-se um canal de comunicação coloquial
+    com profissional com anos de experiência de atuação autônoma próxima
+    ao autor.
+
+    A comunicação inicial revelou situações problemáticas onde: os prazos são
+    esquecidos, o levantamento de custos com insumos usados em confecções e
+    concertos é ignorado e armazenamento irregular de medidas corporais por
+    vezes dificulta consultas rápidas e confunde quando em consultado
+    dados obsoletos.
+
+    Quanto aos requisitos não funcionais, concluiu-se que sistema atuante em
+    redes locais seria, em materia de confiabilidade, custo e legalidade, mais
+    adequado para estes ambientes de processos simples porém fundamentais.
 
     \begin{figure}[h]
       \centering
-      \caption{ Diagrama Deployment Infraestrutura Local de Rede. }
+      \caption{ Diagrama da Infraestrutura Local de Rede. }
       \includegraphics[scale=0.5]{lib/nodes-uml.png}
       \source{ O Autor {\imprimirdata}}
       \label{fig:figura}
     \end{figure}
 
-    A obra \citeonline[p. ~83]{rogerPressman2021} define o software como sendo
-    um processo iterativo de aprendizado e resultado. Assim como a pesquisa
-    científica, o processo possui atividades metodológicas com características
-    geralmente iguais.
+    Seguindo a etapa metodológica comunicativa, \citeonline{rogerPressman2021}
+    define outras quatro atividades metodologicas fundamentais a todo projeto
+    ativo de software:
 
     \begin{itemize}
       \item{ Comunicação \- Partes comunicam-se para conhecimento do que deve ser implementado. }
@@ -58,9 +68,8 @@
       \item{ Entrega \- Testes, implantação e monitoramento mais preparação para proxima iteração. }
     \end{itemize}
 
-    A mesma obra apresenta fluxos fundamentais para as atividades metodológicas
-    acima expostas. Dentre as quais o fluxo processual linear com possibilidade
-    de iteração de etapa é adotado neste corrente trabalho.
+    E também o fluxo como tais atividades fundamentais
+    podem ser executadas temporalmente:
 
     \begin{figure}[h]
       \centering
@@ -70,10 +79,18 @@
       \label{fig:figura}
     \end{figure}
 
+    A solução desenvolvida configurou-se, em questão de ordem dos processos,
+    como sendo semi linear com capacidade para iteração entre etapas internas
+    ou iteração de todas etapas. Entretanto não foi planejado prazos para
+    construção dos componentes do software.
+
     Arquiteturalmente a aplicação adota um modelo em camadas onde cada camada é
-    responsável por uma macro-responsabilidade. A garantia de separação entre
-    domínio e funcionalidades satélites dar-se por orientação da \textit{Hexagonal Architecture}
-    que faz uso massivo e simples de classes adaptadoras que fornecem uma ponte entre o
+    responsável por uma macro-responsabilidade definida ainda no levantamento
+    de requisitos.
+
+    A garantia de separação entre domínio e funcionalidades satélites dar-se
+    por orientação da \textit{Hexagonal Architecture} que faz uso massivo e
+    simples de classes adaptadoras que fornecem uma ponte entre o
     \textit{software} desenvolvido e seu meio necessário à utilidade.
 
     % CLASSIFICAÇÃO EVANS DDD
