@@ -65,8 +65,7 @@
       \item{ Polimorfismo \- capacidade de mutação de comportamentos por sobrescrita }
     \end{itemize}
 
-%   Superconjuntos dos fundamentos OOP
-
+    % dos pilares fundamentais para os padrões de projeto.
     Notoriamente, ao definirmos esses pilares, percebemos que eles
     possibilitaram o desenvolvimento de princípios e padrões de projeto ao
     longo do tempo de aprimoramento técnico do paradigma. Logo, como padrão de
@@ -74,46 +73,51 @@
     regular, flexível e aplicável em múltiplos projetos em prol
     de solucionar problemas recorrentes da \ac{oop} \cite[p.~19-20]{gamma1993design}.
 
-    %TODO: CONTINUA ...
-
+    % continuando para os princípios.
     Por sua vez, os princípios, mais abragentes e abstratos, influênciam um
-    contexto mais fundamental e abstrato. Embora não constituam obrigação são,
-    de fato, recomendações cuja credibilidade fundamenta-se na experiência de
-    profissionais de longa data, aplicabilidade ampla em inúmeras tecnologias
-    implementacionais, consequências relativamente previsíveis.
+    contexto mais amplo. Embora não constituam obrigação, eles são recomendações cuja
+    credibilidade funcional, fundamenta-se na experiência de profissionais
+    que trabalham por décadas sobre esse paradigma. Nesse sentido a aplicabilidade
+    dos princípios se baseia na: universalidade, idependência de tecnologia
+    implementacional e previsibilidade de consequências.
 
-%   Um parágrafo para:
-%   SOLID, Object Calisthenics
-%   DRY Dont Repeat yourself(reduzir duplicação de conhecimento),
-%   KISS Keep It Simple, Stupid, SoC Separation of concerns
-%   Least Astonishment(comportamento previsível ao usuário), FF Fail Fast
+    % Introduz apenas princípios básicos para andamento eficiente
+    % da Fundamentação teórica.
 
-    O SOLID, produto da análise de \citeonline[et all.]{uncleBob2017} trata, em
-    cinco pontos interconexos, acerca da forma de se modelar um abstrato
-    conjunto de classes. A responsabilidade única da classe com entidade,
-    priorização da ação de extender sobre a ação de modificar, preservação da
-    relação de substituição entre classe base e derivada em herança e a
-    inversão de dependências por contratos abstratos.
+    % PRINCÍPIOS DERIVADOS DOS PILARES
 
-    O \textit{Object Calisthenics} de \citeonline{ObjectCalisthenics2008} trás
-    sete caminhos pelos quais um sistema conforma-se-á mais com os quatro
-    pilares fundamentais do paradigma \ac{oop}.
+    Conseguinte aos princípios, apontamos o SOLID, onde CECIL MARTIN, Robin
+    \(2017\) classifica em cinco subprincípios interconectados, tais como: A
+    responsabilidade única da classe como entidade; priorização da ação de
+    extender sobre a ação de modificar; preservação da relação de substituição
+    entre classe base e derivada na herança; A segregação de interfaces como
+    forma de evitar construções desnecessárias e, por último, a inversão de
+    dependências por contratos abstratos pré-implementados.
 
-    Os padrões, responsáveis por tratarem a forma como as classes/objetos
-    interagem, possuem quatro propriedades fundamentais que os definem: Um nome
-    padronizado, um problema comum a resolver, a especificação geral da solução
-    que resolve ou mitiga o problema alvo e as consequências positivas e
-    negativas de adotá-lo \cite[p.~19 et al.]{gamma1993design}.
+    Por outro lado,
+    \citeonline{ObjectCalisthenics2008}, em \textit{Object Calisthenics}
+    enumera sete pontos pelos quais um sistema conformar-se-á mais com os quatro
+    pilares fundamentais do paradigma, onde para o autor surgirá como uma manifestação
+    em resposta à má qualidade do código \ac{oop} pré-existente.
 
-    Como exemplo, o padrão \textit{Adapter} constitui-se como um objeto
-    cujos os métodos são capazes de traduzir chamadas entre código cliente
-    e o código servidor.
+    % PADRÕES PROJETO
+
+    No tocante aos padrões de projeto, eles são responsáveis por tratarem a
+    forma como as classes/objetos interagem da mesma forma que possuem quatro
+    propriedades fundamentais: Um nome padronizado; um problema comum a
+    resolver; a especificação geral da solução que resolve ou mitiga o problema
+    alvo e as consequências positivas e negativas de adotá-lo \cite[p.~19 et
+    al.]{gamma1993design}.
+
+    Neste sentido, citamos o padrão \textit{Adapter} que, a princípio,
+    constitui-se como um objeto cujos os métodos são capazes de traduzir
+    chamadas entre código cliente e o código servidor.
 
 %   Distânciar-se mais padrões, por possui escopo muito amplo, e focar em arquiteturas.
 
-    No âmbito das arquitetura de sistemas houve o aprimoramento contínuo de
+    No que tange as arquiteturas de sistemas, apontamos que houve o aprimoramento contínuo de
     conceitos que promovem desacoplamento por meio da separação de
-    responsabilidades. O objetivo geral constituiu-se das seguintes
+    responsabilidades. Neste sentido, o objetivo geral se forma das seguintes
     propriedades ideais desejadas, como apontado por \cite[p. 202]{uncleBob2017}:
 
     \begin{itemize}
@@ -124,15 +128,15 @@
       \item{ Independência total das regras de negócio. }
     \end{itemize}
 
-    Arquiteturalmente houve o desenvolvimento initerrupto de conceitos
-    promovedores do separação de responsabilidades principalmente em
-    arquiteturas baseadas em camadas. Chegou-se à conclusão universal de que
-    todo o software possui, em seu código fonte, dois elementos distinguíveis
-    categoricamente. Cada autor o definiu de formas levemente diferentes.
+    Notadamente o somatório dessas propriedades,levam ao desenvolvimento
+    initerrupto de conceitos, que são promovedores da separação de
+    responsabilidades, principalmente em arquiteturas baseadas em camadas.
+    Diante do exposto, chegou-se à conclusão universal de que todo o software
+    possui, em seu código fonte, dois elementos distinguíveis categoricamente,
+    onde cada autor o definiu de formas levemente diferentes.
 
-    \citeonline[p. 51]{evans2004domain} refere-se ao domínio em separação das
-    demais camadas satélites que permitem a funcionalidade de tal domínio ao
-    usuário final.
+    \citeonline[p. 51]{evans2004domain} enuncia que o domínio da aplicação
+    separa-se das demais camadas que provêem sua funcionalidade..
 
     \begin{figure}[h]
       \centering
@@ -159,11 +163,11 @@
     que possibilitam que tais regras sejam úteis na forma de uma aplicação
     utilizável.
 
-    Em conclusão sintética, tais autores trataram acerca de um mesmo problema
-    que possui um conjunto de caracteristicas semelhantes e satélites do
-    conceito de dependência. O \textit{software} constroi-se envolto em
-    um meio que o permite ser útil ao usuário final. O meio, de forma genérica, 
-    possuidor das seguintes caracteristicas:
+    Neste sentido, seguindo a lógica desses autores, apontamos que eles tratam
+    acerca de um mesmo problema, que possui um conjunto de caracteristicas
+    semelhantes e próximas do conceito de dependência. O \textit{software}
+    constroi-se envolto em um meio que o permite ser útil ao usuário final
+    possuidor das seguintes propriedades
 
     \begin{itemize}
         \item{ Interfaces gráficas. }
@@ -174,13 +178,14 @@
         \item{ Manipulação de dispositivos computacionais de entrada ou saída. }
     \end{itemize}
 
+    Diante do exposto, como forma de fortalecer estes pontos,
     \citeonline[p. 52]{evans2004domain} aponta que o \textit{software} pode, 
     em processos de desenvolvimento descuidados, espalhar as regras do domínio
     de negócios sobre algumas ou todas partes sobrelistadas.
 
-    Apesar todas as visões apresentadas dos parágrafos superiores aparentarem
-    ser ótimas, há, de fato, um criticismo na forma pela qual tais orientações
-    evoluem em complexidade nos projetos acarretando em problemas de
+    Apesar dos conceitos apresentados dos parágrafos superiores aparentarem
+    ser ótimas, existe, de fato, um criticismo na forma pela qual tais orientações
+    podem evoluir em complexidade nos projetos acarretando em problemas de
     complexidade e excesso de engenharia como causa e o desenvolvimento menos
     ágil em função da maior massividade de código fonte como consequência
     \cite{redGreenwp2015}.
