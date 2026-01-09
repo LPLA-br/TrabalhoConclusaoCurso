@@ -16,100 +16,100 @@
     %validade e confiabilidade dos resultados.
     
     % propriedades: ferramentas, métodos e técnicas
-    % abordagem mista.
 
-    \textit{detalhar processo que desenvolvimento executará}
+    % introdução da metodologia
+    A presente seção tem o intuito de apresentar quais métodos, dentre os mais
+    diversos presentes em obras técnicas, foram selecionados para possibilitar a
+    definição de um processo funcional consolidador do objeto experimental
+    deste trabalho.
 
-    Este trabalho, em sua essência experimental, desenvolver-se-á ao entorno de
-    um projeto real, aqui definido como objeto prático. Sua construção se orienta
-    pela metodologia aqui apresentada em função dos conhecimentos úteis da engenharia
-    e arquitetura de \textit{software} comum.
+    Assim, ao definir como objetivos a independência estrita do software para
+    com suas dependências em observância do que se foi definido como meio para
+    atingir tal estado nas obras de grandes autores, parte-se, então, para uma
+    proposta metodológica simples porem efetiva.
 
-    Todo software surgirá, de acordo com \citeonline[p. 244]{rogerPressman2021},
-    em conformidade com o processo fundamental de levantamento de requisitos.
-    Ele define esse processo como sendo o início fundamental de todo esforço
-    prático de engenharia de software.
+    %etapas
+    A principio todo \textit{software} surgirá, de acordo com
+    \citeonline[p.244]{rogerPressman2021}, em conformidade com o processo de
+    levantamento dos requisitos funcionais. Dessa maneira, ele aponta esta
+    etapa como sendo o marco inicial de todo esforço de engenharia de sistemas
+    que decorre-se sobre uma comunicação constante de partes interessadas.
 
-    As partes envolvidas nesta etapa são, no geral: clientes, funcionários,
-    gerentes, administradores e, nos casos em que o sistema já é usado no
-    estado em que se encontra, usuários. Todos eles contribuem na consolidação
-    estável de um conjunto de caracteristicas que o sistema deve possuir para
-    ser informacionalmente útil ao empreendimento.
+    %partes envolvidas
+    Indo além, caracteriza-se como partes interessadas: clientes; funcionários;
+    gerentes; administradores e, nos casos em que o sistema já é usado no
+    estado em que se encontra, usuários. Todos eles contribuintes de um
+    processo que resultará, em situações ideais, num sistema possuidor de
+    total utilidade ao empreendimento para o qual fora desenvolvido.
 
-    Seguindo a etapa prima metodológica comunicativa, \citeonline{rogerPressman2021}
-    define mais outras quatro atividades fundamentais a qualquer projeto
-    ativamente desenvolvido, são elas:
+    Dessa forma, partindo desta etapa metodológica comunicativa essencial
+    \citeonline{rogerPressman2021} pontua mais outras quatro atividades
+    fundamentais a qualquer projeto ativamente desenvolvido.
 
     \begin{itemize}
       %\item{ Comunicação \- Partes comunicam-se para conhecimento do que deve ser implementado. }
-      \item{ Planejamento - organiza-se como usar recursos durante tempo eficientemente. }
-      \item{ Modelagem \-  modela-se/arquitetur-se como o sistema final estruturar-se-á. }
-      \item{ Construção \- implementa-se/escreve-se o sistema. }
-      \item{ Entrega \- Testes, implantação, monitoramento, administração e preparação para proxima iteração. }
+      \item{ Planejamento - Organiza-se como usar recursos durante tempo eficientemente. }
+      \item{ Modelagem -  Modela-se/arquitetur-se como o sistema final estruturar-se-á. }
+      \item{ Construção - Implementa-se/escreve-se o sistema. }
+      \item{ Entrega - Testes, implantação, monitoramento, administração e preparação para proxima iteração. }
     \end{itemize}
 
-    Essas etapas foram, de modo a não tornar complexo o trabalho, incorporadas,
-    em sua forma inalterada, às atividades fundamentais do objeto prático deste trabalho.
-
-    Além de um conjunto bem definido e aparentemente linear de tarefas, uma
-    organização temporal própria também deve ser adotada. Destacou-se, para a finalidade
-    deste trabalho, os seguintes ordenamentos temporais:
+    %fluxo das etapas
+    Ademais, partir de um conjunto bem definido e aparentemente linear de
+    tarefas não é suficiente pois uma organização temporal própria também deve
+    ser admitida, tendo em visto que todo esforço técnico pode se desenrolar
+    em finitas organizações temporalmente válidas. Destaca-se, de modo a evitar
+    a complexidade, os fluxos de processos apontados pelo mesmo autor.
 
     \begin{figure}[h]
       \centering
-      \caption{ Fluxos de Processos Adotados. }
+      \caption{ Fluxos de Processos Apropriadamente Simples. }
       \includegraphics[scale=0.5]{lib/atividades-processo.png}
       \source{ Pressman 2021 {\imprimirdata}}
       \label{fig:figura}
     \end{figure}
 
-    O objeto prático temporalmente assume, na execução de suas etapas,
-    seguimento semi-linear com capacidade para iteração entre etapas internas
-    ou iteração de todas etapas. Não define-se limites temporais \(prazos\) nem
-    estabelecimento de necessidade entrega iterativa de segmentos usáveis a
-    usuários finais. Em outras palavras o projeto desenvolve-se de forma a
-    possuir total conformidade com os requisitos extraidos do ambiente de
-    negócios consultado.
+    % para planejamento e modelagem
+    Dado que, ao estabelecer um processo de etapas e fluxo bem definido
+    segue-se, dentro deste modelo, para a etapa de planejamento e modelagem onde macro
+    características significativas em impacto por todo o tempo de vida útil do
+    \textit{software} serão inreversivelmente assumidas.
 
-    Determinada as etapas e a própria forma como elas são executadas,
-    procede-se para como a estrutura do sistema é implementada. Aqui reside o
-    cerne das questões levantadas em problemática.
+    Por conseguinte, o sistema, arquiteturalmente, adota uma estruturação
+    usualmente conhecida sob o título de \textit{Hexagonal Architecture}
+    onde os objetos mais importantes da aplicação, denominados de objetos
+    de domínio de negócio, encontram-se isolados de objetos do ambiente
+    referidos como \textit{outside world} "mundo externo" \cite{alistairHexagonal2005}.
+    
+    Por fim, a garantia de separação entre domínio e funcionalidades
+    utilitárias dar-se-á por orientação da arquitetura sobrecitada que sinaliza
+    o uso de classes pertecentes ao padrão de projeto \textit{Adapter} como
+    meio de isolação.
 
-    Arquiteturalmente a aplicação adota um modelo tradicional de camadas onde
-    cada camada é responsável por uma responsabilidade definida ainda no
-    levantamento de requisitos.
-
-    %TODO: metodologia
-
-    A garantia de separação entre domínio e funcionalidades satélites dar-se
-    por orientação da \textit{Hexagonal Architecture} que faz uso massivo e
-    simples de classes adaptadoras que fornecem uma ponte entre o
-    \textit{software} desenvolvido e seu meio necessário à utilidade.
-
-    % CLASSIFICAÇÃO EVANS DDD
-    % Entidades, ValueObjects, Services, Packages.
-    % Aggregates, Factories, Repositories.
-    O modelo acamadado adotado orienta-se, com relação a classificação
-    de objetos, sobre o trabalho de \citeonline{evans2004domain}
+    O sistema, de modo a atender os objetivos, possui classes que intermediam
+    várias características indispensáveis à aplicação.
 
     \begin{figure}[h]
       \centering
-      \caption{ Diagrama Deployment Para Componentes Possuidores de Várias Classes. }
+      \caption{ Interação entre Classes Nucleares do Domínio o \textit{Outside World}. }
       \includegraphics[scale=0.4]{lib/deployment-uml.png}
       \source{ O Autor {\imprimirdata}}
       \label{fig:figura}
     \end{figure}
 
+    Uma vez que classes, em sistemas \ac{oop}, sempre possuem interelações
+    com suas semelhantes na forma de herança ou composição ocorre que, em
+    meios técnicos, discute-se acerca da necessidade de se priorizar uma sobre
+    a outra. Não obstante, o objeto deste trabalho assume uma abordagem mista
+    onde uma e outra são empregadas simultâneamente. 
 
-
-
-
-    % DESMARQUE SE QUISER READICIONÁ-LOS
+    Em suma, de modo a prosseguir em etapas posteriores ao planejamento e
+    modelagem que são construção e entrega, elas desenrolar-se-ão mais
+    apropriadamente sobre a seção de desenvolvimento que tratará mais
+    intimamente acerca do domínio que originou as classes ditas como nucleares.
 
     %\input{textuais/capitulo_3/sub-topicos/QuestoesDePesquisa}
-    
     %\input{textuais/capitulo_3/sub-topicos/PropostaMetodologica}
-    
     %\input{textuais/capitulo_3/sub-topicos/Atividades}
 
 \newpage
