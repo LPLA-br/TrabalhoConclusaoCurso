@@ -81,7 +81,7 @@
     \textit{software} serão inreversivelmente assumidas.
 
     Por conseguinte, o sistema, arquiteturalmente adota uma estruturação
-    usualmente conhecida sob o título de \textit{Hexagonal Architecture}
+    usualmente conhecida sob como \textit{Hexagonal Architecture}
     onde os objetos mais importantes da aplicação, denominados de objetos
     de domínio de negócio, encontram-se isolados dos demais objetos do ambiente
     referidos como \textit{outside world} "mundo externo" \cite{alistairHexagonal2005}.
@@ -102,18 +102,23 @@
       \label{fig:figura}
     \end{figure}
 
-    Uma vez que classes, em sistemas \ac{oop}, sempre possuem interelações
-    com suas semelhantes na forma de herança ou composição ocorre que, em
-    meios técnicos, discute-se acerca da necessidade de se priorizar uma sobre
-    a outra. Não obstante, o objeto deste trabalho assume uma abordagem mista
-    onde uma e outra são empregadas simultâneamente de acordo com o que se julga
-    mais adequado e conveniente no contexto. 
+    No entanto, exclui-se, de modo a seguir a linha do experimental, a parte
+    desenvolvida que provê interface ao usuário final. Logo sobra a escrita
+    do: Domínio de negócios; Adaptador de banco de dados e Adaptador para
+    comunicação usando protocolo de transporte.
+
+    No campo das classes, em sistemas \ac{oop}, há interelações entre elas na
+    forma de herança ou composição, ocorre que, em meios técnicos, discute-se
+    acerca da necessidade de se priorizar uma sobre a outra
+    \cite{rodriguesLenon2023}. Não obstante, o objeto deste trabalho assume uma
+    abordagem mista onde uma e outra são empregadas simultâneamente de acordo
+    com o que se julga mais adequado e conveniente ao contexto de implementação.
 
     Em suma, de modo a prosseguir mais proximamente ao domínio de negócios
     caberá, mais apropiadamente, ao desenvolvimento, tratar acerca dos detalhes
-    do domínio que inspirou a implementação deste experimento.
+    do domínio que orientou a implementação do experimento correspondente
+    aos objetivos.
     
-
     %\input{textuais/capitulo_3/sub-topicos/QuestoesDePesquisa}
     %\input{textuais/capitulo_3/sub-topicos/PropostaMetodologica}
     %\input{textuais/capitulo_3/sub-topicos/Atividades}
