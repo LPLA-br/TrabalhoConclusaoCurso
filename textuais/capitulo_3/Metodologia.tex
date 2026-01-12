@@ -18,21 +18,21 @@
     % propriedades: ferramentas, métodos e técnicas
 
     % introdução da metodologia
-    A presente seção tem o intuito de apresentar quais métodos, dentre os mais
-    diversos presentes em obras técnicas, foram selecionados para possibilitar a
-    definição de um processo funcional consolidador do objeto experimental
-    deste trabalho.
+    A presente seção tem o objetivo de apresentar quais métodos presentes em
+    obras técnicas serão selecionados para possibilitar a consolidação de um
+    processo funcional na construção do objeto experimental deste trabalho.
 
-    Assim, ao direcionar-se como objetivo nuclear a independência estrita do software para
-    com suas dependências, em observância do que se foi definido como meio para
-    atingir tal estado nas obras de grandes autores, parte-se, então, para uma
-    proposta metodológica simples porem efetiva.
+    Assim, ao se posicionar como objetivo nuclear a independência estrita do
+    software para com suas dependências, em observância do que se foi definido
+    como meio para atingir tal estado nas obras de grandes autores, conforme
+    citado anteriormente no referencial teórico, parte-se então para uma
+    proposta metodológica simples, porem efetiva.
 
     %etapas
     A principio todo \textit{software} surgirá, de acordo com
     \citeonline[p.244]{rogerPressman2021}, em conformidade com o processo de
-    levantamento dos requisitos funcionais. Dessa maneira, ele aponta esta
-    etapa como sendo o marco inicial de todo esforço de engenharia de sistemas
+    levantamento dos requisitos funcionais. Dessa maneira, ele aponta estas
+    etapas como sendo marco inicial de todo esforço de engenharia de sistemas,
     que decorre-se sobre uma comunicação constante de partes interessadas.
 
     %partes envolvidas
@@ -42,43 +42,51 @@
     processo que resultará, em situações ideais, num sistema possuidor de
     total utilidade ao empreendimento para o qual fora desenvolvido.
 
-    Dessa forma, partindo desta primeira etapa metodológica comunicativa
+    Dessa forma, partindo desta primeira etapa metodológica comunicativa,
     \citeonline{rogerPressman2021} pontua mais outras quatro atividades
-    fundamentais a qualquer projeto ativamente desenvolvido.
+    fundamentais a qualquer projeto ativamente desenvolvido, onde lista:
 
     \begin{itemize}
       %\item{ Comunicação \- Partes comunicam-se para conhecimento do que deve ser implementado. }
-      \item{ Planejamento - Organiza-se como usar recursos durante tempo eficientemente. }
-      \item{ Modelagem -  Modela-se/arquitetur-se como o sistema final estruturar-se-á. }
-      \item{ Construção - Implementa-se/escreve-se o sistema. }
-      \item{ Entrega - Testes, implantação, monitoramento, administração e preparação para proxima iteração. }
+      \item{ Planejamento - Organização de tempo e recursos; }
+      \item{ Modelagem -  Arquitetação e modelagem da estrutura do sistema; }
+      \item{ Construção - Escrita/Implementação do sistema; }
+      \item{ Entrega - Testes, implantação, monitoramento, administração e preparação para proxima iteração; }
     \end{itemize}
 
     %fluxo das etapas
-    Ademais, partir de um conjunto bem definido e aparentemente linear de
-    tarefas não é suficiente pois uma organização temporal própria também deve
-    ser admitida, tendo em visto que todo esforço técnico pode se desenrolar
-    em finitas organizações temporalmente válidas. Destaca-se, de modo a evitar
-    a complexidade, os fluxos de processos apontados pelo mesmo autor.
+    Neste sentido, partindo de um conjunto bem definido e aparentemente linear de
+    tarefas, encontramos que elas não são suficientes, pois apresentam uma organização
+    temporal própria, onde também devem ser admitidas, tendo em vista que todo esforço
+    técnico pode se desenrolar em finitas organizações temporalmente válidas, consolidadas
+    de modo a evitar a complexidade, os fluxos de processos apontados pelo mesmo autor.
+
+    Neste sentido, partindo de um conjunto bem definido e aparentemente linear
+    de tarefas, encontramos que elas não são suficientes, pois apresentam uma
+    organização temporal muito simplista, tendo em vista que todo esforço
+    técnico pode se desenrolar em finitas organizações temporalmente válidas,
+    consolidadas de modo a evitar a complexidade, os fluxos de processos
+    apontados pelo mesmo autor são mais adequadas.
 
     \begin{figure}[h]
       \centering
-      \caption{ Fluxos de Processos Apropriadamente Simples. }
+      \caption{ Fluxos de Processos. }
       \includegraphics[scale=0.5]{lib/atividades-processo.png}
       \source{ Pressman 2021 {\imprimirdata}}
       \label{fig:figura}
     \end{figure}
 
-    Em conclusão, admitiu-se uma flexibilização na execução de etapas mais
+    Diante dessa premissa, admitiu-se uma flexibilização na execução de etapas mais
     próxima de uma iteração entre etapas e ou de todas etapas. Logo, prazos
     formais não foram admitidos pelo fato de que a aplicação provavelente não
     será empregada para uso concreto.
 
     % para planejamento e modelagem
-    Com um processo de etapas e fluxo bem definido estabelecido segue-se,
-    dentro deste modelo, para a etapa de planejamento e modelagem onde macro
-    características significativas em impacto por todo o tempo de vida útil do
-    \textit{software} serão inreversivelmente assumidas.
+    Essa flexibilização, dar-se-á como um processo de etapas e fluxo bem
+    definido e estabelecido, seguindo dentro do modelo ora apresentado, cujo
+    objetivo atenderá as etapas de planejamento e modelagem, arquitetando uma macro
+    característica significativa em impacto por todo o tempo de vida útil do
+    \textit{software}.
 
     Por conseguinte, o sistema, arquiteturalmente adota uma estruturação
     usualmente conhecida sob como \textit{Hexagonal Architecture}
@@ -86,13 +94,14 @@
     de domínio de negócio, encontram-se isolados dos demais objetos do ambiente
     referidos como \textit{outside world} "mundo externo" \cite{alistairHexagonal2005}.
     
-    Por fim, a garantia de separação entre domínio e funcionalidades
-    utilitárias dar-se-á por orientação da arquitetura sobrecitada que sinaliza
+    Neste sentido, a garantia de separação entre domínio e funcionalidades
+    utilitárias, dar-se-á por orientação da arquitetura sobrecitada que sinaliza
     o uso de classes pertecentes ao padrão de projeto \textit{Adapter} como
     meio de isolação.
 
-    Em seguida, o sistema, de modo a atender os objetivos, possui classes que intermediam
-    várias características indispensáveis ao funcionamento da aplicação.
+    Além dessas funções, encontramos também que o sistema atende os objetivos,
+    possuidores das classes que intermediam as várias características
+    indispensáveis ao funcionamento da aplicação.
 
     \begin{figure}[h]
       \centering
@@ -103,16 +112,17 @@
     \end{figure}
 
     No entanto, exclui-se, de modo a seguir a linha do experimental, a parte
-    desenvolvida que provê interface ao usuário final. Logo sobra a escrita
-    do: Domínio de negócios; Adaptador de banco de dados e Adaptador para
-    comunicação usando protocolo de transporte.
+    desenvolvida que provê interface ao usuário final. Logo sobrará a escrita
+    do Domínio de negócios, do adaptador de banco de dados e do adaptador para
+    comunicação, onde usaremos um protocolo de transporte.
 
-    No campo das classes, em sistemas \ac{oop}, há interelações entre elas na
-    forma de herança ou composição, ocorre que, em meios técnicos, discute-se
-    acerca da necessidade de se priorizar uma sobre a outra
-    \cite{rodriguesLenon2023}. Não obstante, o objeto deste trabalho assume uma
-    abordagem mista onde uma e outra são empregadas simultâneamente de acordo
-    com o que se julga mais adequado e conveniente ao contexto de implementação.
+    No tocante, ao campo das classes em sistemas \ac{oop}, há interelações entre
+    elas na forma de herança ou composição. Entretanto, ocorre que, em meios
+    técnicos, discute-se acerca da necessidade de se priorizar a primeira sobre
+    a segunda \cite{rodriguesLenon2023}. Não obstante, o objeto deste trabalho
+    assume uma abordagem mista onde uma e outra são empregadas simultâneamente
+    de acordo com o que se julga mais adequado e conveniente ao contexto de
+    implementação.
 
     Em suma, de modo a prosseguir mais proximamente ao domínio de negócios
     caberá, mais apropiadamente, ao desenvolvimento, tratar acerca dos detalhes
