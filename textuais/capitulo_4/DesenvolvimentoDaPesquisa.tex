@@ -6,26 +6,25 @@
 %% sua pesquisa a proposta de solução da sua
 %% pesquisa e em caso do TCC II como ela foi implementada
 
-\section{\textbf{DESENVOLVIMENTO DA PESQUISA}}
+\section{\textbf{DESENVOLVIMENTO}}
     \label{sec:desenvolvimento-da-pesquisa}
     % remove nome do capítulo do cabeçalho
     %\input{textuais/capitulo_4/sub-topicos/PropostaDeSolucao}
 
     % para quem foi desenvolvido este sistema ?
-    O sistema objeto surge como uma solução para gerência de processos em
-    ateliês de costura. Em síntese, o domínio de negócios estudado é: local; de
-    impacto geograficamente limitado a pequena cidade; informal e exercido por
-    uma pessoa.
+    O domínio de negócios do objeto surge como uma solução para gerência
+    de processos em ateliês de costura. Em síntese, ele possui características:
+    ser local e causar impacto limitado em ambiente informal.
 
     Em virtude disto, partiu-se do pressuposto de que todo empreendimento de
     costura informal possuiria problemas comuns de ingerência de suas
     informações. Sendo assim, a partir deste pensamento estabeleceu-se um canal
-    de comunicação coloquial com profissional com anos de experiência de
-    atuação autônoma na área.
+    de comunicação coloquial entre profissional com anos de experiência de
+    atuação autônoma na área e programador.
 
     % qual é o problema ?
-    Ao comessar o levantamento de requisitos, obteve-se um conjunto de
-    caracteristicas que, em confirmação do que fora presumido, um
+    A principiar-se o levantamento de requisitos, se obteve um conjunto de
+    caracteristicas que definiu, em confirmação do que fora presumido, um
     \textit{software} voltado para o domínio de costura e conserto de roupas
     deveria ter.
 
@@ -34,41 +33,41 @@
     características; o levantamento de custos com insumos usados em confecções
     e concertos não é monitorado.
 
-    % com o que resolver o problema ?
-    Em seguida, com problemas determinados, seguiu-se para a escolha de quais
-    tecnologias devem ser empregadas em função do que o contexto apresentou
-    como desafio. A estes atribui-se o título de requisitos não funcionais.
+    Em seguida, partiu-se para escolha das melhores ferramentas para o contexto
+    desafiador que delineou-se. Comessou, aqui, a etapa que avalia
+    requisitos/aspectos não funcionais da aplicação.
 
-    \citeonline[p.244]{rogerPressman2021} define os requisitos não funcionais
+    \citeonline[p.85]{somervilleIam2011} define os requisitos não funcionais
     como sendo aqueles que não atribuem funcionalidades à aplicação, mais 
-    são fundamentais para existência dela.
+    são fundamentais para existência dela. Eles são: o ambiente físico,
+    as questões de segurança da informação, a capacidade física da máquina
+    servidora dentre outros que as circunstâncias possam trazer.
 
     Assim, o ambiente do sistema, de modo a garantir acessibilidade por
-    qualquer rede com acesso a internet, fora desenvolvido para redes de internet
-    de amplo alcançe, conhecidas como WANs.
-
+    qualquer rede com acesso a internet, inicialmente fora desenvolvido para
+    ser acessível por redes de internet de amplo alcançe, conhecidas como WANs.
     Entretanto, viu-se que essa caracteristica de disponibilidade ampla não
-    seria viável devido ao alto custo de infraestrutura de computadores
-    em núvem e possíveis problemas legais decorrentes de vazamentos de dados
+    seria viável devido ao alto custo de infraestrutura de computadores em
+    núvem e possíveis problemas legais decorrentes de vazamentos de dados
     \cite{protecaoDados2018}.
 
     Além disso, considerando o foco experimental assumido, estabeleceu-se o
     ambiente de funcionamento estrito à redes locais LAN cuja disponibilidade
     fica espacialmente restrita ao estabelecimento. Abordagem esta, semelhante
-    à encontrada em aplicações anteriores à difusão da acessibilidade da
+    a encontrada em aplicações anteriores à difusão da acessibilidade da
     internet.
 
     % ...
     \begin{figure}[h]
       \centering
-      \caption{ Diagrama da Infraestrutura Local de Rede. }
+      \caption{ Diagrama da Infraestrutura Local de Rede Simples. }
       \includegraphics[scale=0.5]{lib/nodes-uml.png}
       \source{ O Autor {\imprimirdata}}
       \label{fig:figura}
     \end{figure}
 
     %php como linguagem.
-    Conseguinte, prosseguiu-se na definição de uma linguagem de programação
+    Conseguinte, prosseguiu-se no emprego de uma linguagem de programação
     interpretada cuja caracteristica mais importante fosse a capacidade de
     integrar-se bem com o servidor. Logo figurou-se opções como: Javascript;
     PHP; Python; Ruby; Rust; Go dentre outras. Entretanto, devido ao já largo
@@ -78,24 +77,45 @@
     tornou-se, na década de 2000 e 2010, uma das mais utilizadas ferramentas do
     desenvolvimento web backend \cite{phpHistory}. Apesar de seu constante
     declínio atual em face de opções mais modernas, sua influência ainda não é
-    negligenciável pois ainda se encontra presente no cerne de muitas aplicações
-    grandes legadas \cite{theRegisterPHPDecline}.
+    negligenciável pois ainda se encontra presente no cerne inúmeras aplicações
+    legadas e softwares web \cite{theRegisterPHPDecline}.
 
     %modelo de classes
-    Definida a linguagem de programação de projeto proseguiu para a
-    modelagem do esquema de classes do domínio de negócios. O domínio
-    minunciosamente estudado consolidou as seguintes classes
-    na seguinte hierarquia.
+    Assumida uma linguagem de programação para implementação do projeto,
+    adianta-se para a modelagem do esquema de classes do domínio de negócios.
+    Primariamente, o domínio minunciosamente estudado trás as seguintes
+    classes fundamentais para solução do problema de negócio.
 
     \begin{figure}[h]
       \centering
-      \caption{ Diagrama textual indentado das classes principais. }
+      \caption{ Diagrama Textual Indentado das Classes Principais. }
       \includegraphics[scale=0.8]{lib/classes-principais.png}
       \source{ O Autor {\imprimirdata}}
       \label{fig:figura}
     \end{figure}
 
+    Complementando o diagrama sobreposto, determina-se que "ServiçoCostureira",
+    elemento pivô, possui relação de composição de clientes que por sua vez
+    agregam classes representantes de seus dados. Por outro lado há a classe
+    de Coleção de peças, também parte composta de serviço, que de sua parte
+    possui coleção de insumos e seus respectivos dados.
+
     %módulos do PHP e adaptadores
+    No tocante às dependências que são foco do experimento, o PHP possui
+    extensões padrões ativáveis na sua configuração. Cada módulo extende sua
+    capacidade de modo a permitir que a aplicação possa performar ações
+    críticas às funcionalidades instituidas nos requisitos funcionais.
+
+    %pgsql e sockets
+    Ativou-se duas extensões cuja finalidade foram de encontro a
+    garantir as capacidades de requisição e reposta e execução
+    de transações \ac{sql}
+
+    %respectivos adaptadores
+
+    %funcionamento geral/ estado do sistema
+
+    %conclusão para ir à conclusão
 
     %\input{textuais/capitulo_4/sub-topicos/Experimentos}
     \newpage

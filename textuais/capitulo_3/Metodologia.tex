@@ -43,8 +43,9 @@
     total utilidade ao empreendimento para o qual fora desenvolvido.
 
     Dessa forma, partindo desta primeira etapa metodológica comunicativa,
-    \citeonline{rogerPressman2021} pontua mais outras quatro atividades
-    fundamentais a qualquer projeto ativamente desenvolvido, onde lista:
+    \citeonline{rogerPressman2021, somervilleIam2011} pontuam mais outras quatro
+    atividades fundamentais a qualquer projeto ativamente desenvolvido, onde
+    lista:
 
     \begin{itemize}
       %\item{ Comunicação \- Partes comunicam-se para conhecimento do que deve ser implementado. }
@@ -54,19 +55,13 @@
       \item{ Entrega - Testes, implantação, monitoramento, administração e preparação para proxima iteração; }
     \end{itemize}
 
-    %fluxo das etapas
-    Neste sentido, partindo de um conjunto bem definido e aparentemente linear de
-    tarefas, encontramos que elas não são suficientes, pois apresentam uma organização
-    temporal própria, onde também devem ser admitidas, tendo em vista que todo esforço
-    técnico pode se desenrolar em finitas organizações temporalmente válidas, consolidadas
-    de modo a evitar a complexidade, os fluxos de processos apontados pelo mesmo autor.
-
+    %fluxo das etapas/tempo
     Neste sentido, partindo de um conjunto bem definido e aparentemente linear
-    de tarefas, encontramos que elas não são suficientes, pois apresentam uma
-    organização temporal muito simplista, tendo em vista que todo esforço
-    técnico pode se desenrolar em finitas organizações temporalmente válidas,
-    consolidadas de modo a evitar a complexidade, os fluxos de processos
-    apontados pelo mesmo autor são mais adequadas.
+    de tarefas, encontramos que elas não são sequencialmente ótimas, pois
+    apresentam uma organização temporal muito simplista. Logo, tendo em vista
+    que todo esforço técnico pode se desenrolar em finitas organizações
+    temporalmente válidas, os fluxos de processos apontados pelo mesmo autor
+    dinamizar-se-ão como demonstrado na próxima figura.
 
     \begin{figure}[h]
       \centering
@@ -76,32 +71,24 @@
       \label{fig:figura}
     \end{figure}
 
-    Diante dessa premissa, admitiu-se uma flexibilização na execução de etapas mais
-    próxima de uma iteração entre etapas e ou de todas etapas. Logo, prazos
-    formais não foram admitidos pelo fato de que a aplicação provavelente não
-    será empregada para uso concreto.
+    Diante dessa premissa, admitiu-se uma flexibilização na execução de etapas
+    mais próxima de uma iteração entre elas e ou de todas elas (evolutivo).
+    Em relação aos prazos formais não foram admitidos pelo fato de que a aplicação
+    provavelente não será utilizada de fato.
 
-    % para planejamento e modelagem
-    Essa flexibilização, dar-se-á como um processo de etapas e fluxo bem
-    definido e estabelecido, seguindo dentro do modelo ora apresentado, cujo
-    objetivo atenderá as etapas de planejamento e modelagem, arquitetando uma macro
-    característica significativa em impacto por todo o tempo de vida útil do
-    \textit{software}.
+    % para planejamento e modelagem (subconjunto duas dentre todas etapas)
+    Consequentemente além das etapas iniciais de comunicação e planejamento,
+    dentro do modelo de etapas e fluxo flexível ora apresentado, segue-se
+    iteradamente para modelagem e construção que determinam, sob a orientação
+    de arquiteturas e padrões comuns, características significativas em impacto
+    por todo tempo de vida útil do \textit{software}.
 
-    Por conseguinte, o sistema, arquiteturalmente adota uma estruturação
-    usualmente conhecida sob como \textit{Hexagonal Architecture}
-    onde os objetos mais importantes da aplicação, denominados de objetos
-    de domínio de negócio, encontram-se isolados dos demais objetos do ambiente
-    referidos como \textit{outside world} "mundo externo" \cite{alistairHexagonal2005}.
-    
-    Neste sentido, a garantia de separação entre domínio e funcionalidades
-    utilitárias, dar-se-á por orientação da arquitetura sobrecitada que sinaliza
-    o uso de classes pertecentes ao padrão de projeto \textit{Adapter} como
-    meio de isolação.
-
-    Além dessas funções, encontramos também que o sistema atende os objetivos,
-    possuidores das classes que intermediam as várias características
-    indispensáveis ao funcionamento da aplicação.
+    No que diz respeito à arquitetura, assume-se, de modo a evitar a
+    complexidade de abordagens menos intuitivas, o modelo proposto por
+    \citeonline{alistairHexagonal2005} que aponta o uso do padrão de projeto
+    \textit{Adapter} como forma de isolar os objetos do domínio de negócios dos
+    demais objetos do ambiente referido com \textit{Outside World} "Mundo
+    Externo". A tal arquitetura atribui-se o nome de \textit{Hexagonal Architecture}.
 
     \begin{figure}[h]
       \centering
@@ -112,9 +99,10 @@
     \end{figure}
 
     No entanto, exclui-se, de modo a seguir a linha do experimental, a parte
-    desenvolvida que provê interface ao usuário final. Logo sobrará a escrita
-    do Domínio de negócios, do adaptador de banco de dados e do adaptador para
-    comunicação, onde usaremos um protocolo de transporte.
+    desenvolvida que provê interface ao usuário final. Logo resta apenas a
+    escrita do Domínio de negócios, do adaptador de banco de dados e do
+    adaptador para comunicação, onde usar-se-á protocolo da camada de
+    transporte em redes de computadores TCP/IP.
 
     No tocante, ao campo das classes em sistemas \ac{oop}, há interelações entre
     elas na forma de herança ou composição. Entretanto, ocorre que, em meios
@@ -123,6 +111,12 @@
     assume uma abordagem mista onde uma e outra são empregadas simultâneamente
     de acordo com o que se julga mais adequado e conveniente ao contexto de
     implementação.
+
+    Quanto a objetos que agregam ou são compostos de N objetos, adotou-se
+    o padrão inicialmente definido por \citeonline{goldberg1984smalltalk}.
+    Padrão este que consiste em separar responsabilidade de gerenciar
+    uma coleção de sub objetos de seu objeto manipulador principal assim
+    evitando violações do princípio da responsabilidade única.
 
     Em suma, de modo a prosseguir mais proximamente ao domínio de negócios
     caberá, mais apropiadamente, ao desenvolvimento, tratar acerca dos detalhes
