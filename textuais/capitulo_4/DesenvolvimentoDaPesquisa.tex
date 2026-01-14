@@ -100,18 +100,61 @@
     de Coleção de peças, também parte composta de serviço, que de sua parte
     possui coleção de insumos e seus respectivos dados.
 
+    No tocante às classes coleções supra-apresentadas, a obra
+    \citeonline{goldberg1984smalltalk} foi de extrema importância na orientação
+    cautelosa de se evitar que objetos como peças e insumos possuissem excesso de
+    responsabilidades em manipulando matrizes de subobjetos agregados.
+
+    \begin{figure}[h]
+      \centering
+      \caption{ Classes Coleção. }
+      \includegraphics[scale=0.8]{lib/colecoes.png}
+      \source{ O Autor {\imprimirdata}}
+      \label{fig:figura}
+    \end{figure}
+
     %módulos do PHP e adaptadores
-    No tocante às dependências que são foco do experimento, o PHP possui
+    Com relação às dependências, que são foco do experimento, o PHP possui
     extensões padrões ativáveis na sua configuração. Cada módulo extende sua
     capacidade de modo a permitir que a aplicação possa performar ações
     críticas às funcionalidades instituidas nos requisitos funcionais.
 
     %pgsql e sockets
-    Ativou-se duas extensões cuja finalidade foram de encontro a
-    garantir as capacidades de requisição e reposta e execução
-    de transações \ac{sql}
+    Duas extensões cuja finalidades garatem as capacidades
+    de execução de transações \ac{sql} e atendimento do ciclo requisição/resposta
+    foram ativadas, respectivamente sendo elas: pgsql e sockets.
 
     %respectivos adaptadores
+    No âmbito dos dados, a ação tomada objetivou a independência da ferramenta
+    que manipula o banco de dados através da criação de uma interface, também
+    conhecida como contrato abstrato, que definia que classes forasteiras em
+    conformidade com tal contrato deveriam possuir quatro métodos fundamentais
+    escritos, sendo eles: ler, escrever, redefinir e encerrar.
+
+    Em seguida escreveu-se uma classe do tipo adaptador que implementa o
+    sobrecitado contrato. Nela código é capaz de acessar diretamente a
+    \ac{api} da extensão pgsl. Ademais, esta abordagem também visou alcançar
+    a simplicidade através de um adaptador que pudesse ser universalmente
+    utilizado por classes do tipo repositório possuidoras de condigo específico
+    de consultas para instânciação de classes de domínio \ac{sql}.
+
+    A posteriori, viu-se as ações assumidas, no contexto dos dados, criaram
+    um cenário com características próximas mas não idênticas às expostas por
+    \citeonline[p.106]{evans2004domain} na seção que trata acerca de Repositórios.
+
+    \begin{figure}[h]
+      \centering
+      \caption{ Adaptador de Banco de Dados é, Por Contrato, Substituível. }
+      \includegraphics[scale=0.5]{lib/adaptador-dados.png}
+      \source{ O Autor {\imprimirdata}}
+      \label{fig:figura}
+    \end{figure}
+
+    %PARTE EM CONSTRUÇÃO
+
+    Quanto ao âmbito da comunicação, não utilizou-se protocolo da de aplicação
+    em redes conhecido como \ac{http}, como consequência, elaborou-se um protocolo
+    próprio construido sobre o \ac{udp}. Sua dinamica se baseia em 
 
     %funcionamento geral/ estado do sistema
 
