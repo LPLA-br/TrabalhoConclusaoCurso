@@ -152,13 +152,39 @@
 
     %PARTE EM CONSTRUÇÃO
 
-    Quanto ao âmbito da comunicação, não utilizou-se protocolo da de aplicação
+    Quanto  âmbito da comunicação, não utilizou-se protocolo de aplicação
     em redes conhecido como \ac{http}, como consequência, elaborou-se um protocolo
-    próprio construido sobre o \ac{udp}. Sua dinamica se baseia em 
+    próprio construido sobre o \ac{udp}. Trata-se de comandos na forma de substantivo,
+    verbo e dados da ação.
 
-    %funcionamento geral/ estado do sistema
+    \begin{figure}[h]
+      \centering
+      \caption{ Exemplos de Comandos do Protocolo Atelie. }
+      \includegraphics[scale=0.5]{lib/protocoloatelie.png}
+      \source{ O Autor {\imprimirdata}}
+      \label{fig:figura}
+    \end{figure}
+    
+    para cada evento de requisição do cliente há ação, por parte do servidor, de
+    tratamento do comando, roteamento para caso de uso e resposta.
 
-    %conclusão para ir à conclusão
+    Quanto ao módulo dependido para esta funcionalidade a questão da
+    independência foi garantida através da implementação de uma classe chamada
+    Servidor. Sendo ela implementante de uma interface de mesmo nome que define
+    métodos padrões reconhecidos pelo ponto de execução main.php
+
+    \begin{figure}[h]
+      \centering
+      \caption{ Relação Servidor, IServidor e Main. }
+      \includegraphics[scale=0.5]{lib/comunicacao.png}
+      \source{ O Autor {\imprimirdata}}
+      \label{fig:figura}
+    \end{figure}
+
+    %funcionamento geral/ estado do sistema 
+    Por fim, conclui-se a etapa de construção onde comunicação e
+    dados são agora funcionais e relativamente mais independentes.
+    Poder-se-á, agora, extrair resultados e conclusões sobre.
 
     %\input{textuais/capitulo_4/sub-topicos/Experimentos}
     \newpage
