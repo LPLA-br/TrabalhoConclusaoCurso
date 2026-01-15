@@ -100,10 +100,26 @@
     de Coleção de peças, também parte composta de serviço, que de sua parte
     possui coleção de insumos e seus respectivos dados.
 
-    No tocante às classes coleções supra-apresentadas, a obra
-    \citeonline{goldberg1984smalltalk} foi de extrema importância na orientação
-    cautelosa de se evitar que objetos como peças e insumos possuissem excesso de
-    responsabilidades em manipulando matrizes de subobjetos agregados.
+    Em questão de organização de diretórios e sub diretórios, convencionou-se a
+    criação da seguinte hierarquia.
+
+    \begin{itemize}
+      \item{ Collection - Classes que gerenciam plúrimos objetos. }
+      \item{ Entity - Classes que representam Entidades do domínio de negócios. }
+      \item{ Service - Classes que implementam casos de uso do sistema instanciadas em main. }
+      \item{ Repository - Classes que manipulam banco de dados através de interface padronizada. }
+      \item{ Comunication - Classes que usam interface udp/ip para comunicação em redes "\textit{project's specific}". }
+      \item{ Enum - Enumerações que representam estados evitando strings mágicas. }
+      \item{ ValueObject - Objetos de valor que não são omnirelevantes ao domínio }
+    \end{itemize}
+
+    Tal organização orientou-se através de \citeonline{
+      goldberg1984smalltalk, evans2004domain, uncleBob2017 }
+
+    No tocante às classes coleções, a obra \citeonline{goldberg1984smalltalk}
+    foi de extrema importância na orientação cautelosa de se evitar que objetos
+    como peças e insumos possuissem excesso de responsabilidades em manipulando
+    matrizes de subobjetos agregados.
 
     \begin{figure}[h]
       \centering
