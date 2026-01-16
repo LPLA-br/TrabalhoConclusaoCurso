@@ -25,34 +25,35 @@
     % qual é o problema ?
     A principiar-se o levantamento de requisitos, se obteve um conjunto de
     caracteristicas que definiu, em confirmação do que fora presumido, um
-    \textit{software} voltado para o domínio de costura e conserto de roupas
-    deveria ter.
+    \textit{software} que deveria ser voltado para o domínio de costura e
+    conserto de roupas.
 
     Como consequência da comunicação inicial, revelou-se situações problemáticas
-    onde: os prazos de serviços são esquecidos senão o próprio serviço e suas
-    características; o levantamento de custos com insumos usados em confecções
-    e concertos não é monitorado.
+    onde os prazos de serviços são esquecidos, senão o próprio serviço e suas
+    características, bem como o levantamento de custos com insumos usados em
+    confecções e concertos não é monitorado.
 
+    %aspectos não funcionais
     Em seguida, partiu-se para escolha das melhores ferramentas para o contexto
-    desafiador que delineou-se. Comessou, aqui, a etapa que avalia
+    desafiador que delineou-se a problemática. Comessou, aqui, a etapa que avalia
     requisitos/aspectos não funcionais da aplicação.
 
-    \citeonline[p.85]{somervilleIam2011} define os requisitos não funcionais
-    como sendo aqueles que não atribuem funcionalidades à aplicação, mais 
+    Neste sentido, \citeonline[p.85]{somervilleIam2011} define os requisitos não funcionais
+    como sendo aqueles que não atribuem funcionalidades à aplicação, que
     são fundamentais para existência dela. Eles são: o ambiente físico,
     as questões de segurança da informação, a capacidade física da máquina
     servidora dentre outros que as circunstâncias possam trazer.
 
     Assim, o ambiente do sistema, de modo a garantir acessibilidade por
     qualquer rede com acesso a internet, inicialmente fora desenvolvido para
-    ser acessível por redes de internet de amplo alcançe, conhecidas como WANs.
+    ser acessível por redes de internet de amplo alcançe, conhecidas como \ac{wan}.
     Entretanto, viu-se que essa caracteristica de disponibilidade ampla não
     seria viável devido ao alto custo de infraestrutura de computadores em
     núvem e possíveis problemas legais decorrentes de vazamentos de dados
     \cite{protecaoDados2018}.
 
     Além disso, considerando o foco experimental assumido, estabeleceu-se o
-    ambiente de funcionamento estrito à redes locais LAN cuja disponibilidade
+    ambiente de funcionamento estrito à redes locais \ac{lan} cuja disponibilidade
     fica espacialmente restrita ao estabelecimento. Abordagem esta, semelhante
     a encontrada em aplicações anteriores à difusão da acessibilidade da
     internet.
@@ -71,20 +72,21 @@
     interpretada cuja caracteristica mais importante fosse a capacidade de
     integrar-se bem com o servidor. Logo figurou-se opções como: Javascript;
     PHP; Python; Ruby; Rust; Go dentre outras. Entretanto, devido ao já largo
-    emprego de Javascript, assumiu-se uma alternativa mais tradicional: PHP.
+    emprego de Javascript, assumiu-se uma alternativa mais tradicional na
+    linguagem de programação PHP.
     
     O PHP, que nascera como um conjunto de binários escritos na linguagem C,
     tornou-se, na década de 2000 e 2010, uma das mais utilizadas ferramentas do
-    desenvolvimento web backend \cite{phpHistory}. Apesar de seu constante
+    desenvolvimento \textit{backend} \cite{phpHistory}. Apesar de seu constante
     declínio atual em face de opções mais modernas, sua influência ainda não é
-    negligenciável pois ainda se encontra presente no cerne inúmeras aplicações
-    legadas e softwares web \cite{theRegisterPHPDecline}.
+    negligenciável pois ainda se encontra presente no cerne de inúmeras aplicações
+    legadas e \textit{software} \ac{web} \cite{theRegisterPHPDecline}.
 
     %modelo de classes
-    Assumida uma linguagem de programação para implementação do projeto,
-    adianta-se para a modelagem do esquema de classes do domínio de negócios.
-    Primariamente, o domínio minunciosamente estudado trás as seguintes
-    classes fundamentais para solução do problema de negócio.
+    Neste sentido, assumimos uma linguagem de programação para a implementação
+    do projeto, adiantando-se para uma modelagem do esquema de classes do
+    domínio de negócios, onde o domínio minunciosamente estudado trás as
+    seguintes classes fundamentais para solução do problema de negócio.
 
     \begin{figure}[h]
       \centering
@@ -96,12 +98,12 @@
 
     Complementando o diagrama sobreposto, determina-se que "ServiçoCostureira",
     elemento pivô, possui relação de composição de clientes que por sua vez
-    agregam classes representantes de seus dados. Por outro lado há a classe
-    de Coleção de peças, também parte composta de serviço, que de sua parte
-    possui coleção de insumos e seus respectivos dados.
+    agregam classes representantes de seus dados. Por outro lado há classe
+    de Coleção de peças, também parte composta de serviço que, por conseguinte,
+    possui de sua parte uma coleção de insumos e seus respectivos dados.
 
     Em questão de organização de diretórios e sub diretórios, convencionou-se a
-    criação da seguinte hierarquia.
+    criação da seguinte hierarquia:
 
     \begin{itemize}
       \item{ Collection - Classes que gerenciam plúrimos objetos. }
@@ -130,8 +132,8 @@
     \end{figure}
 
     %módulos do PHP e adaptadores
-    Com relação às dependências, que são foco do experimento, o PHP possui
-    extensões padrões ativáveis na sua configuração. Cada módulo extende sua
+    Com relação às dependências, que são foco desse experimento, o PHP possui
+    extensões padrões ativáveis na sua configuração, onde cada módulo extende sua
     capacidade de modo a permitir que a aplicação possa performar ações
     críticas às funcionalidades instituidas nos requisitos funcionais.
 
@@ -143,20 +145,22 @@
     %respectivos adaptadores
     No âmbito dos dados, a ação tomada objetivou a independência da ferramenta
     que manipula o banco de dados através da criação de uma interface, também
-    conhecida como contrato abstrato, que definia que classes forasteiras em
-    conformidade com tal contrato deveriam possuir quatro métodos fundamentais
-    escritos, sendo eles: ler, escrever, redefinir e encerrar.
+    conhecida como contrato abstrato, onde definiria que classes forasteiras
+    estaria em conformidade com tal contrato que, a princípio, possuiria quatro
+    métodos fundamentais escritos, sendo eles: ler, escrever, redefinir e
+    encerrar.
 
-    Em seguida escreveu-se uma classe do tipo adaptador que implementa o
-    sobrecitado contrato. Nela código é capaz de acessar diretamente a
+    Em seguida, escreveu-se uma classe do tipo adaptador que implementa o
+    sobrecitado contrato, onde esse código seria capaz de acessar diretamente a
     \ac{api} da extensão pgsl. Ademais, esta abordagem também visou alcançar
     a simplicidade através de um adaptador que pudesse ser universalmente
-    utilizado por classes do tipo repositório possuidoras de condigo específico
+    utilizado por classes do tipo repositório possuidoras de código específico
     de consultas para instânciação de classes de domínio \ac{sql}.
 
     A posteriori, viu-se as ações assumidas, no contexto dos dados, criaram
     um cenário com características próximas mas não idênticas às expostas por
-    \citeonline[p.106]{evans2004domain} na seção que trata acerca de Repositórios.
+    \citeonline[p.106]{evans2004domain} na seção que trata acerca de repositórios,
+    conforme o diagrama:
 
     \begin{figure}[h]
       \centering
@@ -166,12 +170,11 @@
       \label{fig:figura}
     \end{figure}
 
-    %PARTE EM CONSTRUÇÃO
-
-    Quanto  âmbito da comunicação, não utilizou-se protocolo de aplicação
+    Quanto ao âmbito da comunicação, não utilizou-se protocolo de aplicação
     em redes conhecido como \ac{http}, como consequência, elaborou-se um protocolo
-    próprio construido sobre o \ac{udp}. Trata-se de comandos na forma de substantivo,
-    verbo e dados da ação.
+    próprio construido sobre o \ac{udp}. No que se refere ao protocolo ora apresentado,
+    trata-se de comandos na forma de substantivo, verbo e dados da ação, conforme
+    exemplificado no protocolo desenvolvido:
 
     \begin{figure}[h]
       \centering
@@ -181,13 +184,15 @@
       \label{fig:figura}
     \end{figure}
     
-    para cada evento de requisição do cliente há ação, por parte do servidor, de
-    tratamento do comando, roteamento para caso de uso e resposta.
+    Partindo desse modelo, vê-se que para cada evento de requisição do cliente,
+    há ação por parte de um servidor, do direcionamento para o tratamento do
+    comando, bem como, para o roteamento em casos de uso e resposta.
 
-    Quanto ao módulo dependido para esta funcionalidade a questão da
+    Quanto ao módulo dependido para esta funcionalidade, a questão da
     independência foi garantida através da implementação de uma classe chamada
-    Servidor. Sendo ela implementante de uma interface de mesmo nome que define
-    métodos padrões reconhecidos pelo ponto de execução main.php
+    servidor. Sendo ela implementante de uma interface de mesmo nome que define
+    métodos padrões reconhecidos pelo ponto de execução principal "main.php", conforme
+    a diagramação que se segue:
 
     \begin{figure}[h]
       \centering
@@ -198,9 +203,9 @@
     \end{figure}
 
     %funcionamento geral/ estado do sistema 
-    Por fim, conclui-se a etapa de construção onde comunicação e
-    dados são agora funcionais e relativamente mais independentes.
-    Poder-se-á, agora, extrair resultados e conclusões sobre.
+    Por fim, conclui-se a etapa de construção, onde a comunicação e os
+    dados são funcionais e relativamente mais independentes entre eles, onde
+    podemos extrair resultados e conclusões sobre os mesmos.
 
     %\input{textuais/capitulo_4/sub-topicos/Experimentos}
     \newpage
