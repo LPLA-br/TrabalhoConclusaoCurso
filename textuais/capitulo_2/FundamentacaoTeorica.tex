@@ -23,26 +23,27 @@
     Esta seção, apresenta uma breve compilação das obras mais importantes de
     autores, nos quais direcionam acerca dos métodos capazes de mitigar os
     efeitos adversos, presentes nas más práticas, que mostraram-se danosas à
-    qualidade do \textit{software} sob o paradigma de programação orientação a
+    qualidade do \textit{software} sob o paradigma de programação orientada a
     objetos \ac{oop}.
 
     % orientação a objetos - pilares
     Neste sentido, antes de avançar sobre conceitos arquiteturais e de padrões
-    de projetos, deve-se, primeiro, observar aos fundamentos intrínsecos do
-    paradigma sobre o qual dispõe-se a trabalhar sobre.
+    de projetos, deve-se, primeiro, observar os fundamentos intrínsecos do
+    paradigma sobre o qual dispõe-se a trabalhar.
     
     O conceito de paradigma é introduzido por \citeonline{floyd2007paradigms}
     como sendo: "um padrão, um exemplo com o qual as coisas são feitas". O mesmo autor
     deixara claro, ao discutir acerca dos paradigmas de sua época, que o conceito, no
-    âmbito do desenvolvimento de software, consiste na forma como programas são feitos.
+    âmbito do desenvolvimento de \textit{software}, consiste na forma como os
+    programas são feitos.
 
     Os paradigmas surgiram concomitantemente com o desenvolvimento de linguagens de
     programação, em especial nas de alto nível que abstraiam a implementação binária
     direta de instruções, possibilitando uma implementação mais humana e menos complexa
     \cite[p.~8-]{Sammet1969languages}.
 
-    Inicialmente houve o surgimento, com o desenvolvimento da arquitetura de Von Neumann,
-    do primeiro paradigma, o Imperativo que trazia os conceitos fundamentais de estado
+    Inicialmente surgiu com o desenvolvimento da arquitetura de Von Neumann,
+    onde o primeiro paradigma, o imperativo que trazia os conceitos fundamentais de estado
     e ação modificante do estado. Sua influência é, até hoje, enorme e serviu de base
     para paradigmas posteriores \cite[p.~1]{jungthon2009paradigmas}.
 
@@ -51,34 +52,34 @@
     fundamentais de qualquer programa implementável \cite{Dijkstra1972structured}.
 
     Por fim, a orientação a objetos, inicialmente implantadas nas linguagens
-    Simula 1962 e Smalltalk 1972, traz os conceitos de objeto como uma
+    Simula (1962) e Smalltalk (1972), trazem os conceitos de objeto como uma
     abstração de qualquer elemento da vida real que interage separadamente com
     outros por meio de "mensagens" \cite[p.~52-55]{rentsch1982object}. No
     tocante a esse paradigma, ele teve sua origem com síntese de outros autores
-    presente em \citeonline{kasture2019pillars}, nos quatros pilares
-    fundamentais sobre da implementação \ac{oop} definidos como:
+    presentes em \citeonline{kasture2019pillars}, nos quatros pilares
+    fundamentais da implementação \ac{oop} definidos como:
 
     \begin{itemize}
-      \item{ Abstração \- capacidade de representar um subconjunto de atributos e comportamentos de uma entidade real }
-      \item{ Encapsulamento \- controle de acesso externo a atributos e comportamentos privados de um objeto }
-      \item{ Herança \- capacidade de extensão por superconjunto de atributos e comportamentos }
-      \item{ Polimorfismo \- capacidade de mutação de comportamentos por sobrescrita }
+      \item{ Abstração \- capacidade de representar um subconjunto de atributos e comportamentos de uma entidade real; }
+      \item{ Encapsulamento \- controle de acesso externo a atributos e comportamentos privados de um objeto; }
+      \item{ Herança \- capacidade de extensão por superconjunto de atributos e comportamentos; }
+      \item{ Polimorfismo \- capacidade de mutação de comportamentos por sobrescrita. }
     \end{itemize}
 
     % dos pilares fundamentais para os padrões de projeto.
     Notoriamente, ao definir-se esses pilares, percebe-se que eles
     possibilitaram o desenvolvimento de princípios e padrões de projeto ao
     longo do tempo de aprimoramento técnico do paradigma. Logo, como padrão de
-    projeto entende-se uma espécie de peça metodológica de característica
+    projeto, entende-se uma espécie de peça metodológica de característica
     regular, flexível e aplicável em múltiplos projetos em prol
     de solucionar problemas recorrentes da \ac{oop} \cite[p.~19-20]{gamma1993design}.
 
     % continuando para os princípios.
-    Por sua vez, os princípios, mais abragentes e abstratos, influênciam um
+    Por sua vez, os princípios mais abragentes e abstratos, influenciam um
     contexto mais amplo. Embora não constituam obrigação, eles são recomendações cuja
     credibilidade funcional, fundamenta-se na experiência de profissionais
     que trabalham por décadas sobre esse paradigma. Nesse sentido a aplicabilidade
-    dos princípios se baseia na: universalidade, idependência de tecnologia
+    dos princípios se baseia na: universalidade, independência de tecnologia
     implementacional e previsibilidade de consequências.
 
     % Introduz apenas princípios básicos para andamento eficiente
@@ -87,7 +88,7 @@
     % PRINCÍPIOS DERIVADOS DOS PILARES
 
     Conseguinte aos princípios, aponta-se o SOLID, onde \citeonline{uncleBob2017}
-    classifica em cinco subprincípios interconectados, tais como: A
+    classifica em cinco sub-princípios interconectados, tais como: A
     responsabilidade única da classe como entidade; priorização da ação de
     extender sobre a ação de modificar; preservação da relação de substituição
     entre classe base e derivada na herança; A segregação de interfaces como
@@ -118,25 +119,25 @@
     No que tange as arquiteturas de sistemas, aponta-se que houve o aprimoramento contínuo de
     conceitos que promovem desacoplamento por meio da separação de
     responsabilidades. Neste sentido, o objetivo geral se forma das seguintes
-    propriedades ideais desejadas, como apontado por \cite[p. 202]{uncleBob2017}:
+    propriedades e ideais desejadas, como apontado por \cite[p. 202]{uncleBob2017}:
 
     \begin{itemize}
-      \item{ Arquitetura que independe do frameworks para funcionar. }
-      \item{ Regras de negócio podem ser testadas sem interferência de camadas superiores ou inferiores. }
-      \item{ Idependência de Interface de Usuário onde ela pode mudar sem interferir o resto do sistema. }
-      \item{ Idependência de banco de dados onde sua mudança não interfere nas regras de negócio.  }
+      \item{ Arquitetura que independe de frameworks para funcionar; }
+      \item{ Regras de negócio podem ser testadas sem interferência de camadas superiores ou inferiores; }
+      \item{ Independência de interface de Usuário onde ela pode mudar sem interferir o resto do sistema; }
+      \item{ Independência de banco de dados onde sua mudança não interfere nas regras de negócio;  }
       \item{ Independência total das regras de negócio. }
     \end{itemize}
 
     Notadamente o somatório dessas propriedades,levam ao desenvolvimento
-    initerrupto de conceitos, que são promovedores da separação de
+    ininterrupto de conceitos, que são promovedores da separação de
     responsabilidades, principalmente em arquiteturas baseadas em camadas.
-    Diante do exposto, chegou-se à conclusão universal de que todo o software
+    Diante do exposto, chegou-se à conclusão universal de que todo o \textit{software}
     possui, em seu código fonte, dois elementos distinguíveis categoricamente,
     onde cada autor o definiu de formas levemente diferentes.
 
     \citeonline[p. 51]{evans2004domain} enuncia que o domínio da aplicação
-    separa-se das demais camadas que provêem sua funcionalidade..
+    separa-se das demais camadas que proveem sua funcionalidade.
 
     \begin{figure}[h]
       \centering
@@ -147,7 +148,7 @@
     \end{figure}
 
     Semelhantemente, \citeonline{alistairHexagonal2005}, em seu artigo original, define
-    um padrão majoritariamente comoposto de classes adaptadoras que possibilitam a separação
+    um padrão majoritariamente composto de classes adaptadoras que possibilitam a separação
     do que ele chamou de "aplicação" do \textit{outside world} "mundo externo".
 
     \begin{figure}[h]
@@ -170,21 +171,21 @@
     possuidor das seguintes propriedades
 
     \begin{itemize}
-        \item{ Interfaces gráficas. }
-        \item{ Persistência da informação (bancos de dados). }
-        \item{ Comunicação entre computadores em redes TCP/IP. }
-        \item{ Segurança da informação por criptografia e hashing. }
-        \item{ Especificidades da infraestrutura em que a aplicação executa. }
-        \item{ Manipulação de dispositivos computacionais de entrada ou saída. }
+      \item{ Interfaces gráficas; }
+      \item{ Persistência da informação (bancos de dados); }
+      \item{ Comunicação entre computadores em redes TCP/IP; }
+      \item{ Segurança da informação por criptografia e hashing; }
+      \item{ Especificidades da infraestrutura em que a aplicação executa; }
+      \item{ Manipulação de dispositivos computacionais de entrada ou saída. }
     \end{itemize}
 
     Diante do exposto, como forma de fortalecer estes pontos,
     \citeonline[p. 52]{evans2004domain} aponta que o \textit{software} pode, 
     em processos de desenvolvimento descuidados, espalhar as regras do domínio
-    de negócios sobre algumas ou todas partes sobrelistadas.
+    de negócios sobre algumas ou todas as partes sobrelistadas.
 
-    Apesar dos conceitos apresentados dos parágrafos superiores aparentarem
-    ser ótimas, existe, de fato, um criticismo na forma pela qual tais orientações
+    Apesar dos conceitos apresentados nos parágrafos anteriores aparentarem
+    ser ótimos, existe, de fato, um criticismo na forma pela qual tais orientações
     podem evoluir em complexidade nos projetos acarretando em problemas de
     complexidade e excesso de engenharia como causa e o desenvolvimento menos
     ágil em função da maior massividade de código fonte como consequência

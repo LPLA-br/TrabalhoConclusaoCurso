@@ -31,18 +31,18 @@
     Como consequência da comunicação inicial, revelou-se situações problemáticas
     onde os prazos de serviços são esquecidos, senão o próprio serviço e suas
     características, bem como o levantamento de custos com insumos usados em
-    confecções e concertos não é monitorado.
+    confecções e consertos não monitorados.
 
     %aspectos não funcionais
     Em seguida, partiu-se para escolha das melhores ferramentas para o contexto
-    desafiador que delineou-se a problemática. Comessou, aqui, a etapa que avalia
+    desafiador que delineou-se a problemática. Começou, aqui, a etapa que avalia
     requisitos/aspectos não funcionais da aplicação.
 
     Neste sentido, \citeonline[p.85]{somervilleIam2011} define os requisitos não funcionais
     como sendo aqueles que não atribuem funcionalidades à aplicação, que
     são fundamentais para existência dela. Eles são: o ambiente físico,
     as questões de segurança da informação, a capacidade física da máquina
-    servidora dentre outros que as circunstâncias possam trazer.
+    servidora, dentre outros que as circunstâncias possam trazer.
 
     Assim, o ambiente do sistema, de modo a garantir acessibilidade por
     qualquer rede com acesso a internet, inicialmente fora desenvolvido para
@@ -68,12 +68,12 @@
     \end{figure}
 
     %php como linguagem.
-    Conseguinte, prosseguiu-se no emprego de uma linguagem de programação
+    Por conseguinte, prosseguiu-se no emprego de uma linguagem de programação
     interpretada cuja caracteristica mais importante fosse a capacidade de
     integrar-se bem com o servidor. Logo figurou-se opções como: Javascript;
-    PHP; Python; Ruby; Rust; Go dentre outras. Entretanto, devido ao já largo
+    PHP; Python; Ruby; Rust; Go; entre outras. Entretanto, devido ao já largo
     emprego de Javascript, assumiu-se uma alternativa mais tradicional na
-    linguagem de programação PHP.
+    forma da linguagem de programação PHP.
     
     O PHP, que nascera como um conjunto de binários escritos na linguagem C,
     tornou-se, na década de 2000 e 2010, uma das mais utilizadas ferramentas do
@@ -85,7 +85,7 @@
     %modelo de classes
     Neste sentido, assumimos uma linguagem de programação para a implementação
     do projeto, adiantando-se para uma modelagem do esquema de classes do
-    domínio de negócios, onde o domínio minunciosamente estudado trás as
+    domínio de negócios, onde o domínio minuciosamente estudado traz as
     seguintes classes fundamentais para solução do problema de negócio.
 
     \begin{figure}[h]
@@ -96,23 +96,23 @@
       \label{fig:figura}
     \end{figure}
 
-    Complementando o diagrama sobreposto, determina-se que "ServiçoCostureira",
+    Complementando o diagrama sobreposto, determina-se que a classe "serviço de costureira",
     elemento pivô, possui relação de composição de clientes que por sua vez
-    agregam classes representantes de seus dados. Por outro lado há classe
-    de Coleção de peças, também parte composta de serviço que, por conseguinte,
+    agregam classes representantes de seus dados. Por outro lado, há classes
+    de coleção de peças, também parte composta de serviço que, por conseguinte,
     possui de sua parte uma coleção de insumos e seus respectivos dados.
 
-    Em questão de organização de diretórios e sub diretórios, convencionou-se a
+    Em questão de organização de diretórios e subdiretórios, convencionou-se a
     criação da seguinte hierarquia:
 
     \begin{itemize}
-      \item{ Collection - Classes que gerenciam plúrimos objetos. }
-      \item{ Entity - Classes que representam Entidades do domínio de negócios. }
-      \item{ Service - Classes que implementam casos de uso do sistema instanciadas em main. }
-      \item{ Repository - Classes que manipulam banco de dados através de interface padronizada. }
-      \item{ Comunication - Classes que usam interface udp/ip para comunicação em redes "\textit{project's specific}". }
-      \item{ Enum - Enumerações que representam estados evitando strings mágicas. }
-      \item{ ValueObject - Objetos de valor que não são omnirelevantes ao domínio }
+      \item{ Collection - Classes que gerenciam plúrimos objetos; }
+      \item{ Entity - Classes que representam Entidades do domínio de negócios; }
+      \item{ Service - Classes que implementam casos de uso do sistema instanciadas em main; }
+      \item{ Repository - Classes que manipulam banco de dados através de interface padronizada; }
+      \item{ Comunication - Classes que usam interface UDP/IP para comunicação em redes "\textit{project's specific}". }
+      \item{ Enum - Enumerações que representam estados evitando strings mágicas; }
+      \item{ ValueObject - Objetos de valor que não são omnirelevantes ao domínio. }
     \end{itemize}
 
     Tal organização orientou-se através de \citeonline{
@@ -120,8 +120,8 @@
 
     No tocante às classes coleções, a obra \citeonline{goldberg1984smalltalk}
     foi de extrema importância na orientação cautelosa de se evitar que objetos
-    como peças e insumos possuissem excesso de responsabilidades em manipulando
-    matrizes de subobjetos agregados.
+    como peças e insumos possuissem excesso de responsabilidades na manipulação
+    de matrizes de subobjetos agregados.
 
     \begin{figure}[h]
       \centering
@@ -138,7 +138,7 @@
     críticas às funcionalidades instituidas nos requisitos funcionais.
 
     %pgsql e sockets
-    Duas extensões cuja finalidades garatem as capacidades
+    Duas extensões cujas as finalidades garantem as capacidades
     de execução de transações \ac{sql} e atendimento do ciclo requisição/resposta
     foram ativadas, respectivamente sendo elas: pgsql e sockets.
 
@@ -155,7 +155,7 @@
     \ac{api} da extensão pgsl. Ademais, esta abordagem também visou alcançar
     a simplicidade através de um adaptador que pudesse ser universalmente
     utilizado por classes do tipo repositório possuidoras de código específico
-    de consultas para instânciação de classes de domínio \ac{sql}.
+    de consultas para instanciação de classes de domínio \ac{sql}.
 
     A posteriori, viu-se as ações assumidas, no contexto dos dados, criaram
     um cenário com características próximas mas não idênticas às expostas por
@@ -178,7 +178,7 @@
 
     \begin{figure}[h]
       \centering
-      \caption{ Exemplos de Comandos do Protocolo Atelie. }
+      \caption{ Exemplos de Comandos do Protocolo Ateliê. }
       \includegraphics[scale=0.5]{lib/protocoloatelie.png}
       \source{ O Autor {\imprimirdata}}
       \label{fig:figura}
