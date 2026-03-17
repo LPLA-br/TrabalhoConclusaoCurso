@@ -1,5 +1,14 @@
 #!/usr/bin/bash
 
+if [[ ! -d ./build ]]; then
+	echo "./build não existe"
+	echo "criando diretório ./build";
+	mkdir ./build
+	echo "criando arquivo de log vazio ./build/Principal.log"
+	echo "" >> ./build/Principal.log
+	echo "[OK!]"
+fi
+
 # pedidos de citação
 /usr/bin/pdflatex -output-directory=build ./Principal.tex;
 
